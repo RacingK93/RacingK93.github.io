@@ -1,0 +1,1830 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MongoDB 入门 | RacingK&#39;s blog</title>
+  <meta name="keywords" content=" MongoDB ">
+  <meta name="description" content="MongoDB 入门 | RacingK&#39;s blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="个人博客 记录生活 记录技术">
+<meta property="og:type" content="website">
+<meta property="og:title" content="文章分类">
+<meta property="og:url" content="https://www.52ruankai.cn/categories/index.html">
+<meta property="og:site_name" content="RacingK&#39;s blog">
+<meta property="og:description" content="个人博客 记录生活 记录技术">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-09-27T02:12:58.000Z">
+<meta property="article:modified_time" content="2021-07-02T12:01:51.924Z">
+<meta property="article:author" content="RacingK">
+<meta property="article:tag" content="前端博客,JavaScript,html5,css3,Jquery,NodeJs,Ubuntu,Vue,React">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.0.2" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.0.2" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.2" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="/js/iconfont.js?v=1.0.2" ></script>
+
+<script src="//unpkg.com/valine/dist/Valine.min.js" ></script>
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>RacingK</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="github" href="https://github.com/clear93-hub" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a title="weibo" href="https://weibo.com/52ruankai" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="jianshu" href="https://www.jianshu.com/u/11c5d2d55266" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-jianshu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="zhihu" href="https://www.zhihu.com/people/ruan-kai-44/activities" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-zhihu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="oschina" href="https://my.oschina.net/RacingK" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-oschina"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="juejin" href="https://juejin.im/user/5a913ad85188255de2010c05" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-juejin"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="email" href="mailto:D05DdV@163.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=736512612&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="kugou" href="https://www.kugou.com/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-kugou"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=53457140" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(62)</small></div></li>
+    
+        
+            
+            <li><div data-rel="小程序">小程序<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="java">java<small>(16)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="运维">运维<small>(6)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Node.js">Node.js<small>(4)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Hexo">Hexo<small>(4)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="javascript">javascript<small>(5)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="MySQL">MySQL<small>(4)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Next">Next<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="MongoDB">MongoDB<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="vue">vue<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Vuex">Vuex<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="WebAssembly">WebAssembly<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="windows">windows<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="git">git<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="CSS">CSS<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="svn">svn<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="webpack">webpack<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="魔方">魔方<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Babel">Babel<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="计算机科学与技术">计算机科学与技术<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="前端">前端<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="npm">npm<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="赛车">赛车<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="用户体验">用户体验<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="62">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="Search..." autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color4">小程序</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">java</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">Spring</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">CentOS</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">linux</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Elasticsearch</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Eclipse</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">运维</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Node.js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Hexo</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Next</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">logstash</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">javascript</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">MySQL</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">MongoDB</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">IOC</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">vue</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">TypeScript</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">ubuntu</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">express</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Vim</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Vuex</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Vue</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">WebAssembly</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">windows</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">cmd</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">filebeat</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">git</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">ES6</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">kibana</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">ES</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">jdk</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">powershell</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">CSS</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">svn</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">webpack</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">ejs</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">pug</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">三阶魔方</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">魔方</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">Babel</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">位运算</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">位</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">字节</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">二进制</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">sass</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">less</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">styl</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">前端</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">用户体验</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">pwa</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">vue-cli</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">npm</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">微信小程序</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">速度</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">赛车</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">shell</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="运维 "
+           href="/CentOS%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="CentOS,linux"
+           data-author="" >
+            <span class="post-title" title="CentOS系统操作常用命令">CentOS系统操作常用命令</span>
+            <span class="post-date" title="2020-01-08 11:28:04">2020/01/08</span>
+        </a>
+        
+        <a  class="java "
+           href="/Elasticsearch%E5%B8%B8%E7%94%A8%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/"
+           data-tag="java,Elasticsearch"
+           data-author="" >
+            <span class="post-title" title="Elasticsearch常用查询语句">Elasticsearch常用查询语句</span>
+            <span class="post-date" title="2020-09-09 16:05:17">2020/09/09</span>
+        </a>
+        
+        <a  class="java "
+           href="/Eclipse%E5%AE%89%E8%A3%85/"
+           data-tag="java,Eclipse"
+           data-author="" >
+            <span class="post-title" title="安装Eclipse">安装Eclipse</span>
+            <span class="post-date" title="2020-01-14 17:16:23">2020/01/14</span>
+        </a>
+        
+        <a  class="java "
+           href="/Elasticsearch%E4%B8%AD%E7%9A%84mappings/"
+           data-tag="java,Elasticsearch"
+           data-author="" >
+            <span class="post-title" title="Elasticsearch中的mappings">Elasticsearch中的mappings</span>
+            <span class="post-date" title="2020-09-09 16:39:46">2020/09/09</span>
+        </a>
+        
+        <a  class="java "
+           href="/Elasticsearch%E7%9A%84%E5%88%86%E8%AF%8D%E5%99%A8/"
+           data-tag="java,Elasticsearch"
+           data-author="" >
+            <span class="post-title" title="Elasticsearch的分词器">Elasticsearch的分词器</span>
+            <span class="post-date" title="2020-09-09 16:56:26">2020/09/09</span>
+        </a>
+        
+        <a  class="java "
+           href="/Elasticsearch%E7%B4%A2%E5%BC%95%E5%BA%93%E9%87%8D%E5%91%BD%E5%90%8D/"
+           data-tag="java,linux,Elasticsearch,运维"
+           data-author="" >
+            <span class="post-title" title="Elasticsearch索引库重命名">Elasticsearch索引库重命名</span>
+            <span class="post-date" title="2020-09-08 20:23:57">2020/09/08</span>
+        </a>
+        
+        <a  class="java "
+           href="/Elasticsearch%E4%BB%8B%E7%BB%8D/"
+           data-tag="java,Elasticsearch"
+           data-author="" >
+            <span class="post-title" title="Elasticsearch介绍">Elasticsearch介绍</span>
+            <span class="post-date" title="2020-09-09 15:55:53">2020/09/09</span>
+        </a>
+        
+        <a  class="Node.js "
+           href="/Express/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Express 入门">Express 入门</span>
+            <span class="post-date" title="2019-09-18 10:41:54">2019/09/18</span>
+        </a>
+        
+        <a  class="Hexo Next "
+           href="/Hexo-Next-%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/"
+           data-tag="Hexo,Next"
+           data-author="" >
+            <span class="post-title" title="Hexo Next 添加分类和标签">Hexo Next 添加分类和标签</span>
+            <span class="post-date" title="2019-09-27 11:40:27">2019/09/27</span>
+        </a>
+        
+        <a  class="Hexo Next "
+           href="/Hexo%E4%B9%8BNext/"
+           data-tag="Hexo,Next"
+           data-author="" >
+            <span class="post-title" title="Hexo之Next">Hexo之Next</span>
+            <span class="post-date" title="2019-09-27 09:08:38">2019/09/27</span>
+        </a>
+        
+        <a  class="Hexo "
+           href="/Hexo%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E5%AD%A6/"
+           data-tag="Hexo"
+           data-author="" >
+            <span class="post-title" title="Hexo 手把手教学">Hexo 手把手教学</span>
+            <span class="post-date" title="2019-09-26 15:28:23">2019/09/26</span>
+        </a>
+        
+        <a  class="java "
+           href="/Logstash%E5%AE%89%E8%A3%85/"
+           data-tag="java,logstash"
+           data-author="" >
+            <span class="post-title" title="Logstash安装">Logstash安装</span>
+            <span class="post-date" title="2020-09-11 11:14:44">2020/09/11</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/JavaScript-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%A6%81%E4%BD%BF%E7%94%A8-eval/"
+           data-tag="javascript"
+           data-author="" >
+            <span class="post-title" title="JavaScript 为什么不要使用 eval">JavaScript 为什么不要使用 eval</span>
+            <span class="post-date" title="2019-12-24 10:21:35">2019/12/24</span>
+        </a>
+        
+        <a  class="MySQL "
+           href="/MySQL-%E5%85%A5%E9%97%A8/"
+           data-tag="MySQL"
+           data-author="" >
+            <span class="post-title" title="MySQL 介绍">MySQL 介绍</span>
+            <span class="post-date" title="2019-10-15 11:37:37">2019/10/15</span>
+        </a>
+        
+        <a  class="MongoDB "
+           href="/MongoDB-%E5%85%A5%E9%97%A8/"
+           data-tag="MongoDB"
+           data-author="" >
+            <span class="post-title" title="MongoDB 入门">MongoDB 入门</span>
+            <span class="post-date" title="2020-01-06 11:24:55">2020/01/06</span>
+        </a>
+        
+        <a  class="Node.js "
+           href="/NodeJS-net-module/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="NodeJS的网络模块">NodeJS的网络模块</span>
+            <span class="post-date" title="2019-09-16 11:38:21">2019/09/16</span>
+        </a>
+        
+        <a  class="java "
+           href="/Spring-IOC/"
+           data-tag="java,Spring,IOC"
+           data-author="" >
+            <span class="post-title" title="Spring IOC">Spring IOC</span>
+            <span class="post-date" title="2020-08-25 10:56:36">2020/08/25</span>
+        </a>
+        
+        <a  class="vue "
+           href="/TypeScript%E6%95%99%E7%A8%8B/"
+           data-tag="vue,TypeScript"
+           data-author="" >
+            <span class="post-title" title="TypeScript教程">TypeScript教程</span>
+            <span class="post-date" title="2019-11-01 16:13:18">2019/11/01</span>
+        </a>
+        
+        <a  class="Node.js "
+           href="/Ubuntu-install-express-project/"
+           data-tag="linux,Node.js,ubuntu,express"
+           data-author="" >
+            <span class="post-title" title="Ubuntu下安装部署express项目">Ubuntu下安装部署express项目</span>
+            <span class="post-date" title="2019-09-17 11:14:00">2019/09/17</span>
+        </a>
+        
+        <a  class="运维 "
+           href="/Vim%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%95%B4%E7%90%86/"
+           data-tag="Vim"
+           data-author="" >
+            <span class="post-title" title="Vim常用操作整理">Vim常用操作整理</span>
+            <span class="post-date" title="2020-01-08 13:58:28">2020/01/08</span>
+        </a>
+        
+        <a  class="Vuex "
+           href="/Vuex%E7%9A%84%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/"
+           data-tag="Vuex,Vue"
+           data-author="" >
+            <span class="post-title" title="Vuex的使用入门">Vuex的使用入门</span>
+            <span class="post-date" title="2019-10-25 10:18:10">2019/10/25</span>
+        </a>
+        
+        <a  class="Node.js "
+           href="/NodeJS%E7%9A%84fs%E6%A8%A1%E5%9D%97/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="NodeJS的fs模块">NodeJS的fs模块</span>
+            <span class="post-date" title="2019-09-11 11:28:21">2019/09/11</span>
+        </a>
+        
+        <a  class="WebAssembly "
+           href="/WebAssembly%E6%A6%82%E5%BF%B5%E5%85%A5%E9%97%A8/"
+           data-tag="WebAssembly"
+           data-author="" >
+            <span class="post-title" title="WebAssembly概念入门">WebAssembly概念入门</span>
+            <span class="post-date" title="2019-12-18 09:17:26">2019/12/18</span>
+        </a>
+        
+        <a  class=""
+           href="/chrome-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B1%9E%E6%80%A7/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="chrome://的一些属性">chrome://的一些属性</span>
+            <span class="post-date" title="2019-11-01 14:59:35">2019/11/01</span>
+        </a>
+        
+        <a  class="windows "
+           href="/cmd%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="windows,cmd"
+           data-author="" >
+            <span class="post-title" title="cmd常用命令">cmd常用命令</span>
+            <span class="post-date" title="2019-12-24 11:18:21">2019/12/24</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/don't-use-document.write/"
+           data-tag="javascript"
+           data-author="" >
+            <span class="post-title" title="不建议使用document.write">不建议使用document.write</span>
+            <span class="post-date" title="2019-09-09 09:30:00">2019/09/09</span>
+        </a>
+        
+        <a  class="java "
+           href="/filebeat-issue/"
+           data-tag="java,filebeat"
+           data-author="" >
+            <span class="post-title" title="filebeat issue">filebeat issue</span>
+            <span class="post-date" title="2020-09-14 13:35:15">2020/09/14</span>
+        </a>
+        
+        <a  class="git "
+           href="/git%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git常用操作">git常用操作</span>
+            <span class="post-date" title="2019-12-20 17:31:43">2019/12/20</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/generator%E5%85%A5%E9%97%A8/"
+           data-tag="javascript,ES6"
+           data-author="" >
+            <span class="post-title" title="generator入门">generator入门</span>
+            <span class="post-date" title="2019-12-27 17:08:26">2019/12/27</span>
+        </a>
+        
+        <a  class="git "
+           href="/git%E6%8A%A5-changes-not-staged-for-commit/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git报&#39;changes not staged for commit&#39;">git报&#39;changes not staged for commit&#39;</span>
+            <span class="post-date" title="2019-09-27 18:35:45">2019/09/27</span>
+        </a>
+        
+        <a  class="java "
+           href="/kibana-issue/"
+           data-tag="java,kibana"
+           data-author="" >
+            <span class="post-title" title="kibana issue">kibana issue</span>
+            <span class="post-date" title="2020-09-14 15:10:34">2020/09/14</span>
+        </a>
+        
+        <a  class="java "
+           href="/kibana%E5%AE%89%E8%A3%85/"
+           data-tag="java,linux,kibana,ES"
+           data-author="" >
+            <span class="post-title" title="kibana安装">kibana安装</span>
+            <span class="post-date" title="2020-09-09 14:50:22">2020/09/09</span>
+        </a>
+        
+        <a  class="java "
+           href="/linux%E4%B8%8BElasticsearch%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"
+           data-tag="java,linux,Elasticsearch,运维,filebeat"
+           data-author="" >
+            <span class="post-title" title="linux下Elasticsearch相关操作">linux下Elasticsearch相关操作</span>
+            <span class="post-date" title="2020-09-08 09:38:55">2020/09/08</span>
+        </a>
+        
+        <a  class="运维 MySQL "
+           href="/linux%E4%B8%8Bmysql%E6%93%8D%E4%BD%9C/"
+           data-tag="linux,运维,MySQL"
+           data-author="" >
+            <span class="post-title" title="linux下mysql操作">linux下mysql操作</span>
+            <span class="post-date" title="2020-09-02 17:30:43">2020/09/02</span>
+        </a>
+        
+        <a  class="java "
+           href="/linux%E4%B8%8B%E5%AE%89%E8%A3%85Elasticsearch7-9/"
+           data-tag="java,Elasticsearch,运维"
+           data-author="" >
+            <span class="post-title" title="linux下安装Elasticsearch7.9">linux下安装Elasticsearch7.9</span>
+            <span class="post-date" title="2020-09-02 08:52:07">2020/09/02</span>
+        </a>
+        
+        <a  class="java "
+           href="/linux%E5%AE%89%E8%A3%85jdk/"
+           data-tag="java,linux,jdk"
+           data-author="" >
+            <span class="post-title" title="linux安装jdk">linux安装jdk</span>
+            <span class="post-date" title="2020-09-01 17:44:34">2020/09/01</span>
+        </a>
+        
+        <a  class="运维 "
+           href="/linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux系统常用命令">linux系统常用命令</span>
+            <span class="post-date" title="2020-01-08 11:50:32">2020/01/08</span>
+        </a>
+        
+        <a  class="java "
+           href="/logstash-issue/"
+           data-tag="java,logstash"
+           data-author="" >
+            <span class="post-title" title="logstash issue">logstash issue</span>
+            <span class="post-date" title="2020-09-14 11:42:56">2020/09/14</span>
+        </a>
+        
+        <a  class="MySQL "
+           href="/mysql%E4%B9%8Bjoin/"
+           data-tag="MySQL"
+           data-author="" >
+            <span class="post-title" title="mysql之join">mysql之join</span>
+            <span class="post-date" title="2020-09-03 16:06:23">2020/09/03</span>
+        </a>
+        
+        <a  class="MySQL "
+           href="/mysql%E4%B9%8B%E6%9F%A5%E8%AF%A2/"
+           data-tag="MySQL"
+           data-author="" >
+            <span class="post-title" title="mysql之查询">mysql之查询</span>
+            <span class="post-date" title="2020-09-03 16:03:33">2020/09/03</span>
+        </a>
+        
+        <a  class="windows "
+           href="/powershell%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="windows,powershell"
+           data-author="" >
+            <span class="post-title" title="powershell常用命令">powershell常用命令</span>
+            <span class="post-date" title="2019-12-24 14:43:30">2019/12/24</span>
+        </a>
+        
+        <a  class="CSS "
+           href="/px-em-rem-vh-vw-media-%E4%B9%8B%E8%87%AA%E9%80%82%E5%BA%94%E6%96%B9%E6%B3%95/"
+           data-tag="CSS"
+           data-author="" >
+            <span class="post-title" title="px em rem vh vw @media 之自适应方法">px em rem vh vw @media 之自适应方法</span>
+            <span class="post-date" title="2020-01-02 16:30:08">2020/01/02</span>
+        </a>
+        
+        <a  class="svn "
+           href="/svn%E5%88%86%E6%94%AF%E5%90%88%E5%B9%B6%E4%B8%BB%E5%B9%B2/"
+           data-tag="svn"
+           data-author="" >
+            <span class="post-title" title="svn分支合并主干">svn分支合并主干</span>
+            <span class="post-date" title="2020-11-18 09:36:41">2020/11/18</span>
+        </a>
+        
+        <a  class="运维 "
+           href="/ubuntu%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="linux,ubuntu"
+           data-author="" >
+            <span class="post-title" title="ubuntu系统操作常用命令">ubuntu系统操作常用命令</span>
+            <span class="post-date" title="2020-01-06 17:49:57">2020/01/06</span>
+        </a>
+        
+        <a  class="vue "
+           href="/vue%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E4%BA%8B%E4%BB%B6%E8%A7%A6%E5%8F%91/"
+           data-tag="vue"
+           data-author="" >
+            <span class="post-title" title="vue组件之间如何进行事件触发">vue组件之间如何进行事件触发</span>
+            <span class="post-date" title="2019-11-05 11:48:04">2019/11/05</span>
+        </a>
+        
+        <a  class="vue "
+           href="/vue%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E4%BC%A0%E5%80%BC/"
+           data-tag="vue"
+           data-author="" >
+            <span class="post-title" title="vue组件之间的传值">vue组件之间的传值</span>
+            <span class="post-date" title="2019-10-24 09:01:54">2019/10/24</span>
+        </a>
+        
+        <a  class="webpack "
+           href="/webpack%E8%BD%AC%E6%8D%A2ejs-pug%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
+           data-tag="webpack,ejs,pug"
+           data-author="" >
+            <span class="post-title" title="webpack转换ejs pug模板引擎">webpack转换ejs pug模板引擎</span>
+            <span class="post-date" title="2019-10-10 14:20:55">2019/10/10</span>
+        </a>
+        
+        <a  class="魔方 "
+           href="/%E4%B8%89%E9%98%B6%E9%AD%94%E6%96%B9%E5%A4%8D%E5%8E%9F%E6%96%B9%E6%B3%95%E8%AE%B0%E5%BD%95/"
+           data-tag="三阶魔方,魔方"
+           data-author="" >
+            <span class="post-title" title="三阶魔方复原方法记录">三阶魔方复原方法记录</span>
+            <span class="post-date" title="2020-08-31 21:16:56">2020/08/31</span>
+        </a>
+        
+        <a  class="Babel "
+           href="/%E4%BA%94%E6%AD%A5%E6%90%9E%E5%AE%9A%EF%BC%8C%E4%BD%BF%E7%94%A8babel%E5%B0%86js%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84%E6%89%80%E6%9C%89js%E6%96%87%E4%BB%B6%E5%85%A8%E9%83%A8%E8%BD%AC%E7%A0%81%E5%88%B0compile%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B/"
+           data-tag="Babel"
+           data-author="" >
+            <span class="post-title" title="五步搞定，使用babel将js文件夹下的所有js文件全部转码到compile文件夹下">五步搞定，使用babel将js文件夹下的所有js文件全部转码到compile文件夹下</span>
+            <span class="post-date" title="2019-12-24 11:11:34">2019/12/24</span>
+        </a>
+        
+        <a  class="计算机科学与技术 "
+           href="/%E4%BD%8D%E8%BF%90%E7%AE%97/"
+           data-tag="位运算,位,字节,二进制"
+           data-author="" >
+            <span class="post-title" title="位运算">位运算</span>
+            <span class="post-date" title="2019-10-23 11:15:05">2019/10/23</span>
+        </a>
+        
+        <a  class="webpack "
+           href="/webpack%E9%85%8D%E7%BD%AE%E4%B9%8Bsass-less-styl%E7%9A%84%E5%BA%94%E7%94%A8/"
+           data-tag="webpack,sass,less,styl"
+           data-author="" >
+            <span class="post-title" title="webpack配置之sass less styl的应用">webpack配置之sass less styl的应用</span>
+            <span class="post-date" title="2019-10-10 11:59:42">2019/10/10</span>
+        </a>
+        
+        <a  class="Hexo "
+           href="/%E4%BF%AE%E6%94%B9Hexo%E4%B8%BB%E9%A2%98/"
+           data-tag="Hexo"
+           data-author="" >
+            <span class="post-title" title="修改Hexo主题">修改Hexo主题</span>
+            <span class="post-date" title="2019-12-24 13:42:18">2019/12/24</span>
+        </a>
+        
+        <a  class="前端 用户体验 "
+           href="/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E4%B8%AD%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"
+           data-tag="前端,用户体验"
+           data-author="" >
+            <span class="post-title" title="前端开发中用户体验注意事项">前端开发中用户体验注意事项</span>
+            <span class="post-date" title="2019-12-11 11:56:16">2019/12/11</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/%E5%85%A5%E9%97%A8PWA/"
+           data-tag="javascript,vue,pwa,vue-cli"
+           data-author="" >
+            <span class="post-title" title="入门PWA">入门PWA</span>
+            <span class="post-date" title="2019-10-29 11:08:04">2019/10/29</span>
+        </a>
+        
+        <a  class="git "
+           href="/%E5%90%8C%E4%B8%AA%E7%94%B5%E8%84%91%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E4%B8%8D%E5%90%8Cgit%E5%B9%B3%E5%8F%B0%E8%B4%A6%E6%88%B7/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="同个电脑配置多个不同git平台账户">同个电脑配置多个不同git平台账户</span>
+            <span class="post-date" title="2019-10-17 14:57:48">2019/10/17</span>
+        </a>
+        
+        <a  class="npm "
+           href="/%E5%A6%82%E4%BD%95%E7%94%A8CNPM%E4%BB%A3%E6%9B%BFNPM/"
+           data-tag="npm"
+           data-author="" >
+            <span class="post-title" title="如何用CNPM代替NPM">如何用CNPM代替NPM</span>
+            <span class="post-date" title="2019-12-24 09:57:37">2019/12/24</span>
+        </a>
+        
+        <a  class="webpack "
+           href="/%E5%AE%89%E8%A3%85webpack/"
+           data-tag="webpack"
+           data-author="" >
+            <span class="post-title" title="安装webpack">安装webpack</span>
+            <span class="post-date" title="2019-10-10 11:03:03">2019/10/10</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/%E5%B8%B8%E7%94%A8%E6%AD%A3%E5%88%99%E6%95%B4%E7%90%86/"
+           data-tag="javascript"
+           data-author="" >
+            <span class="post-title" title="常用正则整理">常用正则整理</span>
+            <span class="post-date" title="2019-12-24 10:36:42">2019/12/24</span>
+        </a>
+        
+        <a  class="小程序 "
+           href="/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"
+           data-tag="小程序,微信小程序"
+           data-author="" >
+            <span class="post-title" title="微信小程序开发中的注意事项">微信小程序开发中的注意事项</span>
+            <span class="post-date" title="2019-12-11 10:18:02">2019/12/11</span>
+        </a>
+        
+        <a  class="赛车 "
+           href="/%E6%9E%81%E9%99%90%E9%80%9F%E5%BA%A6%E6%8F%AD%E7%A7%98%E8%AE%B0%E5%BD%95/"
+           data-tag="速度,赛车"
+           data-author="" >
+            <span class="post-title" title="极限速度揭秘记录">极限速度揭秘记录</span>
+            <span class="post-date" title="2020-08-31 22:53:41">2020/08/31</span>
+        </a>
+        
+        <a  class="java "
+           href="/%E7%94%A8filebeat%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5ES/"
+           data-tag="java,Elasticsearch,运维,filebeat"
+           data-author="" >
+            <span class="post-title" title="用filebeat将数据导入ES">用filebeat将数据导入ES</span>
+            <span class="post-date" title="2020-09-08 09:05:32">2020/09/08</span>
+        </a>
+        
+        <a  class="运维 "
+           href="/%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6-shell%E8%84%9A%E6%9C%AC/"
+           data-tag="运维,shell"
+           data-author="" >
+            <span class="post-title" title="读写文件-shell脚本">读写文件-shell脚本</span>
+            <span class="post-date" title="2020-09-23 11:26:46">2020/09/23</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-MongoDB-入门" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">MongoDB 入门</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="MongoDB">MongoDB</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color3">MongoDB</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2021-07-02 20:01:51'>2020-01-06 11:24</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5%E4%BB%8B%E7%BB%8D"><span class="toc-text">概念介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E7%89%B9%E7%82%B9"><span class="toc-text">主要特点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MongoDB-%E4%B8%8B%E8%BD%BD"><span class="toc-text">MongoDB 下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%AD%E8%A8%80%E6%94%AF%E6%8C%81"><span class="toc-text">语言支持</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MongoDB-%E5%B7%A5%E5%85%B7"><span class="toc-text">MongoDB 工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%91%E6%8E%A7"><span class="toc-text">监控</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#GUI"><span class="toc-text">GUI</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MongoDB-%E5%BA%94%E7%94%A8%E6%A1%88%E4%BE%8B"><span class="toc-text">MongoDB 应用案例</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%90%84%E5%B9%B3%E5%8F%B0%E7%9A%84MongoDB-%E5%AE%89%E8%A3%85"><span class="toc-text">各平台的MongoDB 安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Windows"><span class="toc-text">Windows</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD"><span class="toc-text">下载</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E7%9B%AE%E5%BD%95"><span class="toc-text">创建数据目录</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8B%E8%BF%90%E8%A1%8C-MongoDB-%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">命令行下运行 MongoDB 服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MongoDB-%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86-Shell"><span class="toc-text">MongoDB 后台管理 Shell</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux"><span class="toc-text">linux</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5%E8%A7%A3%E6%9E%90"><span class="toc-text">概念解析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%90%8D%E5%8F%AF%E4%BB%A5%E6%98%AF%E6%BB%A1%E8%B6%B3%E4%BB%A5%E4%B8%8B%E6%9D%A1%E4%BB%B6%E7%9A%84%E4%BB%BB%E6%84%8FUTF-8%E5%AD%97%E7%AC%A6%E4%B8%B2%E3%80%82"><span class="toc-text">数据库名可以是满足以下条件的任意UTF-8字符串。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E4%B8%80%E4%BA%9B%E6%95%B0%E6%8D%AE%E5%BA%93%E5%90%8D%E6%98%AF%E4%BF%9D%E7%95%99%E7%9A%84%EF%BC%8C%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5%E8%AE%BF%E9%97%AE%E8%BF%99%E4%BA%9B%E6%9C%89%E7%89%B9%E6%AE%8A%E4%BD%9C%E7%94%A8%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E3%80%82"><span class="toc-text">有一些数据库名是保留的，可以直接访问这些有特殊作用的数据库。</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E6%A1%A3-Document"><span class="toc-text">文档(Document)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E5%90%88"><span class="toc-text">集合</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%88%E6%B3%95%E7%9A%84%E9%9B%86%E5%90%88%E5%90%8D"><span class="toc-text">合法的集合名</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-text">参考</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="概念介绍"><a href="#概念介绍" class="headerlink" title="概念介绍"></a>概念介绍</h1><ul>
+<li>MongoDB 是一个基于分布式文件存储的开源数据库。</li>
+<li>由 C++ 语言编写。</li>
+<li>旨在为 WEB 应用提供可扩展的高性能数据存储解决方案。</li>
+<li>MongoDB 是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。</li>
+<li>在高负载的情况下，添加更多的节点，可以保证服务器性能。</li>
+</ul>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/mongodb/nosql.html">NoSQL 简介</a></p>
+</blockquote>
+<h2 id="主要特点"><a href="#主要特点" class="headerlink" title="主要特点"></a>主要特点</h2><ul>
+<li>MongoDB 是一个面向文档存储的数据库，操作起来比较简单和容易。</li>
+<li>你可以在MongoDB记录中设置任何属性的索引 (如：FirstName=”Sameer”,Address=”8 Gandhi Road”)来实现更快的排序。</li>
+<li>你可以通过本地或者网络创建数据镜像，这使得MongoDB有更强的扩展性。</li>
+<li>如果负载的增加（需要更多的存储空间和更强的处理能力） ，它可以分布在计算机网络中的其他节点上这就是所谓的分片。</li>
+<li>Mongo支持丰富的查询表达式。查询指令使用JSON形式的标记，可轻易查询文档中内嵌的对象及数组。</li>
+<li>MongoDb 使用update()命令可以实现替换完成的文档（数据）或者一些指定的数据字段 。</li>
+<li>Mongodb中的Map/reduce主要是用来对数据进行批量处理和聚合操作。</li>
+<li>Map和Reduce。Map函数调用emit(key,value)遍历集合中所有的记录，将key与value传给Reduce函数进行处理。</li>
+<li>Map函数和Reduce函数是使用Javascript编写的，并可以通过db.runCommand或mapreduce命令来执行MapReduce操作。</li>
+<li>GridFS是MongoDB中的一个内置功能，可以用于存放大量小文件。</li>
+<li>MongoDB允许在服务端执行脚本，可以用Javascript编写某个函数，直接在服务端执行，也可以把函数的定义存储在服务端，下次直接调用即可。</li>
+<li>MongoDB支持各种编程语言:RUBY，PYTHON，JAVA，C++，PHP，C#等多种语言。</li>
+<li>MongoDB安装简单。</li>
+</ul>
+<h2 id="MongoDB-下载"><a href="#MongoDB-下载" class="headerlink" title="MongoDB 下载"></a>MongoDB 下载</h2><p>  你可以在mongodb官网下载该安装包，地址为：<a target="_blank" rel="noopener" href="https://www.mongodb.com/download-center#community%E3%80%82MonggoDB%E6%94%AF%E6%8C%81%E4%BB%A5%E4%B8%8B%E5%B9%B3%E5%8F%B0">https://www.mongodb.com/download-center#community。MonggoDB支持以下平台</a>:</p>
+<ul>
+<li>OS X 32-bit</li>
+<li>OS X 64-bit </li>
+<li>Linux 32-bit</li>
+<li>Linux 64-bit</li>
+<li>Windows 32-bit</li>
+<li>Windows 64-bit</li>
+<li>Solaris i86pc</li>
+<li>Solaris 64</li>
+</ul>
+<h2 id="语言支持"><a href="#语言支持" class="headerlink" title="语言支持"></a>语言支持</h2><p>  MongoDB有官方的驱动如下：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://github.com/mongodb/mongo-c-driver">C</a></li>
+<li><a target="_blank" rel="noopener" href="http://github.com/mongodb/mongo">C++</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.mongodb.org/display/DOCS/CSharp+Language+Center">C#/.NET</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/TonyGen/mongodb-erlang">Erlang</a></li>
+<li><a target="_blank" rel="noopener" href="http://hackage.haskell.org/package/mongoDB">Haskell</a></li>
+<li><a target="_blank" rel="noopener" href="http://github.com/mongodb/mongo-java-driver">Java</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.mongodb.org/display/DOCS/Javascript+Language+Center">JavaScript</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/fons/cl-mongo">Lisp</a></li>
+<li><a target="_blank" rel="noopener" href="http://github.com/mongodb/node-mongodb-native">node.js</a></li>
+<li><a target="_blank" rel="noopener" href="http://github.com/mongodb/mongo-perl-driver">Perl</a></li>
+<li><a target="_blank" rel="noopener" href="http://github.com/mongodb/mongo-php-driver">PHP</a></li>
+<li><a target="_blank" rel="noopener" href="http://github.com/mongodb/mongo-python-driver">Python</a></li>
+<li><a target="_blank" rel="noopener" href="http://github.com/mongodb/mongo-ruby-driver">Ruby</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/mongodb/casbah">Scala</a></li>
+</ul>
+<h2 id="MongoDB-工具"><a href="#MongoDB-工具" class="headerlink" title="MongoDB 工具"></a>MongoDB 工具</h2><p>  有几种可用于MongoDB的管理工具。</p>
+<h3 id="监控"><a href="#监控" class="headerlink" title="监控"></a>监控</h3><p>  MongoDB提供了网络和系统监控工具Munin，它作为一个插件应用于MongoDB中。<br>  Gangila是MongoDB高性能的系统监视的工具，它作为一个插件应用于MongoDB中。<br>  基于图形界面的开源工具 Cacti, 用于查看CPU负载, 网络带宽利用率,它也提供了一个应用于监控 MongoDB 的插件。</p>
+<h3 id="GUI"><a href="#GUI" class="headerlink" title="GUI"></a>GUI</h3><ul>
+<li>Fang of Mongo – 网页式,由Django和jQuery所构成。</li>
+<li>Futon4Mongo – 一个CouchDB Futon web的mongodb山寨版。</li>
+<li>Mongo3 – Ruby写成。</li>
+<li>MongoHub – 适用于OSX的应用程序。</li>
+<li>Opricot – 一个基于浏览器的MongoDB控制台, 由PHP撰写而成。</li>
+<li>Database Master — Windows的mongodb管理工具</li>
+<li>RockMongo — 最好的PHP语言的MongoDB管理工具，轻量级, 支持多国语言.</li>
+</ul>
+<h2 id="MongoDB-应用案例"><a href="#MongoDB-应用案例" class="headerlink" title="MongoDB 应用案例"></a>MongoDB 应用案例</h2><p>  下面列举一些公司MongoDB的实际应用：</p>
+<ul>
+<li>Craiglist上使用MongoDB的存档数十亿条记录。</li>
+<li>FourSquare，基于位置的社交网站，在Amazon EC2的服务器上使用MongoDB分享数据。</li>
+<li>Shutterfly，以互联网为基础的社会和个人出版服务，使用MongoDB的各种持久性数据存储的要求。</li>
+<li>bit.ly, 一个基于Web的网址缩短服务，使用MongoDB的存储自己的数据。</li>
+<li>spike.com，一个MTV网络的联营公司， spike.com使用MongoDB的。</li>
+<li>Intuit公司，一个为小企业和个人的软件和服务提供商，为小型企业使用MongoDB的跟踪用户的数据。</li>
+<li>sourceforge.net，资源网站查找，创建和发布开源软件免费，使用MongoDB的后端存储。</li>
+<li>etsy.com ，一个购买和出售手工制作物品网站，使用MongoDB。</li>
+<li>纽约时报，领先的在线新闻门户网站之一，使用MongoDB。</li>
+<li>CERN，著名的粒子物理研究所，欧洲核子研究中心大型强子对撞机的数据使用MongoDB。</li>
+</ul>
+<br>
+
+<hr>
+<br>
+
+
+<h1 id="各平台的MongoDB-安装"><a href="#各平台的MongoDB-安装" class="headerlink" title="各平台的MongoDB 安装"></a>各平台的MongoDB 安装</h1><h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>  MongoDB 提供了可用于 32 位和 64 位系统的预编译二进制包，你可以从MongoDB官网下载安装，MongoDB 预编译二进制包下载地址：<a target="_blank" rel="noopener" href="https://www.mongodb.com/download-center/community">https://www.mongodb.com/download-center/community</a></p>
+<blockquote>
+<p>注意：在 MongoDB 2.2 版本后已经不再支持 Windows XP 系统。最新版本也已经没有了 32 位系统的安装文件。</p>
+</blockquote>
+<p>  安装过程中，你可以通过点击 “Custom(自定义)” 按钮来设置你的安装目录。</p>
+<p>  下一步安装 “install mongoDB compass” 不勾选（当然你也可以选择安装它，可能需要更久的安装时间），MongoDB Compass 是一个图形界面管理工具，我们可以在后面自己到官网下载安装，下载地址：<a target="_blank" rel="noopener" href="https://www.mongodb.com/download-center/compass%E3%80%82">https://www.mongodb.com/download-center/compass。</a></p>
+<blockquote>
+<p>建议不安装，因为要下载安装比较慢，后面要用可以单独下载安装</p>
+</blockquote>
+<h4 id="创建数据目录"><a href="#创建数据目录" class="headerlink" title="创建数据目录"></a>创建数据目录</h4><p>  MongoDB将数据目录存储在 db 目录下。但是这个数据目录不会主动创建，我们在安装完成后需要创建它。请注意，数据目录应该放在根目录下（(如： C:\ 或者 D:\ 等 )。</p>
+<p>  在本教程中，我们已经在 C 盘安装了 mongodb，现在让我们创建一个 data 的目录然后在 data 目录里创建 db 目录。</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">c:\&gt;cd c:\</span><br><span class="line"></span><br><span class="line">c:\&gt;mkdir data</span><br><span class="line"></span><br><span class="line">c:\&gt;cd data</span><br><span class="line"></span><br><span class="line">c:\data&gt;mkdir db</span><br><span class="line"></span><br><span class="line">c:\data&gt;cd db</span><br><span class="line"></span><br><span class="line">c:\data\db&gt;</span><br></pre></td></tr></table></figure>
+<p>  你也可以通过 window 的资源管理器中创建这些目录，而不一定通过命令行。</p>
+<h2 id="命令行下运行-MongoDB-服务器"><a href="#命令行下运行-MongoDB-服务器" class="headerlink" title="命令行下运行 MongoDB 服务器"></a>命令行下运行 MongoDB 服务器</h2><p>  因为装的是最新版MongoDB,所以连接MongoDB直接进入bin目录下双击mongo.exe就行。</p>
+<p>  MongoDB配置文件mongod.cfg在bin目录下。</p>
+<p>  启动MongoDB服务<br>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net start MongoDB</span><br></pre></td></tr></table></figure></p>
+<p>  关闭MongoDB服务<br>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net stop MongoDB</span><br></pre></td></tr></table></figure></p>
+<p>  移除 MongoDB 服务<br>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\mongodb\bin\mongod.exe --remove</span><br></pre></td></tr></table></figure></p>
+<h2 id="MongoDB-后台管理-Shell"><a href="#MongoDB-后台管理-Shell" class="headerlink" title="MongoDB 后台管理 Shell"></a>MongoDB 后台管理 Shell</h2><p>  如果你需要进入MongoDB后台管理，你需要先打开mongodb装目录的下的bin目录，然后执行mongo.exe文件，MongoDB Shell是MongoDB自带的交互式Javascript shell,用来对MongoDB进行操作和管理的交互式环境。</p>
+<ul>
+<li>当你进入mongoDB后台后，它默认会链接到 test 文档（数据库）</li>
+<li>由于它是一个JavaScript shell，您可以运行一些简单的算术运算</li>
+<li>db 命令用于查看当前操作的文档（数据库）<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; db</span><br><span class="line">test</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>  插入一些简单的记录并查找它：<br>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; db.clear.insert(&#123;x:10&#125;)</span><br><span class="line">WriteResult(&#123; &quot;nInserted&quot; : 1 &#125;)</span><br><span class="line">&gt; db.clear.find()</span><br><span class="line">&#123; &quot;_id&quot; : ObjectId(&quot;5e12fb19ad99fdbeea78c960d&quot;), &quot;x&quot; : 10 &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure><br>  第一个命令将数字 10 插入到 clear 集合的 x 字段中。</p>
+<h2 id="linux"><a href="#linux" class="headerlink" title="linux"></a>linux</h2><ol>
+<li>输入命令：<code>sudo apt-get install mongodb</code></li>
+<li>装完之后会自动运行mongod程序，通过<code>&quot;pgrep mongo -l &quot;</code>查看进程是否已经启动</li>
+<li>在终端输入”mongo”，然后回车进入数据库</li>
+</ol>
+<hr>
+<br>
+<br>
+
+  
+
+<h1 id="概念解析"><a href="#概念解析" class="headerlink" title="概念解析"></a>概念解析</h1><blockquote>
+<p>在mongodb中基本的概念是文档、集合、数据库</p>
+</blockquote>
+<p>下表将帮助您更容易理解Mongo中的一些概念：</p>
+<table>
+<thead>
+<tr>
+<th>SQL术语/概念</th>
+<th>MongoDB术语/概念</th>
+<th>解释/说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>database</td>
+<td>database</td>
+<td>数据库</td>
+</tr>
+<tr>
+<td>table</td>
+<td>collection</td>
+<td>数据库表/集合</td>
+</tr>
+<tr>
+<td>row</td>
+<td>document</td>
+<td>数据记录行/文档</td>
+</tr>
+<tr>
+<td>column</td>
+<td>field</td>
+<td>数据字段/域</td>
+</tr>
+<tr>
+<td>index</td>
+<td>index</td>
+<td>索引</td>
+</tr>
+<tr>
+<td>table joins</td>
+<td></td>
+<td>表连接,MongoDB不支持</td>
+</tr>
+<tr>
+<td>primary key</td>
+<td>primary key</td>
+<td>主键,MongoDB自动将_id字段设置为主键</td>
+</tr>
+</tbody></table>
+<p>通过下图实例，我们也可以更直观的了解Mongo中的一些概念：</p>
+<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><ul>
+<li>一个mongodb中可以建立多个数据库。</li>
+<li>MongoDB的默认数据库为”db”，该数据库存储在data目录中。</li>
+<li>MongoDB的单个实例可以容纳多个独立的数据库，每一个都有自己的集合和权限，不同的数据库也放置在不同的文件中。</li>
+<li>“show dbs” 命令可以显示所有数据的列表。</li>
+</ul>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ ./mongo</span><br><span class="line">MongoDB shell version: 3.0.6</span><br><span class="line">connecting to: test</span><br><span class="line">&gt; show dbs</span><br><span class="line">local  0.078GB</span><br><span class="line">test   0.078GB</span><br><span class="line">&gt; </span><br></pre></td></tr></table></figure>
+
+<p>  执行 “db” 命令可以显示当前数据库对象或集合。</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ ./mongo</span><br><span class="line">MongoDB shell version: 3.0.6</span><br><span class="line">connecting to: test</span><br><span class="line">&gt; db</span><br><span class="line">test</span><br><span class="line">&gt; </span><br></pre></td></tr></table></figure>
+
+<p>  运行”use”命令，可以连接到一个指定的数据库。</p>
+<h3 id="数据库名可以是满足以下条件的任意UTF-8字符串。"><a href="#数据库名可以是满足以下条件的任意UTF-8字符串。" class="headerlink" title="数据库名可以是满足以下条件的任意UTF-8字符串。"></a>数据库名可以是满足以下条件的任意UTF-8字符串。</h3><ul>
+<li>不能是空字符串（””)。</li>
+<li>不得含有’ ‘（空格)、.、$、/、\和\0 (空字符)。</li>
+<li>应全部小写。</li>
+<li>最多64字节。</li>
+</ul>
+<h3 id="有一些数据库名是保留的，可以直接访问这些有特殊作用的数据库。"><a href="#有一些数据库名是保留的，可以直接访问这些有特殊作用的数据库。" class="headerlink" title="有一些数据库名是保留的，可以直接访问这些有特殊作用的数据库。"></a>有一些数据库名是保留的，可以直接访问这些有特殊作用的数据库。</h3><ul>
+<li>admin： 从权限的角度来看，这是”root”数据库。要是将一个用户添加到这个数据库，这个用户自动继承所有数据库的权限。一些特定的服务器端命令也只能从这个数据库运行，比如列出所有的数据库或者关闭服务器。</li>
+<li>local: 这个数据永远不会被复制，可以用来存储限于本地单台服务器的任意集合</li>
+<li>config: 当Mongo用于分片设置时，config数据库在内部使用，用于保存分片的相关信息。</li>
+</ul>
+<h2 id="文档-Document"><a href="#文档-Document" class="headerlink" title="文档(Document)"></a>文档(Document)</h2><p>  文档是一组键值(key-value)对(即 BSON)。MongoDB 的文档不需要设置相同的字段，并且相同的字段不需要相同的数据类型，这与关系型数据库有很大的区别，也是 MongoDB 非常突出的特点。</p>
+<p>  一个简单的文档例子如下：<br>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;site&quot;:&quot;www.runoob.com&quot;, &quot;name&quot;:&quot;菜鸟教程&quot;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>  下表列出了 RDBMS 与 MongoDB 对应的术语：</p>
+<table>
+<thead>
+<tr>
+<th>RDBMS</th>
+<th>MongoDB</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>数据库</td>
+<td>数据库</td>
+</tr>
+<tr>
+<td>表格</td>
+<td>集合</td>
+</tr>
+<tr>
+<td>行</td>
+<td>文档</td>
+</tr>
+<tr>
+<td>列</td>
+<td>字段</td>
+</tr>
+<tr>
+<td>表联合</td>
+<td>嵌入文档</td>
+</tr>
+<tr>
+<td>主键</td>
+<td>主键 (MongoDB 提供了 key 为 _id )</td>
+</tr>
+</tbody></table>
+<p>  <strong>数据库服务和客户端</strong><br>  占位 |　占位<br>  – | –<br>  Mysqld/Oracle | mongod<br>  mysql/sqlplus | mongo</p>
+<p>  需要注意的是：</p>
+<ol>
+<li>文档中的键/值对是有序的。</li>
+<li>文档中的值不仅可以是在双引号里面的字符串，还可以是其他几种数据类型（甚至可以是整个嵌入的文档)。</li>
+<li>MongoDB区分类型和大小写。</li>
+<li>MongoDB的文档不能有重复的键。</li>
+<li>文档的键是字符串。除了少数例外情况，键可以使用任意UTF-8字符。</li>
+</ol>
+<p>  文档键命名规范：</p>
+<ul>
+<li>键不能含有\0 (空字符)。这个字符用来表示键的结尾。</li>
+<li>.和$有特别的意义，只有在特定环境下才能使用。</li>
+<li>以下划线”_”开头的键是保留的(不是严格要求的)。</li>
+</ul>
+<h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><p>  集合就是 MongoDB 文档组，类似于 RDBMS （关系数据库管理系统：Relational Database Management System)中的表格。</p>
+<p>  集合存在于数据库中，集合没有固定的结构，这意味着你在对集合可以插入不同格式和类型的数据，但通常情况下我们插入集合的数据都会有一定的关联性。</p>
+<p>  比如，我们可以将以下不同数据结构的文档插入到集合中：</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;site&quot;:&quot;www.baidu.com&quot;&#125;</span><br><span class="line">&#123;&quot;site&quot;:&quot;www.google.com&quot;,&quot;name&quot;:&quot;Google&quot;&#125;</span><br><span class="line">&#123;&quot;site&quot;:&quot;www.runoob.com&quot;,&quot;name&quot;:&quot;菜鸟教程&quot;,&quot;num&quot;:5&#125;</span><br></pre></td></tr></table></figure>
+
+<p>  当第一个文档插入时，集合就会被创建。</p>
+<h3 id="合法的集合名"><a href="#合法的集合名" class="headerlink" title="合法的集合名"></a>合法的集合名</h3><ul>
+<li>集合名不能是空字符串””。</li>
+<li>集合名不能含有\0字符（空字符)，这个字符表示集合名的结尾。</li>
+<li>集合名不能以”system.”开头，这是为系统集合保留的前缀。</li>
+</ul>
+<br>
+
+<hr>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.runoob.com/mongodb/mongodb-tutorial.html">MongoDB 教程</a></li>
+</ul>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 D05DdV@163.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>MongoDB 入门</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="RacingK">RacingK</a></p>
+    <p><span class="copy-title">发布时间:</span>2020-01-06, 11:24:55</p>
+    <p><span class="copy-title">最后更新:</span>2021-07-02, 20:01:51</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/MongoDB-%E5%85%A5%E9%97%A8/" title="MongoDB 入门">https://www.52ruankai.cn/MongoDB-%E5%85%A5%E9%97%A8/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+<!-- 
+    <div id="comments"></div>
+<script>
+  new Valine({
+    el: '#comments',
+    appId: 'OVfMjrRltgj0gOIDIRKqAFsc-gzGzoHsz',
+    appKey: 'UozYUfoCJGOnEMdyxhaBB2lH',
+    placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+  })
+</script>
+ -->
+
+
+    <div id="comments"></div>
+<script>
+  new Valine({
+    el: '#comments',
+    appId: 'OVfMjrRltgj0gOIDIRKqAFsc-gzGzoHsz',
+    appKey: 'UozYUfoCJGOnEMdyxhaBB2lH',
+    placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+  })
+</script>
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2016-2020 RacingK</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80NzAwOS8yMzUwOQ==">
+  <script type="text/javascript">
+  (function(d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+      if (typeof LivereTower === 'function') { return; }
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+  </script>
+  <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":200,"height":350},"mobile":{"show":true},"react":{"opacity":0.7},"dialog":{"enable":true},"log":false});</script></body>
+<script src="/js/jquery.pjax.js?v=1.0.2" ></script>
+
+<script src="/js/script.js?v=1.0.2" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#小程序','#java','#Spring','#CentOS','#linux','#Elasticsearch','#Eclipse','#运维','#Node.js','#Hexo','#Next','#logstash','#javascript','#MySQL','#MongoDB','#IOC','#vue','#TypeScript','#ubuntu','#express','#Vim','#Vuex','#Vue','#WebAssembly','#windows','#cmd','#filebeat','#git','#ES6','#kibana','#ES','#jdk','#powershell','#CSS','#svn','#webpack','#ejs','#pug','#三阶魔方','#魔方','#Babel','#位运算','#位','#字节','#二进制','#sass','#less','#styl','#前端','#用户体验','#pwa','#vue-cli','#npm','#微信小程序','#速度','#赛车','#shell',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 604px;
+    }
+    .nav.fullscreen {
+        margin-left: -604px;
+    }
+    .nav-left {
+        width: 182px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 574px;
+        }
+        .nav.fullscreen {
+            margin-left: -574px;
+        }
+        .nav-left {
+            width: 182px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 574px;
+            margin-left: -574px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 574px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

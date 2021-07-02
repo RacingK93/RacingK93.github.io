@@ -1,0 +1,2140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TypeScript教程 | RacingK&#39;s blog</title>
+  <meta name="keywords" content=" vue , TypeScript ">
+  <meta name="description" content="TypeScript教程 | RacingK&#39;s blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="个人博客 记录生活 记录技术">
+<meta property="og:type" content="website">
+<meta property="og:title" content="文章分类">
+<meta property="og:url" content="https://www.52ruankai.cn/categories/index.html">
+<meta property="og:site_name" content="RacingK&#39;s blog">
+<meta property="og:description" content="个人博客 记录生活 记录技术">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-09-27T02:12:58.000Z">
+<meta property="article:modified_time" content="2021-07-02T12:01:51.924Z">
+<meta property="article:author" content="RacingK">
+<meta property="article:tag" content="前端博客,JavaScript,html5,css3,Jquery,NodeJs,Ubuntu,Vue,React">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.0.2" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.0.2" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.2" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="/js/iconfont.js?v=1.0.2" ></script>
+
+<script src="//unpkg.com/valine/dist/Valine.min.js" ></script>
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>RacingK</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="github" href="https://github.com/clear93-hub" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a title="weibo" href="https://weibo.com/52ruankai" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="jianshu" href="https://www.jianshu.com/u/11c5d2d55266" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-jianshu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="zhihu" href="https://www.zhihu.com/people/ruan-kai-44/activities" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-zhihu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="oschina" href="https://my.oschina.net/RacingK" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-oschina"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="juejin" href="https://juejin.im/user/5a913ad85188255de2010c05" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-juejin"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="email" href="mailto:D05DdV@163.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=736512612&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="kugou" href="https://www.kugou.com/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-kugou"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=53457140" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(62)</small></div></li>
+    
+        
+            
+            <li><div data-rel="小程序">小程序<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="java">java<small>(16)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="运维">运维<small>(6)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Node.js">Node.js<small>(4)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Hexo">Hexo<small>(4)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="javascript">javascript<small>(5)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="MySQL">MySQL<small>(4)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Next">Next<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="MongoDB">MongoDB<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="vue">vue<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Vuex">Vuex<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="WebAssembly">WebAssembly<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="windows">windows<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="git">git<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="CSS">CSS<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="svn">svn<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="webpack">webpack<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="魔方">魔方<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Babel">Babel<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="计算机科学与技术">计算机科学与技术<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="前端">前端<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="npm">npm<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="赛车">赛车<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="用户体验">用户体验<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="62">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="Search..." autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color4">小程序</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">java</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">Spring</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">CentOS</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">linux</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Elasticsearch</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Eclipse</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">运维</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Node.js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Hexo</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Next</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">logstash</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">javascript</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">MySQL</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">MongoDB</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">IOC</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">vue</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">TypeScript</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">ubuntu</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">express</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Vim</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Vuex</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Vue</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">WebAssembly</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">windows</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">cmd</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">filebeat</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">git</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">ES6</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">kibana</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">ES</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">jdk</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">powershell</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">CSS</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">svn</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">webpack</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">ejs</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">pug</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">三阶魔方</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">魔方</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">Babel</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">位运算</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">位</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">字节</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">二进制</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">sass</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">less</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">styl</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">前端</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">用户体验</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">pwa</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">vue-cli</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">npm</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">微信小程序</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">速度</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">赛车</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">shell</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="运维 "
+           href="/CentOS%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="CentOS,linux"
+           data-author="" >
+            <span class="post-title" title="CentOS系统操作常用命令">CentOS系统操作常用命令</span>
+            <span class="post-date" title="2020-01-08 11:28:04">2020/01/08</span>
+        </a>
+        
+        <a  class="java "
+           href="/Elasticsearch%E5%B8%B8%E7%94%A8%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/"
+           data-tag="java,Elasticsearch"
+           data-author="" >
+            <span class="post-title" title="Elasticsearch常用查询语句">Elasticsearch常用查询语句</span>
+            <span class="post-date" title="2020-09-09 16:05:17">2020/09/09</span>
+        </a>
+        
+        <a  class="java "
+           href="/Eclipse%E5%AE%89%E8%A3%85/"
+           data-tag="java,Eclipse"
+           data-author="" >
+            <span class="post-title" title="安装Eclipse">安装Eclipse</span>
+            <span class="post-date" title="2020-01-14 17:16:23">2020/01/14</span>
+        </a>
+        
+        <a  class="java "
+           href="/Elasticsearch%E4%B8%AD%E7%9A%84mappings/"
+           data-tag="java,Elasticsearch"
+           data-author="" >
+            <span class="post-title" title="Elasticsearch中的mappings">Elasticsearch中的mappings</span>
+            <span class="post-date" title="2020-09-09 16:39:46">2020/09/09</span>
+        </a>
+        
+        <a  class="java "
+           href="/Elasticsearch%E7%9A%84%E5%88%86%E8%AF%8D%E5%99%A8/"
+           data-tag="java,Elasticsearch"
+           data-author="" >
+            <span class="post-title" title="Elasticsearch的分词器">Elasticsearch的分词器</span>
+            <span class="post-date" title="2020-09-09 16:56:26">2020/09/09</span>
+        </a>
+        
+        <a  class="java "
+           href="/Elasticsearch%E7%B4%A2%E5%BC%95%E5%BA%93%E9%87%8D%E5%91%BD%E5%90%8D/"
+           data-tag="java,linux,Elasticsearch,运维"
+           data-author="" >
+            <span class="post-title" title="Elasticsearch索引库重命名">Elasticsearch索引库重命名</span>
+            <span class="post-date" title="2020-09-08 20:23:57">2020/09/08</span>
+        </a>
+        
+        <a  class="java "
+           href="/Elasticsearch%E4%BB%8B%E7%BB%8D/"
+           data-tag="java,Elasticsearch"
+           data-author="" >
+            <span class="post-title" title="Elasticsearch介绍">Elasticsearch介绍</span>
+            <span class="post-date" title="2020-09-09 15:55:53">2020/09/09</span>
+        </a>
+        
+        <a  class="Node.js "
+           href="/Express/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Express 入门">Express 入门</span>
+            <span class="post-date" title="2019-09-18 10:41:54">2019/09/18</span>
+        </a>
+        
+        <a  class="Hexo Next "
+           href="/Hexo-Next-%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/"
+           data-tag="Hexo,Next"
+           data-author="" >
+            <span class="post-title" title="Hexo Next 添加分类和标签">Hexo Next 添加分类和标签</span>
+            <span class="post-date" title="2019-09-27 11:40:27">2019/09/27</span>
+        </a>
+        
+        <a  class="Hexo Next "
+           href="/Hexo%E4%B9%8BNext/"
+           data-tag="Hexo,Next"
+           data-author="" >
+            <span class="post-title" title="Hexo之Next">Hexo之Next</span>
+            <span class="post-date" title="2019-09-27 09:08:38">2019/09/27</span>
+        </a>
+        
+        <a  class="Hexo "
+           href="/Hexo%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E5%AD%A6/"
+           data-tag="Hexo"
+           data-author="" >
+            <span class="post-title" title="Hexo 手把手教学">Hexo 手把手教学</span>
+            <span class="post-date" title="2019-09-26 15:28:23">2019/09/26</span>
+        </a>
+        
+        <a  class="java "
+           href="/Logstash%E5%AE%89%E8%A3%85/"
+           data-tag="java,logstash"
+           data-author="" >
+            <span class="post-title" title="Logstash安装">Logstash安装</span>
+            <span class="post-date" title="2020-09-11 11:14:44">2020/09/11</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/JavaScript-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%A6%81%E4%BD%BF%E7%94%A8-eval/"
+           data-tag="javascript"
+           data-author="" >
+            <span class="post-title" title="JavaScript 为什么不要使用 eval">JavaScript 为什么不要使用 eval</span>
+            <span class="post-date" title="2019-12-24 10:21:35">2019/12/24</span>
+        </a>
+        
+        <a  class="MySQL "
+           href="/MySQL-%E5%85%A5%E9%97%A8/"
+           data-tag="MySQL"
+           data-author="" >
+            <span class="post-title" title="MySQL 介绍">MySQL 介绍</span>
+            <span class="post-date" title="2019-10-15 11:37:37">2019/10/15</span>
+        </a>
+        
+        <a  class="MongoDB "
+           href="/MongoDB-%E5%85%A5%E9%97%A8/"
+           data-tag="MongoDB"
+           data-author="" >
+            <span class="post-title" title="MongoDB 入门">MongoDB 入门</span>
+            <span class="post-date" title="2020-01-06 11:24:55">2020/01/06</span>
+        </a>
+        
+        <a  class="Node.js "
+           href="/NodeJS-net-module/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="NodeJS的网络模块">NodeJS的网络模块</span>
+            <span class="post-date" title="2019-09-16 11:38:21">2019/09/16</span>
+        </a>
+        
+        <a  class="java "
+           href="/Spring-IOC/"
+           data-tag="java,Spring,IOC"
+           data-author="" >
+            <span class="post-title" title="Spring IOC">Spring IOC</span>
+            <span class="post-date" title="2020-08-25 10:56:36">2020/08/25</span>
+        </a>
+        
+        <a  class="vue "
+           href="/TypeScript%E6%95%99%E7%A8%8B/"
+           data-tag="vue,TypeScript"
+           data-author="" >
+            <span class="post-title" title="TypeScript教程">TypeScript教程</span>
+            <span class="post-date" title="2019-11-01 16:13:18">2019/11/01</span>
+        </a>
+        
+        <a  class="Node.js "
+           href="/Ubuntu-install-express-project/"
+           data-tag="linux,Node.js,ubuntu,express"
+           data-author="" >
+            <span class="post-title" title="Ubuntu下安装部署express项目">Ubuntu下安装部署express项目</span>
+            <span class="post-date" title="2019-09-17 11:14:00">2019/09/17</span>
+        </a>
+        
+        <a  class="运维 "
+           href="/Vim%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%95%B4%E7%90%86/"
+           data-tag="Vim"
+           data-author="" >
+            <span class="post-title" title="Vim常用操作整理">Vim常用操作整理</span>
+            <span class="post-date" title="2020-01-08 13:58:28">2020/01/08</span>
+        </a>
+        
+        <a  class="Vuex "
+           href="/Vuex%E7%9A%84%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/"
+           data-tag="Vuex,Vue"
+           data-author="" >
+            <span class="post-title" title="Vuex的使用入门">Vuex的使用入门</span>
+            <span class="post-date" title="2019-10-25 10:18:10">2019/10/25</span>
+        </a>
+        
+        <a  class="Node.js "
+           href="/NodeJS%E7%9A%84fs%E6%A8%A1%E5%9D%97/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="NodeJS的fs模块">NodeJS的fs模块</span>
+            <span class="post-date" title="2019-09-11 11:28:21">2019/09/11</span>
+        </a>
+        
+        <a  class="WebAssembly "
+           href="/WebAssembly%E6%A6%82%E5%BF%B5%E5%85%A5%E9%97%A8/"
+           data-tag="WebAssembly"
+           data-author="" >
+            <span class="post-title" title="WebAssembly概念入门">WebAssembly概念入门</span>
+            <span class="post-date" title="2019-12-18 09:17:26">2019/12/18</span>
+        </a>
+        
+        <a  class=""
+           href="/chrome-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B1%9E%E6%80%A7/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="chrome://的一些属性">chrome://的一些属性</span>
+            <span class="post-date" title="2019-11-01 14:59:35">2019/11/01</span>
+        </a>
+        
+        <a  class="windows "
+           href="/cmd%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="windows,cmd"
+           data-author="" >
+            <span class="post-title" title="cmd常用命令">cmd常用命令</span>
+            <span class="post-date" title="2019-12-24 11:18:21">2019/12/24</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/don't-use-document.write/"
+           data-tag="javascript"
+           data-author="" >
+            <span class="post-title" title="不建议使用document.write">不建议使用document.write</span>
+            <span class="post-date" title="2019-09-09 09:30:00">2019/09/09</span>
+        </a>
+        
+        <a  class="java "
+           href="/filebeat-issue/"
+           data-tag="java,filebeat"
+           data-author="" >
+            <span class="post-title" title="filebeat issue">filebeat issue</span>
+            <span class="post-date" title="2020-09-14 13:35:15">2020/09/14</span>
+        </a>
+        
+        <a  class="git "
+           href="/git%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git常用操作">git常用操作</span>
+            <span class="post-date" title="2019-12-20 17:31:43">2019/12/20</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/generator%E5%85%A5%E9%97%A8/"
+           data-tag="javascript,ES6"
+           data-author="" >
+            <span class="post-title" title="generator入门">generator入门</span>
+            <span class="post-date" title="2019-12-27 17:08:26">2019/12/27</span>
+        </a>
+        
+        <a  class="git "
+           href="/git%E6%8A%A5-changes-not-staged-for-commit/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git报&#39;changes not staged for commit&#39;">git报&#39;changes not staged for commit&#39;</span>
+            <span class="post-date" title="2019-09-27 18:35:45">2019/09/27</span>
+        </a>
+        
+        <a  class="java "
+           href="/kibana-issue/"
+           data-tag="java,kibana"
+           data-author="" >
+            <span class="post-title" title="kibana issue">kibana issue</span>
+            <span class="post-date" title="2020-09-14 15:10:34">2020/09/14</span>
+        </a>
+        
+        <a  class="java "
+           href="/kibana%E5%AE%89%E8%A3%85/"
+           data-tag="java,linux,kibana,ES"
+           data-author="" >
+            <span class="post-title" title="kibana安装">kibana安装</span>
+            <span class="post-date" title="2020-09-09 14:50:22">2020/09/09</span>
+        </a>
+        
+        <a  class="java "
+           href="/linux%E4%B8%8BElasticsearch%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"
+           data-tag="java,linux,Elasticsearch,运维,filebeat"
+           data-author="" >
+            <span class="post-title" title="linux下Elasticsearch相关操作">linux下Elasticsearch相关操作</span>
+            <span class="post-date" title="2020-09-08 09:38:55">2020/09/08</span>
+        </a>
+        
+        <a  class="运维 MySQL "
+           href="/linux%E4%B8%8Bmysql%E6%93%8D%E4%BD%9C/"
+           data-tag="linux,运维,MySQL"
+           data-author="" >
+            <span class="post-title" title="linux下mysql操作">linux下mysql操作</span>
+            <span class="post-date" title="2020-09-02 17:30:43">2020/09/02</span>
+        </a>
+        
+        <a  class="java "
+           href="/linux%E4%B8%8B%E5%AE%89%E8%A3%85Elasticsearch7-9/"
+           data-tag="java,Elasticsearch,运维"
+           data-author="" >
+            <span class="post-title" title="linux下安装Elasticsearch7.9">linux下安装Elasticsearch7.9</span>
+            <span class="post-date" title="2020-09-02 08:52:07">2020/09/02</span>
+        </a>
+        
+        <a  class="java "
+           href="/linux%E5%AE%89%E8%A3%85jdk/"
+           data-tag="java,linux,jdk"
+           data-author="" >
+            <span class="post-title" title="linux安装jdk">linux安装jdk</span>
+            <span class="post-date" title="2020-09-01 17:44:34">2020/09/01</span>
+        </a>
+        
+        <a  class="运维 "
+           href="/linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux系统常用命令">linux系统常用命令</span>
+            <span class="post-date" title="2020-01-08 11:50:32">2020/01/08</span>
+        </a>
+        
+        <a  class="java "
+           href="/logstash-issue/"
+           data-tag="java,logstash"
+           data-author="" >
+            <span class="post-title" title="logstash issue">logstash issue</span>
+            <span class="post-date" title="2020-09-14 11:42:56">2020/09/14</span>
+        </a>
+        
+        <a  class="MySQL "
+           href="/mysql%E4%B9%8Bjoin/"
+           data-tag="MySQL"
+           data-author="" >
+            <span class="post-title" title="mysql之join">mysql之join</span>
+            <span class="post-date" title="2020-09-03 16:06:23">2020/09/03</span>
+        </a>
+        
+        <a  class="MySQL "
+           href="/mysql%E4%B9%8B%E6%9F%A5%E8%AF%A2/"
+           data-tag="MySQL"
+           data-author="" >
+            <span class="post-title" title="mysql之查询">mysql之查询</span>
+            <span class="post-date" title="2020-09-03 16:03:33">2020/09/03</span>
+        </a>
+        
+        <a  class="windows "
+           href="/powershell%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="windows,powershell"
+           data-author="" >
+            <span class="post-title" title="powershell常用命令">powershell常用命令</span>
+            <span class="post-date" title="2019-12-24 14:43:30">2019/12/24</span>
+        </a>
+        
+        <a  class="CSS "
+           href="/px-em-rem-vh-vw-media-%E4%B9%8B%E8%87%AA%E9%80%82%E5%BA%94%E6%96%B9%E6%B3%95/"
+           data-tag="CSS"
+           data-author="" >
+            <span class="post-title" title="px em rem vh vw @media 之自适应方法">px em rem vh vw @media 之自适应方法</span>
+            <span class="post-date" title="2020-01-02 16:30:08">2020/01/02</span>
+        </a>
+        
+        <a  class="svn "
+           href="/svn%E5%88%86%E6%94%AF%E5%90%88%E5%B9%B6%E4%B8%BB%E5%B9%B2/"
+           data-tag="svn"
+           data-author="" >
+            <span class="post-title" title="svn分支合并主干">svn分支合并主干</span>
+            <span class="post-date" title="2020-11-18 09:36:41">2020/11/18</span>
+        </a>
+        
+        <a  class="运维 "
+           href="/ubuntu%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="linux,ubuntu"
+           data-author="" >
+            <span class="post-title" title="ubuntu系统操作常用命令">ubuntu系统操作常用命令</span>
+            <span class="post-date" title="2020-01-06 17:49:57">2020/01/06</span>
+        </a>
+        
+        <a  class="vue "
+           href="/vue%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E4%BA%8B%E4%BB%B6%E8%A7%A6%E5%8F%91/"
+           data-tag="vue"
+           data-author="" >
+            <span class="post-title" title="vue组件之间如何进行事件触发">vue组件之间如何进行事件触发</span>
+            <span class="post-date" title="2019-11-05 11:48:04">2019/11/05</span>
+        </a>
+        
+        <a  class="vue "
+           href="/vue%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E4%BC%A0%E5%80%BC/"
+           data-tag="vue"
+           data-author="" >
+            <span class="post-title" title="vue组件之间的传值">vue组件之间的传值</span>
+            <span class="post-date" title="2019-10-24 09:01:54">2019/10/24</span>
+        </a>
+        
+        <a  class="webpack "
+           href="/webpack%E8%BD%AC%E6%8D%A2ejs-pug%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
+           data-tag="webpack,ejs,pug"
+           data-author="" >
+            <span class="post-title" title="webpack转换ejs pug模板引擎">webpack转换ejs pug模板引擎</span>
+            <span class="post-date" title="2019-10-10 14:20:55">2019/10/10</span>
+        </a>
+        
+        <a  class="魔方 "
+           href="/%E4%B8%89%E9%98%B6%E9%AD%94%E6%96%B9%E5%A4%8D%E5%8E%9F%E6%96%B9%E6%B3%95%E8%AE%B0%E5%BD%95/"
+           data-tag="三阶魔方,魔方"
+           data-author="" >
+            <span class="post-title" title="三阶魔方复原方法记录">三阶魔方复原方法记录</span>
+            <span class="post-date" title="2020-08-31 21:16:56">2020/08/31</span>
+        </a>
+        
+        <a  class="Babel "
+           href="/%E4%BA%94%E6%AD%A5%E6%90%9E%E5%AE%9A%EF%BC%8C%E4%BD%BF%E7%94%A8babel%E5%B0%86js%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84%E6%89%80%E6%9C%89js%E6%96%87%E4%BB%B6%E5%85%A8%E9%83%A8%E8%BD%AC%E7%A0%81%E5%88%B0compile%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B/"
+           data-tag="Babel"
+           data-author="" >
+            <span class="post-title" title="五步搞定，使用babel将js文件夹下的所有js文件全部转码到compile文件夹下">五步搞定，使用babel将js文件夹下的所有js文件全部转码到compile文件夹下</span>
+            <span class="post-date" title="2019-12-24 11:11:34">2019/12/24</span>
+        </a>
+        
+        <a  class="计算机科学与技术 "
+           href="/%E4%BD%8D%E8%BF%90%E7%AE%97/"
+           data-tag="位运算,位,字节,二进制"
+           data-author="" >
+            <span class="post-title" title="位运算">位运算</span>
+            <span class="post-date" title="2019-10-23 11:15:05">2019/10/23</span>
+        </a>
+        
+        <a  class="webpack "
+           href="/webpack%E9%85%8D%E7%BD%AE%E4%B9%8Bsass-less-styl%E7%9A%84%E5%BA%94%E7%94%A8/"
+           data-tag="webpack,sass,less,styl"
+           data-author="" >
+            <span class="post-title" title="webpack配置之sass less styl的应用">webpack配置之sass less styl的应用</span>
+            <span class="post-date" title="2019-10-10 11:59:42">2019/10/10</span>
+        </a>
+        
+        <a  class="Hexo "
+           href="/%E4%BF%AE%E6%94%B9Hexo%E4%B8%BB%E9%A2%98/"
+           data-tag="Hexo"
+           data-author="" >
+            <span class="post-title" title="修改Hexo主题">修改Hexo主题</span>
+            <span class="post-date" title="2019-12-24 13:42:18">2019/12/24</span>
+        </a>
+        
+        <a  class="前端 用户体验 "
+           href="/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E4%B8%AD%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"
+           data-tag="前端,用户体验"
+           data-author="" >
+            <span class="post-title" title="前端开发中用户体验注意事项">前端开发中用户体验注意事项</span>
+            <span class="post-date" title="2019-12-11 11:56:16">2019/12/11</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/%E5%85%A5%E9%97%A8PWA/"
+           data-tag="javascript,vue,pwa,vue-cli"
+           data-author="" >
+            <span class="post-title" title="入门PWA">入门PWA</span>
+            <span class="post-date" title="2019-10-29 11:08:04">2019/10/29</span>
+        </a>
+        
+        <a  class="git "
+           href="/%E5%90%8C%E4%B8%AA%E7%94%B5%E8%84%91%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E4%B8%8D%E5%90%8Cgit%E5%B9%B3%E5%8F%B0%E8%B4%A6%E6%88%B7/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="同个电脑配置多个不同git平台账户">同个电脑配置多个不同git平台账户</span>
+            <span class="post-date" title="2019-10-17 14:57:48">2019/10/17</span>
+        </a>
+        
+        <a  class="npm "
+           href="/%E5%A6%82%E4%BD%95%E7%94%A8CNPM%E4%BB%A3%E6%9B%BFNPM/"
+           data-tag="npm"
+           data-author="" >
+            <span class="post-title" title="如何用CNPM代替NPM">如何用CNPM代替NPM</span>
+            <span class="post-date" title="2019-12-24 09:57:37">2019/12/24</span>
+        </a>
+        
+        <a  class="webpack "
+           href="/%E5%AE%89%E8%A3%85webpack/"
+           data-tag="webpack"
+           data-author="" >
+            <span class="post-title" title="安装webpack">安装webpack</span>
+            <span class="post-date" title="2019-10-10 11:03:03">2019/10/10</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/%E5%B8%B8%E7%94%A8%E6%AD%A3%E5%88%99%E6%95%B4%E7%90%86/"
+           data-tag="javascript"
+           data-author="" >
+            <span class="post-title" title="常用正则整理">常用正则整理</span>
+            <span class="post-date" title="2019-12-24 10:36:42">2019/12/24</span>
+        </a>
+        
+        <a  class="小程序 "
+           href="/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"
+           data-tag="小程序,微信小程序"
+           data-author="" >
+            <span class="post-title" title="微信小程序开发中的注意事项">微信小程序开发中的注意事项</span>
+            <span class="post-date" title="2019-12-11 10:18:02">2019/12/11</span>
+        </a>
+        
+        <a  class="赛车 "
+           href="/%E6%9E%81%E9%99%90%E9%80%9F%E5%BA%A6%E6%8F%AD%E7%A7%98%E8%AE%B0%E5%BD%95/"
+           data-tag="速度,赛车"
+           data-author="" >
+            <span class="post-title" title="极限速度揭秘记录">极限速度揭秘记录</span>
+            <span class="post-date" title="2020-08-31 22:53:41">2020/08/31</span>
+        </a>
+        
+        <a  class="java "
+           href="/%E7%94%A8filebeat%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5ES/"
+           data-tag="java,Elasticsearch,运维,filebeat"
+           data-author="" >
+            <span class="post-title" title="用filebeat将数据导入ES">用filebeat将数据导入ES</span>
+            <span class="post-date" title="2020-09-08 09:05:32">2020/09/08</span>
+        </a>
+        
+        <a  class="运维 "
+           href="/%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6-shell%E8%84%9A%E6%9C%AC/"
+           data-tag="运维,shell"
+           data-author="" >
+            <span class="post-title" title="读写文件-shell脚本">读写文件-shell脚本</span>
+            <span class="post-date" title="2020-09-23 11:26:46">2020/09/23</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-TypeScript教程" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">TypeScript教程</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="vue">vue</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color4">vue</a>
+            
+            <a class="color1">TypeScript</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2021-07-02 20:01:51'>2019-11-01 16:13</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript%E4%BB%8B%E7%BB%8D"><span class="toc-text">TypeScript介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-TypeScript%EF%BC%9F"><span class="toc-text">什么是 TypeScript？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TypeScript%E4%BC%98%E5%8A%BF"><span class="toc-text">TypeScript优势</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript-%E4%B8%8E-TypeScript-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">JavaScript 与 TypeScript 的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%AD%E8%A8%80%E7%89%B9%E6%80%A7"><span class="toc-text">语言特性</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript-%E5%AE%89%E8%A3%85"><span class="toc-text">TypeScript 安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#NPM-%E5%AE%89%E8%A3%85-TypeScript"><span class="toc-text">NPM 安装 TypeScript</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript-%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="toc-text">TypeScript 基础语法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript-%E5%9F%BA%E7%A1%80%E7%B1%BB%E5%9E%8B"><span class="toc-text">TypeScript 基础类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Any-%E7%B1%BB%E5%9E%8B"><span class="toc-text">Any 类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Null-%E5%92%8C-Undefined"><span class="toc-text">Null 和 Undefined</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">null</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-text">undefined</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#never-%E7%B1%BB%E5%9E%8B"><span class="toc-text">never 类型</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript-%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E"><span class="toc-text">TypeScript 变量声明</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B%E6%96%AD%E8%A8%80%EF%BC%88Type-Assertion%EF%BC%89"><span class="toc-text">类型断言（Type Assertion）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD"><span class="toc-text">类型推断</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-text">变量作用域</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript-%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">TypeScript 运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">位运算符</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript-%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B"><span class="toc-text">TypeScript 联合类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B%E6%95%B0%E7%BB%84"><span class="toc-text">联合类型数组</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript-%E6%8E%A5%E5%8F%A3"><span class="toc-text">TypeScript 接口</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B%E5%92%8C%E6%8E%A5%E5%8F%A3"><span class="toc-text">联合类型和接口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A5%E5%8F%A3%E5%92%8C%E6%95%B0%E7%BB%84"><span class="toc-text">接口和数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A5%E5%8F%A3%E7%BB%A7%E6%89%BF"><span class="toc-text">接口继承</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E7%BB%A7%E6%89%BF%E5%AE%9E%E4%BE%8B"><span class="toc-text">单继承实例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E7%BB%A7%E6%89%BF%E5%AE%9E%E4%BE%8B"><span class="toc-text">多继承实例</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript-%E7%B1%BB"><span class="toc-text">TypeScript 类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E7%B1%BB%E7%9A%84%E6%95%B0%E6%8D%AE%E6%88%90%E5%91%98"><span class="toc-text">创建类的数据成员</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%AE%9E%E4%BE%8B%E5%8C%96%E5%AF%B9%E8%B1%A1"><span class="toc-text">创建实例化对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%8C%E6%95%B4%E5%AE%9E%E4%BE%8B"><span class="toc-text">完整实例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E7%9A%84%E7%BB%A7%E6%89%BF"><span class="toc-text">类的继承</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%A7%E6%89%BF%E7%B1%BB%E7%9A%84%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99"><span class="toc-text">继承类的方法重写</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#static-%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-text">static 关键字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#instanceof-%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">instanceof 运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="toc-text">访问控制修饰符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E5%92%8C%E6%8E%A5%E5%8F%A3"><span class="toc-text">类和接口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%B8%AD%E5%AD%90%E7%B1%BB%E5%9E%8B-Duck-Typing"><span class="toc-text">鸭子类型(Duck Typing)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript-%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4"><span class="toc-text">TypeScript 命名空间</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B5%8C%E5%A5%97%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4"><span class="toc-text">嵌套命名空间</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript-%E6%A8%A1%E5%9D%97"><span class="toc-text">TypeScript 模块</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TypeScript-%E5%A3%B0%E6%98%8E%E6%96%87%E4%BB%B6"><span class="toc-text">TypeScript 声明文件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E%E6%96%87%E4%BB%B6"><span class="toc-text">声明文件</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="TypeScript介绍"><a href="#TypeScript介绍" class="headerlink" title="TypeScript介绍"></a>TypeScript介绍</h1><h2 id="什么是-TypeScript？"><a href="#什么是-TypeScript？" class="headerlink" title="什么是 TypeScript？"></a>什么是 TypeScript？</h2><ul>
+<li><p>百度解释：<br>TypeScript是一种由微软开发的自由和开源的编程语言。它是JavaScript的一个超集，而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。它扩展了JavaScript的语法，所以任何现有的JavaScript程序可以不加改变的在TypeScript下工作。TypeScript是为大型应用的开发而设计，而编译它时产生 JavaScript 以确保兼容性。</p>
+</li>
+<li><p>通俗解释：<br>TypeScript充分利用了JavaScript原有的对象模型并在此基础上做了扩充，添加了较为严格的类型检查机制，添加了模块支持和API导出的能力。比起JavaScript，TypeScript提供了更多在语言层面上的支持，使得程序员能够以更加标准化的语法来表达语义上的约束，从而降低了程序出错的机率；TypeScript也使得代码组织和复用变得更加有序，使得开发大型Web应用有了一套标准方法。</p>
+</li>
+<li><p>补充：<br>TypeScript 是 JavaScript 的一个超集，支持 ECMAScript 6 标准。<br>TypeScript 设计目标是开发大型应用，它可以编译成纯 JavaScript，编译出来的 JavaScript 可以运行在任何浏览器上。</p>
+</li>
+</ul>
+<h2 id="TypeScript优势"><a href="#TypeScript优势" class="headerlink" title="TypeScript优势"></a>TypeScript优势</h2><ul>
+<li>支持ES6（TypeScript脚本语言的语法会成为未来一段时间客户端语言的主流语法）</li>
+<li>强大的IDE支持</li>
+</ul>
+<h2 id="JavaScript-与-TypeScript-的区别"><a href="#JavaScript-与-TypeScript-的区别" class="headerlink" title="JavaScript 与 TypeScript 的区别"></a>JavaScript 与 TypeScript 的区别</h2><p>TypeScript 是 JavaScript 的超集，扩展了 JavaScript 的语法，因此现有的 JavaScript 代码可与 TypeScript 一起工作无需任何修改，TypeScript 通过类型注解提供编译时的静态类型检查。</p>
+<p>TypeScript 可处理已有的 JavaScript 代码，并只对其中的 TypeScript 代码进行编译。</p>
+<h2 id="语言特性"><a href="#语言特性" class="headerlink" title="语言特性"></a>语言特性</h2><p>TypeScript 是一种给 JavaScript 添加特性的语言扩展。增加的功能包括：</p>
+<ul>
+<li>类型批注和编译时类型检查</li>
+<li>类型推断</li>
+<li>类型擦除</li>
+<li>接口</li>
+<li>枚举</li>
+<li>Mixin</li>
+<li>泛型编程</li>
+<li>名字空间</li>
+<li>元组</li>
+<li>Await</li>
+</ul>
+<p>以下功能是从 ECMA 2015 反向移植而来：</p>
+<ul>
+<li>类</li>
+<li>模块</li>
+<li>lambda 函数的箭头语法</li>
+<li>可选参数以及默认参数</li>
+</ul>
+<h1 id="TypeScript-安装"><a href="#TypeScript-安装" class="headerlink" title="TypeScript 安装"></a>TypeScript 安装</h1><h2 id="NPM-安装-TypeScript"><a href="#NPM-安装-TypeScript" class="headerlink" title="NPM 安装 TypeScript"></a>NPM 安装 TypeScript</h2><p>如果你的本地环境已经安装了 npm 工具，可以使用以下命令来安装：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g typescript</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后我们可以使用 tsc 命令来执行 TypeScript 的相关代码，以下是查看版本号：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ tsc -v</span><br></pre></td></tr></table></figure>
+
+<p>然后我们新建一个 test.ts 的文件，代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var message:string = &quot;Hello World&quot; </span><br><span class="line">console.log(message)</span><br></pre></td></tr></table></figure>
+
+<p>通常我们使用 .ts 作为 TypeScript 代码文件的扩展名。<br>然后执行以下命令将 TypeScript 转换为 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tsc test.ts</span><br></pre></td></tr></table></figure>
+<p>这时候在当前目录下（与 test.ts 同一目录）就会生成一个 test.js 文件，代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var message:string = &quot;Hello World&quot; </span><br><span class="line">console.log(message)</span><br></pre></td></tr></table></figure>
+<p>使用 node 命令来执行 test.js 文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ node test.js </span><br><span class="line">Hello World</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="TypeScript-基础语法"><a href="#TypeScript-基础语法" class="headerlink" title="TypeScript 基础语法"></a>TypeScript 基础语法</h1><p>TypeScript 程序由以下几个部分组成：</p>
+<ul>
+<li>模块</li>
+<li>函数</li>
+<li>变量</li>
+<li>语句和表达式</li>
+<li>注释</li>
+</ul>
+<hr>
+<p>同时编译多个 ts 文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tsc file1.ts, file2.ts, file3.ts</span><br></pre></td></tr></table></figure>
+
+<p>TypeScript 面向对象编程实例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">class Site &#123; </span><br><span class="line">   name():void &#123; </span><br><span class="line">      console.log(&quot;Runoob&quot;) </span><br><span class="line">   &#125; </span><br><span class="line">&#125; </span><br><span class="line">var obj = new Site(); </span><br><span class="line">obj.name();</span><br></pre></td></tr></table></figure>
+<p>以上实例定义了一个类 Site，该类有一个方法 name()，该方法在终端上输出字符串 Runoob。</p>
+<p>new 关键字创建类的对象，该对象调用方法 name()。</p>
+<p>编译后生成的 JavaScript 代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var Site = /** @class */ (function () &#123;</span><br><span class="line">    function Site() &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    Site.prototype.name = function () &#123;</span><br><span class="line">        console.log(&quot;Runoob&quot;);</span><br><span class="line">    &#125;;</span><br><span class="line">    return Site;</span><br><span class="line">&#125;());</span><br><span class="line">var obj = new Site();</span><br><span class="line">obj.name();</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="TypeScript-基础类型"><a href="#TypeScript-基础类型" class="headerlink" title="TypeScript 基础类型"></a>TypeScript 基础类型</h1><p>TypeScript 包含的数据类型如下表:</p>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>关键字</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>任意类型</td>
+<td>any</td>
+<td>声明为 any 的变量可以赋予任意类型的值。</td>
+</tr>
+<tr>
+<td>数字类型</td>
+<td>number</td>
+<td>双精度 64 位浮点值。它可以用来表示整数和分数。<br> let binaryLiteral: number = 0b1010;   // 二进制 <br> let octalLiteral: number = 0o744;    // 八进制 <br> let decLiteral: number = 6;    // 十进制 <br> let hexLiteral: number = 0xf00d;    // 十六进制</td>
+</tr>
+<tr>
+<td>字符串类型</td>
+<td>string</td>
+<td>一个字符系列，使用单引号（’）或双引号（”）来表示字符串类型。反引号（`）来定义多行文本和内嵌表达式。<br> let name: string = “Runoob”;<br>let years: number = 5;<br> let words: string = `您好，今年是 ${ name } 发布 ${ years + 1} 周年`;</td>
+</tr>
+<tr>
+<td>布尔类型</td>
+<td>boolean</td>
+<td>表示逻辑值：true 和 false。<br> let flag: boolean = true;</td>
+</tr>
+<tr>
+<td>数组类型</td>
+<td>无</td>
+<td>声明变量为数组。<br> // 在元素类型后面加上[] <br> let arr: number[] = [1, 2]; <br> // 或者使用数组泛型 <br> let arr: Array<number> = [1, 2];</td>
+</tr>
+<tr>
+<td>元组</td>
+<td>无</td>
+<td>元组类型用来表示已知元素数量和类型的数组，各元素的类型不必相同，对应位置的类型需要相同。 <br> let x: [string, number]; <br> x = [‘Runoob’, 1];    // 运行正常 <br> x = [1, ‘Runoob’];    // 报错 <br> console.log(x[0]);    // 输出 Runoob</td>
+</tr>
+<tr>
+<td>枚举</td>
+<td>enum</td>
+<td>枚举类型用于定义数值集合。<br> enum Color {Red, Green, Blue}; <br> let c: Color = Color.Blue; <br> console.log(c);    // 输出 2</td>
+</tr>
+<tr>
+<td>void</td>
+<td>void</td>
+<td>用于标识方法返回值的类型，表示该方法没有返回值。 <br> function hello(): void { <br> &nbsp;&nbsp; alert(“Hello Runoob”);<br>}</td>
+</tr>
+<tr>
+<td>null</td>
+<td>null</td>
+<td>表示对象值缺失。</td>
+</tr>
+<tr>
+<td>undefined</td>
+<td>undefined</td>
+<td>用于初始化变量为一个未定义的值</td>
+</tr>
+<tr>
+<td>never</td>
+<td>never</td>
+<td>never 是其它类型（包括 null 和 undefined）的子类型，代表从不会出现的值。</td>
+</tr>
+</tbody></table>
+<p>注意：TypeScript 和 JavaScript 没有整数类型。</p>
+<h2 id="Any-类型"><a href="#Any-类型" class="headerlink" title="Any 类型"></a>Any 类型</h2><p>任意值是 TypeScript 针对编程时类型不明确的变量使用的一种数据类型，它常用于以下三种情况。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;1、变量的值会动态改变时，比如来自用户的输入，任意值类型可以让这些变量跳过编译阶段的类型检查，示例代码如下：&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">let x: any = 1;    // 数字类型</span><br><span class="line">x = &#x27;I am who I am&#x27;;    // 字符串类型</span><br><span class="line">x = false;    // 布尔类型</span><br></pre></td></tr></table></figure>
+
+<p>改写现有代码时，任意值允许在编译时可选择地包含或移除类型检查，示例代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let x: any = 4;</span><br><span class="line">x.ifItExists();    // 正确，ifItExists方法在运行时可能存在，但这里并不会检查</span><br><span class="line">x.toFixed();    // 正确</span><br></pre></td></tr></table></figure>
+
+<p>定义存储各种类型数据的数组时，示例代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let arrayList: any[] = [1, false, &#x27;fine&#x27;];</span><br><span class="line">arrayList[1] = 100;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Null-和-Undefined"><a href="#Null-和-Undefined" class="headerlink" title="Null 和 Undefined"></a>Null 和 Undefined</h2><h3 id="null"><a href="#null" class="headerlink" title="null"></a>null</h3><p>在 JavaScript 中 null 表示 “什么都没有”。<br>null是一个只有一个值的特殊类型。表示一个空对象引用。<br>用 typeof 检测 null 返回是 object。</p>
+<h3 id="undefined"><a href="#undefined" class="headerlink" title="undefined"></a>undefined</h3><p>在 JavaScript 中, undefined 是一个没有设置值的变量。</p>
+<p>typeof 一个没有值的变量会返回 undefined。</p>
+<p>Null 和 Undefined 是其他任何类型（包括 void）的子类型，可以赋值给其它类型，如数字类型，此时，赋值后的类型会变成 null 或 undefined。而在TypeScript中启用严格的空校验（–strictNullChecks）特性，就可以使得null 和 undefined 只能被赋值给 void 或本身对应的类型，示例代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 启用 --strictNullChecks</span><br><span class="line">let x: number;</span><br><span class="line">x = 1; // 运行正确</span><br><span class="line">x = undefined;    // 运行错误</span><br><span class="line">x = null;    // 运行错误</span><br></pre></td></tr></table></figure>
+
+<h3 id="never-类型"><a href="#never-类型" class="headerlink" title="never 类型"></a>never 类型</h3><p>never 是其它类型（包括 null 和 undefined）的子类型，代表从不会出现的值。这意味着声明为 never 类型的变量只能被 never 类型所赋值，在函数中它通常表现为抛出异常或无法执行到终止点（例如无限循环），示例代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">let x: never;</span><br><span class="line">let y: number;</span><br><span class="line"></span><br><span class="line">// 运行错误，数字类型不能转为 never 类型</span><br><span class="line">x = 123;</span><br><span class="line"></span><br><span class="line">// 运行正确，never 类型可以赋值给 never类型</span><br><span class="line">x = (()=&gt;&#123; throw new Error(&#x27;exception&#x27;)&#125;)();</span><br><span class="line"></span><br><span class="line">// 运行正确，never 类型可以赋值给 数字类型</span><br><span class="line">y = (()=&gt;&#123; throw new Error(&#x27;exception&#x27;)&#125;)();</span><br><span class="line"></span><br><span class="line">// 返回值为 never 的函数可以是抛出异常的情况</span><br><span class="line">function error(message: string): never &#123;</span><br><span class="line">    throw new Error(message);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 返回值为 never 的函数可以是无法被执行到的终止点的情况</span><br><span class="line">function loop(): never &#123;</span><br><span class="line">    while (true) &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="TypeScript-变量声明"><a href="#TypeScript-变量声明" class="headerlink" title="TypeScript 变量声明"></a>TypeScript 变量声明</h1><p>变量是一种使用方便的占位符，用于引用计算机内存地址。<br>我们可以把变量看做存储数据的容器。<br>TypeScript 变量的命名规则：  </p>
+<ul>
+<li>变量名称可以包含数字和字母。</li>
+<li>除了下划线 _ 和美元 $ 符号外，不能包含其他特殊字符，包括空格。</li>
+<li>变量名不能以数字开头。</li>
+</ul>
+<p>变量使用前必须先声明，我们可以使用 var 来声明变量。<br>我们可以使用以下四种方式来声明变量：</p>
+<ol>
+<li>声明变量的类型及初始值：  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var [变量名] : [类型] = 值;</span><br></pre></td></tr></table></figure>
+例如：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var uname:string = &quot;Runoob&quot;;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>2.<br>声明变量的类型及但没有初始值，变量值会设置为 undefined：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var [变量名] : [类型];</span><br></pre></td></tr></table></figure>
+<p>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var uname:string;</span><br></pre></td></tr></table></figure>
+
+<p>3.<br>声明变量并初始值，但不设置类型，该变量可以是任意类型：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var [变量名] = 值;</span><br></pre></td></tr></table></figure>
+<p>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var uname = &quot;Runoob&quot;;</span><br></pre></td></tr></table></figure>
+
+<p>4.<br>声明变量没有设置类型和初始值，类型可以是任意类型，默认初始值为 undefined：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var [变量名];</span><br></pre></td></tr></table></figure>
+<p>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var uname;</span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var uname:string = &quot;Runoob&quot;; </span><br><span class="line">var score1:number = 50;</span><br><span class="line">var score2:number = 42.50</span><br><span class="line">var sum = score1 + score2 </span><br><span class="line">console.log(&quot;名字: &quot;+uname) </span><br><span class="line">console.log(&quot;第一个科目成绩: &quot;+score1) </span><br><span class="line">console.log(&quot;第二个科目成绩: &quot;+score2) </span><br><span class="line">console.log(&quot;总成绩: &quot;+sum)</span><br></pre></td></tr></table></figure>
+<p>注意：变量不要使用 name 否则会与 DOM 中的全局 window 对象下的 name 属性出现了重名。</p>
+<p>使用 tsc 命令编译以上代码，得到如下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var uname = &quot;Runoob&quot;;</span><br><span class="line">var score1 = 50;</span><br><span class="line">var score2 = 42.50;</span><br><span class="line">var sum = score1 + score2;</span><br><span class="line">console.log(&quot;名字: &quot; + uname);</span><br><span class="line">console.log(&quot;第一个科目成绩: &quot; + score1);</span><br><span class="line">console.log(&quot;第二个科目成绩: &quot; + score2);</span><br><span class="line">console.log(&quot;总成绩: &quot; + sum);</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="类型断言（Type-Assertion）"><a href="#类型断言（Type-Assertion）" class="headerlink" title="类型断言（Type Assertion）"></a>类型断言（Type Assertion）</h2><p>类型断言可以用来手动指定一个值的类型，即允许变量从一种类型更改为另一种类型。<br>语法格式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;类型&gt;值</span><br></pre></td></tr></table></figure>
+<p>或:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">值 as 类型</span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var str = &#x27;1&#x27; </span><br><span class="line">var str2:number = &lt;number&gt; &lt;any&gt; str   //str、str2 是 string 类型</span><br><span class="line">console.log(str2)</span><br></pre></td></tr></table></figure>
+
+<p><strong>TypeScript 是怎么确定单个断言是否足够</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;当 S 类型是 T 类型的子集，或者 T 类型是 S 类型的子集时，S 能被成功断言成 S。这是为了在进行类型断言时提供额外的安全性，完全毫无根据的断言是危险的，如果你想这么做，你可以使用 any。<br>&nbsp;&nbsp;&nbsp;&nbsp;它之所以不被称为类型转换，是因为转换通常意味着某种运行时的支持。但是，类型断言纯粹是一个编译时语法，同时，它也是一种为编译器提供关于如何分析代码的方法。</p>
+<p>编译后，以上代码会生成如下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var str = &#x27;1&#x27;;</span><br><span class="line">var str2 = str;  //str、str2 是 string 类型</span><br><span class="line">console.log(str2);</span><br></pre></td></tr></table></figure>
+
+<h2 id="类型推断"><a href="#类型推断" class="headerlink" title="类型推断"></a>类型推断</h2><p>当类型没有给出时，TypeScript 编译器利用类型推断来推断类型。</p>
+<p>如果由于缺乏声明而不能推断出类型，那么它的类型被视作默认的动态 any 类型。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var num = 2;    // 类型推断为 number</span><br><span class="line">console.log(&quot;num 变量的值为 &quot;+num); </span><br><span class="line">num = &quot;12&quot;;    // 编译错误</span><br><span class="line">console.log(num);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>第一行代码声明了变量 num 并=设置初始值为 2。 注意变量声明没有指定类型。因此，程序使用类型推断来确定变量的数据类型，第一次赋值为 2，num 设置为 number 类型。</li>
+<li>第三行代码，当我们再次为变量设置字符串类型的值时，这时编译会错误。因为变量已经设置为了 number 类型。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">error TS2322: Type &#x27;&quot;12&quot;&#x27; is not assignable to type &#x27;number&#x27;.</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="变量作用域"><a href="#变量作用域" class="headerlink" title="变量作用域"></a>变量作用域</h2><p>变量作用域指定了变量定义的位置。<br>程序中变量的可用性由变量作用域决定。<br>TypeScript 有以下几种作用域：</p>
+<ul>
+<li>全局作用域 − 全局变量定义在程序结构的外部，它可以在你代码的任何位置使用。</li>
+<li>类作用域 − 这个变量也可以称为 字段。类变量声明在一个类里头，但在类的方法外面。 该变量可以通过类的对象来访问。类变量也可以是静态的，静态的变量可以通过类名直接访问。</li>
+<li>局部作用域 − 局部变量，局部变量只能在声明它的一个代码块（如：方法）中使用。</li>
+</ul>
+<p>以下实例说明了三种作用域的使用：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">var global_num = 12          // 全局变量</span><br><span class="line">class Numbers &#123; </span><br><span class="line">   num_val = 13;             // 实例变量</span><br><span class="line">   static sval = 10;         // 静态变量</span><br><span class="line">   </span><br><span class="line">   storeNum():void &#123; </span><br><span class="line">      var local_num = 14;    // 局部变量</span><br><span class="line">   &#125; </span><br><span class="line">&#125; </span><br><span class="line">console.log(&quot;全局变量为: &quot;+global_num)  </span><br><span class="line">console.log(Numbers.sval)   // 静态变量</span><br><span class="line">var obj = new Numbers(); </span><br><span class="line">console.log(&quot;实例变量: &quot;+obj.num_val)</span><br></pre></td></tr></table></figure>
+<p>以上代码使用 tsc 命令编译为 JavaScript 代码为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var global_num = 12; // 全局变量</span><br><span class="line">var Numbers = /** @class */ (function () &#123;</span><br><span class="line">    function Numbers() &#123;</span><br><span class="line">        this.num_val = 13; // 类变量</span><br><span class="line">    &#125;</span><br><span class="line">    Numbers.prototype.storeNum = function () &#123;</span><br><span class="line">        var local_num = 14; // 局部变量</span><br><span class="line">    &#125;;</span><br><span class="line">    Numbers.sval = 10; // 静态变量</span><br><span class="line">    return Numbers;</span><br><span class="line">&#125;());</span><br><span class="line">console.log(&quot;全局变量为: &quot; + global_num);</span><br><span class="line">console.log(Numbers.sval); // 静态变量</span><br><span class="line">var obj = new Numbers();</span><br><span class="line">console.log(&quot;类变量: &quot; + obj.num_val);</span><br></pre></td></tr></table></figure>
+<p>执行以上 JavaScript 代码，输出结果为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">全局变量为: 12</span><br><span class="line">10</span><br><span class="line">类变量: 13</span><br></pre></td></tr></table></figure>
+<p>如果我们在方法外部调用局部变量 local_num，会报错：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">error TS2322: Could not find symbol &#x27;local_num&#x27;.</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="TypeScript-运算符"><a href="#TypeScript-运算符" class="headerlink" title="TypeScript 运算符"></a>TypeScript 运算符</h1><blockquote>
+<p>注：简单的就不说了。</p>
+</blockquote>
+<h2 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h2><p>位操作是程序设计中对位模式按位或二进制数的一元和二元操作。</p>
+<p>; 0001<br>运算符 | 描述 | 例子 | 类似于 | 结果 | 十进制<br>—|—|—|—|—|—<br>&amp; | AND，按位与处理两个长度相同的二进制数，两个相应的二进位都为 1，该位的结果值才为 1，否则为 0。 | x = 5 &amp; 1 | 0101 &amp; 0001 | 0001 | 1<br>| | OR，按位或处理两个长度相同的二进制数，两个相应的二进位中只要有一个为 1，该位/的结果值为 1。| x = 5 | 1 | 0101 | 0001 | 0101 | 5<br>~ | 取反，取反是一元运算符，对一个二进制数的每一位执行逻辑反操作。使数字 1 成为 0，0 成为 1。 | x = ~ 5 | ~0101 | 1010 | -6<br>^ | 异或，按位异或运算，对等长二进制模式按位或二进制数的每一位执行逻辑异按位或操作。操作的结果是如果某位不同则该位为 1，否则该位为 0。 | x = 5 ^ 1 | 0101 ^ 0001 | 0100 | 4<br>&lt;&lt; | 左移，把 &lt;&lt; 左边的运算数的各二进位全部左移若干位，由 &lt;&lt; 右边的数指定移动的位数，高位丢弃，低位补 0。 | x = 5 &lt;&lt; 1 | 0101 &lt;&lt; 1 | 1010 | 10</p>
+<blockquote>
+<blockquote>
+<p>| 右移，把 &gt;&gt; 左边的运算数的各二进位全部右移若干位，&gt;&gt; 右边的数指定移动的位数。 | x = 5 &gt;&gt; 1 | 0101 &gt;&gt; 1 | 0010 | 2</p>
+<blockquote>
+<p>| 无符号右移，与有符号右移位类似，除了左边一律使用0 补位。| x = 2 &gt;&gt;&gt; 1 | 0010 &gt;&gt;&gt; 1 | 0001    | 1</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><strong>实例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">var a:number = 2;   // 二进制 10 </span><br><span class="line">var b:number = 3;   // 二进制 11</span><br><span class="line">    </span><br><span class="line">var result; </span><br><span class="line">        </span><br><span class="line">result = (a &amp; b);     </span><br><span class="line">console.log(&quot;(a &amp; b) =&gt; &quot;,result)</span><br><span class="line">            </span><br><span class="line">result = (a | b);          </span><br><span class="line">console.log(&quot;(a | b) =&gt; &quot;,result)  </span><br><span class="line">        </span><br><span class="line">result = (a ^ b);  </span><br><span class="line">console.log(&quot;(a ^ b) =&gt; &quot;,result);</span><br><span class="line">    </span><br><span class="line">result = (~b); </span><br><span class="line">console.log(&quot;(~b) =&gt; &quot;,result);</span><br><span class="line"> </span><br><span class="line">result = (a &lt;&lt; b); </span><br><span class="line">console.log(&quot;(a &lt;&lt; b) =&gt; &quot;,result); </span><br><span class="line"> </span><br><span class="line">result = (a &gt;&gt; b); </span><br><span class="line">console.log(&quot;(a &gt;&gt; b) =&gt; &quot;,result);</span><br><span class="line"> </span><br><span class="line">result = (a &gt;&gt;&gt; 1); </span><br><span class="line">console.log(&quot;(a &gt;&gt;&gt; 1) =&gt; &quot;,result);</span><br></pre></td></tr></table></figure>
+<p>使用 tsc 命令编译以上代码得到如下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var a = 2; // 二进制 10 </span><br><span class="line">var b = 3; // 二进制 11</span><br><span class="line">var result;</span><br><span class="line">result = (a &amp; b);</span><br><span class="line">console.log(&quot;(a &amp; b) =&gt; &quot;, result);</span><br><span class="line">result = (a | b);</span><br><span class="line">console.log(&quot;(a | b) =&gt; &quot;, result);</span><br><span class="line">result = (a ^ b);</span><br><span class="line">console.log(&quot;(a ^ b) =&gt; &quot;, result);</span><br><span class="line">result = (~b);</span><br><span class="line">console.log(&quot;(~b) =&gt; &quot;, result);</span><br><span class="line">result = (a &lt;&lt; b);</span><br><span class="line">console.log(&quot;(a &lt;&lt; b) =&gt; &quot;, result);</span><br><span class="line">result = (a &gt;&gt; b);</span><br><span class="line">console.log(&quot;(a &gt;&gt; b) =&gt; &quot;, result);</span><br><span class="line">result = (a &gt;&gt;&gt; 1);</span><br><span class="line">console.log(&quot;(a &gt;&gt;&gt; 1) =&gt; &quot;, result);</span><br></pre></td></tr></table></figure>
+<p>执行以上 JavaScript 代码，输出结果为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(a &amp; b) =&gt;  2</span><br><span class="line">(a | b) =&gt;  3</span><br><span class="line">(a ^ b) =&gt;  1</span><br><span class="line">(~b) =&gt;  -4</span><br><span class="line">(a &lt;&lt; b) =&gt;  16</span><br><span class="line">(a &gt;&gt; b) =&gt;  0</span><br><span class="line">(a &gt;&gt;&gt; 1) =&gt;  1</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="TypeScript-联合类型"><a href="#TypeScript-联合类型" class="headerlink" title="TypeScript 联合类型"></a>TypeScript 联合类型</h1><p>联合类型（Union Types）可以通过管道(|)将变量设置多种类型，赋值时可以根据设置的类型来赋值。</p>
+<p><strong>注意</strong>：只能赋值指定的类型，如果赋值其它类型就会报错。</p>
+<p>创建联合类型的语法格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Type1|Type2|Type3 </span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong><br>声明一个联合类型：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var val:string|number </span><br><span class="line">val = 12 </span><br><span class="line">console.log(&quot;数字为 &quot;+ val) </span><br><span class="line">val = &quot;Runoob&quot; </span><br><span class="line">console.log(&quot;字符串为 &quot; + val)</span><br></pre></td></tr></table></figure>
+<p>编译以上代码，得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var val;</span><br><span class="line">val = 12;</span><br><span class="line">console.log(&quot;数字为 &quot; + val);</span><br><span class="line">val = &quot;Runoob&quot;;</span><br><span class="line">console.log(&quot;字符串为 &quot; + val);</span><br></pre></td></tr></table></figure>
+
+<p>如果赋值其它类型就会报错：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var val:string|number </span><br><span class="line">val = true </span><br></pre></td></tr></table></figure>
+
+<p>也可以将联合类型作为函数参数使用：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function disp(name:string|string[]) &#123; </span><br><span class="line">        if(typeof name == &quot;string&quot;) &#123; </span><br><span class="line">                console.log(name) </span><br><span class="line">        &#125; else &#123; </span><br><span class="line">                var i; </span><br><span class="line">                for(i = 0;i&lt;name.length;i++) &#123; </span><br><span class="line">                console.log(name[i])</span><br><span class="line">                &#125; </span><br><span class="line">        &#125; </span><br><span class="line">&#125; </span><br><span class="line">disp(&quot;Runoob&quot;) </span><br><span class="line">console.log(&quot;输出数组....&quot;) </span><br><span class="line">disp([&quot;Runoob&quot;,&quot;Google&quot;,&quot;Taobao&quot;,&quot;Facebook&quot;])</span><br></pre></td></tr></table></figure>
+<p>编译以上代码，得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function disp(name) &#123;</span><br><span class="line">        if (typeof name == &quot;string&quot;) &#123;</span><br><span class="line">                console.log(name);</span><br><span class="line">        &#125;</span><br><span class="line">        else &#123;</span><br><span class="line">                var i;</span><br><span class="line">                for (i = 0; i &lt; name.length; i++) &#123;</span><br><span class="line">                console.log(name[i]);</span><br><span class="line">                &#125;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">disp(&quot;Runoob&quot;);</span><br><span class="line">console.log(&quot;输出数组....&quot;);</span><br><span class="line">disp([&quot;Runoob&quot;, &quot;Google&quot;, &quot;Taobao&quot;, &quot;Facebook&quot;]);</span><br></pre></td></tr></table></figure>
+
+<h2 id="联合类型数组"><a href="#联合类型数组" class="headerlink" title="联合类型数组"></a>联合类型数组</h2><p>我们也可以将数组声明为联合类型：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var arr:number[]|string[]; </span><br><span class="line">var i:number; </span><br><span class="line">arr = [1,2,4] </span><br><span class="line">console.log(&quot;**数字数组**&quot;)  </span><br><span class="line"> </span><br><span class="line">for(i = 0;i&lt;arr.length;i++) &#123; </span><br><span class="line">   console.log(arr[i]) </span><br><span class="line">&#125;  </span><br><span class="line"> </span><br><span class="line">arr = [&quot;Runoob&quot;,&quot;Google&quot;,&quot;Taobao&quot;] </span><br><span class="line">console.log(&quot;**字符串数字**&quot;)  </span><br><span class="line"> </span><br><span class="line">for(i = 0;i&lt;arr.length;i++) &#123; </span><br><span class="line">   console.log(arr[i]) </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>编译以上代码，得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">ar arr;</span><br><span class="line">var i;</span><br><span class="line">arr = [1, 2, 4];</span><br><span class="line">console.log(&quot;**数字数组**&quot;);</span><br><span class="line">for (i = 0; i &lt; arr.length; i++) &#123;</span><br><span class="line">    console.log(arr[i]);</span><br><span class="line">&#125;</span><br><span class="line">arr = [&quot;Runoob&quot;, &quot;Google&quot;, &quot;Taobao&quot;];</span><br><span class="line">console.log(&quot;**字符串数字**&quot;);</span><br><span class="line">for (i = 0; i &lt; arr.length; i++) &#123;</span><br><span class="line">    console.log(arr[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="TypeScript-接口"><a href="#TypeScript-接口" class="headerlink" title="TypeScript 接口"></a>TypeScript 接口</h1><p>接口是一系列抽象方法的声明，是一些方法特征的集合，这些方法都应该是抽象的，需要由具体的类去实现，然后第三方就可以通过这组抽象方法调用，让具体的类执行具体的方法。</p>
+<p>TypeScript 接口定义如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">interface interface_name &#123; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong><br>以下实例中，我们定义了一个接口 IPerson，接着定义了一个变量 customer，它的类型是 IPerson。</p>
+<p>customer 实现了接口 IPerson 的属性和方法。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">interface IPerson &#123; </span><br><span class="line">    firstName:string, </span><br><span class="line">    lastName:string, </span><br><span class="line">    sayHi: ()=&gt;string </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">var customer:IPerson = &#123; </span><br><span class="line">    firstName:&quot;Tom&quot;,</span><br><span class="line">    lastName:&quot;Hanks&quot;, </span><br><span class="line">    sayHi: ():string =&gt;&#123;return &quot;Hi there&quot;&#125; </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">console.log(&quot;Customer 对象 &quot;) </span><br><span class="line">console.log(customer.firstName) </span><br><span class="line">console.log(customer.lastName) </span><br><span class="line">console.log(customer.sayHi())  </span><br><span class="line"> </span><br><span class="line">var employee:IPerson = &#123; </span><br><span class="line">    firstName:&quot;Jim&quot;,</span><br><span class="line">    lastName:&quot;Blakes&quot;, </span><br><span class="line">    sayHi: ():string =&gt;&#123;return &quot;Hello!!!&quot;&#125; </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">console.log(&quot;Employee  对象 &quot;) </span><br><span class="line">console.log(employee.firstName) </span><br><span class="line">console.log(employee.lastName)</span><br></pre></td></tr></table></figure>
+
+<p>需要注意接口不能转换为 JavaScript。 它只是 TypeScript 的一部分。<br>编译以上代码，得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var customer = &#123;</span><br><span class="line">    firstName: &quot;Tom&quot;,</span><br><span class="line">    lastName: &quot;Hanks&quot;,</span><br><span class="line">    sayHi: function () &#123; return &quot;Hi there&quot;; &#125;</span><br><span class="line">&#125;;</span><br><span class="line">console.log(&quot;Customer 对象 &quot;);</span><br><span class="line">console.log(customer.firstName);</span><br><span class="line">console.log(customer.lastName);</span><br><span class="line">console.log(customer.sayHi());</span><br><span class="line">var employee = &#123;</span><br><span class="line">    firstName: &quot;Jim&quot;,</span><br><span class="line">    lastName: &quot;Blakes&quot;,</span><br><span class="line">    sayHi: function () &#123; return &quot;Hello!!!&quot;; &#125;</span><br><span class="line">&#125;;</span><br><span class="line">console.log(&quot;Employee  对象 &quot;);</span><br><span class="line">console.log(employee.firstName);</span><br><span class="line">console.log(employee.lastName);</span><br></pre></td></tr></table></figure>
+
+<h2 id="联合类型和接口"><a href="#联合类型和接口" class="headerlink" title="联合类型和接口"></a>联合类型和接口</h2><p>以下实例演示了如何在接口中使用联合类型：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">interface RunOptions &#123; </span><br><span class="line">    program:string; </span><br><span class="line">    commandline:string[]|string|(()=&gt;string); </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">// commandline 是字符串</span><br><span class="line">var options:RunOptions = &#123;program:&quot;test1&quot;,commandline:&quot;Hello&quot;&#125;; </span><br><span class="line">console.log(options.commandline)  </span><br><span class="line"> </span><br><span class="line">// commandline 是字符串数组</span><br><span class="line">options = &#123;program:&quot;test1&quot;,commandline:[&quot;Hello&quot;,&quot;World&quot;]&#125;; </span><br><span class="line">console.log(options.commandline[0]); </span><br><span class="line">console.log(options.commandline[1]);  </span><br><span class="line"> </span><br><span class="line">// commandline 是一个函数表达式</span><br><span class="line">options = &#123;program:&quot;test1&quot;,commandline:()=&gt;&#123;return &quot;**Hello World**&quot;;&#125;&#125;; </span><br><span class="line"> </span><br><span class="line">var fn:any = options.commandline; </span><br><span class="line">console.log(fn());</span><br></pre></td></tr></table></figure>
+
+<p>编译以上代码，得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// commandline 是字符串</span><br><span class="line">var options = &#123; program: &quot;test1&quot;, commandline: &quot;Hello&quot; &#125;;</span><br><span class="line">console.log(options.commandline);</span><br><span class="line">// commandline 是字符串数组</span><br><span class="line">options = &#123; program: &quot;test1&quot;, commandline: [&quot;Hello&quot;, &quot;World&quot;] &#125;;</span><br><span class="line">console.log(options.commandline[0]);</span><br><span class="line">console.log(options.commandline[1]);</span><br><span class="line">// commandline 是一个函数表达式</span><br><span class="line">options = &#123; program: &quot;test1&quot;, commandline: function () &#123; return &quot;**Hello World**&quot;; &#125; &#125;;</span><br><span class="line">var fn = options.commandline;</span><br><span class="line">console.log(fn());</span><br></pre></td></tr></table></figure>
+
+<h2 id="接口和数组"><a href="#接口和数组" class="headerlink" title="接口和数组"></a>接口和数组</h2><p>接口中我们可以将数组的索引值和元素设置为不同类型，索引值可以是数字或字符串。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">interface namelist &#123; </span><br><span class="line">   [index:number]:string </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">var list2:namelist = [&quot;John&quot;,1,&quot;Bran&quot;] / 错误元素 1 不是 string 类型</span><br><span class="line">interface ages &#123; </span><br><span class="line">   [index:string]:number </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">var agelist:ages; </span><br><span class="line">agelist[&quot;John&quot;] = 15   // 正确 </span><br><span class="line">agelist[2] = &quot;nine&quot;   // 错误</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="接口继承"><a href="#接口继承" class="headerlink" title="接口继承"></a>接口继承</h2><p>接口继承就是说接口可以通过其他接口来扩展自己。<br>Typescript 允许接口继承多个接口。<br>继承使用关键字 extends。<br>单接口继承语法格式：  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Child_interface_name extends super_interface_name</span><br></pre></td></tr></table></figure>
+<p>多接口继承语法格式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Child_interface_name extends super_interface1_name, super_interface2_name,…,super_interfaceN_name</span><br></pre></td></tr></table></figure>
+<p>继承的各个接口使用逗号 , 分隔。</p>
+<h3 id="单继承实例"><a href="#单继承实例" class="headerlink" title="单继承实例"></a>单继承实例</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">interface Person &#123; </span><br><span class="line">   age:number </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">interface Musician extends Person &#123; </span><br><span class="line">   instrument:string </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">var drummer = &lt;Musician&gt;&#123;&#125;; </span><br><span class="line">drummer.age = 27 </span><br><span class="line">drummer.instrument = &quot;Drums&quot; </span><br><span class="line">console.log(&quot;年龄:  &quot;+drummer.age)</span><br><span class="line">console.log(&quot;喜欢的乐器:  &quot;+drummer.instrument)</span><br></pre></td></tr></table></figure>
+
+<p>编译以上代码，得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var drummer = &#123;&#125;;</span><br><span class="line">drummer.age = 27;</span><br><span class="line">drummer.instrument = &quot;Drums&quot;;</span><br><span class="line">console.log(&quot;年龄:  &quot; + drummer.age);</span><br><span class="line">console.log(&quot;喜欢的乐器:  &quot; + drummer.instrument);</span><br></pre></td></tr></table></figure>
+
+<h3 id="多继承实例"><a href="#多继承实例" class="headerlink" title="多继承实例"></a>多继承实例</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">interface IParent1 &#123; </span><br><span class="line">    v1:number </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">interface IParent2 &#123; </span><br><span class="line">    v2:number </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">interface Child extends IParent1, IParent2 &#123; &#125; </span><br><span class="line">var Iobj:Child = &#123; v1:12, v2:23&#125; </span><br><span class="line">console.log(&quot;value 1: &quot;+Iobj.v1+&quot; value 2: &quot;+Iobj.v2)</span><br></pre></td></tr></table></figure>
+<p>编译以上代码，得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var Iobj = &#123; v1: 12, v2: 23 &#125;;</span><br><span class="line">console.log(&quot;value 1: &quot; + Iobj.v1 + &quot; value 2: &quot; + Iobj.v2);</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="TypeScript-类"><a href="#TypeScript-类" class="headerlink" title="TypeScript 类"></a>TypeScript 类</h1><p>TypeScript 是面向对象的 JavaScript。<br>类描述了所创建的对象共同的属性和方法。<br>TypeScript 支持面向对象的所有特性，比如 类、接口等。<br>TypeScript 类定义方式如下：  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">class class_name &#123; </span><br><span class="line">    // 类作用域</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>定义类的关键字为 class，后面紧跟类名，类可以包含以下几个模块（类的数据成员）：  </p>
+<ul>
+<li>字段 − 字段是类里面声明的变量。字段表示对象的有关数据。  </li>
+<li>构造函数 − 类实例化时调用，可以为类的对象分配内存。  </li>
+<li>方法 − 方法为对象要执行的操作。  </li>
+</ul>
+<p><strong>实例</strong><br>创建一个 Person 类：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">class Person &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>编译以上代码，得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var Person = /** @class */ (function () &#123;</span><br><span class="line">    function Person() &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    return Person;</span><br><span class="line">&#125;());</span><br></pre></td></tr></table></figure>
+
+<h2 id="创建类的数据成员"><a href="#创建类的数据成员" class="headerlink" title="创建类的数据成员"></a>创建类的数据成员</h2><p>以下实例我们声明了类 Car，包含字段为 engine，构造函数在类实例化后初始化字段 engine。<br>this 关键字表示当前类实例化的对象。注意构造函数的参数名与字段名相同,this.engine 表示类的字段。<br>此外我们也在类中定义了一个方法 disp()。  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Car &#123; </span><br><span class="line">    // 字段 </span><br><span class="line">    engine:string; </span><br><span class="line"> </span><br><span class="line">    // 构造函数 </span><br><span class="line">    constructor(engine:string) &#123; </span><br><span class="line">        this.engine = engine </span><br><span class="line">    &#125;  </span><br><span class="line"> </span><br><span class="line">    // 方法 </span><br><span class="line">    disp():void &#123; </span><br><span class="line">        console.log(&quot;发动机为 :   &quot;+this.engine) </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>编译以上代码，得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var Car = /** @class */ (function () &#123;</span><br><span class="line">    // 构造函数 </span><br><span class="line">    function Car(engine) &#123;</span><br><span class="line">        this.engine = engine;</span><br><span class="line">    &#125;</span><br><span class="line">    // 方法 </span><br><span class="line">    Car.prototype.disp = function () &#123;</span><br><span class="line">        console.log(&quot;发动机为 :   &quot; + this.engine);</span><br><span class="line">    &#125;;</span><br><span class="line">    return Car;</span><br><span class="line">&#125;());</span><br></pre></td></tr></table></figure>
+
+<h2 id="创建实例化对象"><a href="#创建实例化对象" class="headerlink" title="创建实例化对象"></a>创建实例化对象</h2><p>我们使用 new 关键字来实例化类的对象，语法格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var object_name = new class_name([ arguments ])</span><br></pre></td></tr></table></figure>
+
+<p>类实例化时会调用构造函数，例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var obj = new Car(&quot;Engine 1&quot;)</span><br></pre></td></tr></table></figure>
+
+<p>类中的字段属性和方法可以使用 <code>.</code> 号来访问：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 访问属性</span><br><span class="line">obj.field_name </span><br><span class="line"></span><br><span class="line">// 访问方法</span><br><span class="line">obj.function_name()</span><br></pre></td></tr></table></figure>
+
+<h3 id="完整实例"><a href="#完整实例" class="headerlink" title="完整实例"></a>完整实例</h3><p>以下实例创建来一个 Car 类，然后通过关键字 new 来创建一个对象并访问属性和方法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">class Car &#123; </span><br><span class="line">   // 字段</span><br><span class="line">   engine:string; </span><br><span class="line">   </span><br><span class="line">   // 构造函数</span><br><span class="line">   constructor(engine:string) &#123; </span><br><span class="line">      this.engine = engine </span><br><span class="line">   &#125;  </span><br><span class="line">   </span><br><span class="line">   // 方法</span><br><span class="line">   disp():void &#123; </span><br><span class="line">      console.log(&quot;函数中显示发动机型号  :   &quot;+this.engine) </span><br><span class="line">   &#125; </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">// 创建一个对象</span><br><span class="line">var obj = new Car(&quot;XXSY1&quot;)</span><br><span class="line"> </span><br><span class="line">// 访问字段</span><br><span class="line">console.log(&quot;读取发动机型号 :  &quot;+obj.engine)  </span><br><span class="line"> </span><br><span class="line">// 访问方法</span><br><span class="line">obj.disp()</span><br></pre></td></tr></table></figure>
+<p>编译以上代码，得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var Car = /** @class */ (function () &#123;</span><br><span class="line">    // 构造函数</span><br><span class="line">    function Car(engine) &#123;</span><br><span class="line">        this.engine = engine;</span><br><span class="line">    &#125;</span><br><span class="line">    // 方法</span><br><span class="line">    Car.prototype.disp = function () &#123;</span><br><span class="line">        console.log(&quot;函数中显示发动机型号  :   &quot; + this.engine);</span><br><span class="line">    &#125;;</span><br><span class="line">    return Car;</span><br><span class="line">&#125;());</span><br><span class="line">// 创建一个对象</span><br><span class="line">var obj = new Car(&quot;XXSY1&quot;);</span><br><span class="line">// 访问字段</span><br><span class="line">console.log(&quot;读取发动机型号 :  &quot; + obj.engine);</span><br><span class="line">// 访问方法</span><br><span class="line">obj.disp();</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="类的继承"><a href="#类的继承" class="headerlink" title="类的继承"></a>类的继承</h2><p>TypeScript 支持继承类，即我们可以在创建类的时候继承一个已存在的类，这个已存在的类称为父类，继承它的类称为子类。</p>
+<p>类继承使用关键字 extends，子类除了不能继承父类的私有成员(方法和属性)和构造函数，其他的都可以继承。</p>
+<p>TypeScript 一次只能继承一个类，不支持继承多个类，但 TypeScript 支持多重继承（A 继承 B，B 继承 C）。</p>
+<p>语法格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class child_class_name extends parent_class_name</span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong></p>
+<p>类的继承：实例中创建了 Shape 类，Circle 类继承了 Shape 类，Circle 类可以直接使用 Area 属性：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class Shape &#123; </span><br><span class="line">   Area:number </span><br><span class="line">   </span><br><span class="line">   constructor(a:number) &#123; </span><br><span class="line">      this.Area = a </span><br><span class="line">   &#125; </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">class Circle extends Shape &#123; </span><br><span class="line">   disp():void &#123; </span><br><span class="line">      console.log(&quot;圆的面积:  &quot;+this.Area) </span><br><span class="line">   &#125; </span><br><span class="line">&#125;</span><br><span class="line">  </span><br><span class="line">var obj = new Circle(223); </span><br><span class="line">obj.disp()</span><br></pre></td></tr></table></figure>
+
+<p>编译以上代码，得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">var __extends = (this &amp;&amp; this.__extends) || (function () &#123;</span><br><span class="line">    var extendStatics = function (d, b) &#123;</span><br><span class="line">        extendStatics = Object.setPrototypeOf ||</span><br><span class="line">            (&#123; __proto__: [] &#125; instanceof Array &amp;&amp; function (d, b) &#123; d.__proto__ = b; &#125;) ||</span><br><span class="line">            function (d, b) &#123; for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; &#125;;</span><br><span class="line">        return extendStatics(d, b);</span><br><span class="line">    &#125;;</span><br><span class="line">    return function (d, b) &#123;</span><br><span class="line">        extendStatics(d, b);</span><br><span class="line">        function __() &#123; this.constructor = d; &#125;</span><br><span class="line">        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;)();</span><br><span class="line">var Shape = /** @class */ (function () &#123;</span><br><span class="line">    function Shape(a) &#123;</span><br><span class="line">        this.Area = a;</span><br><span class="line">    &#125;</span><br><span class="line">    return Shape;</span><br><span class="line">&#125;());</span><br><span class="line">var Circle = /** @class */ (function (_super) &#123;</span><br><span class="line">    __extends(Circle, _super);</span><br><span class="line">    function Circle() &#123;</span><br><span class="line">        return _super !== null &amp;&amp; _super.apply(this, arguments) || this;</span><br><span class="line">    &#125;</span><br><span class="line">    Circle.prototype.disp = function () &#123;</span><br><span class="line">        console.log(&quot;圆的面积:  &quot; + this.Area);</span><br><span class="line">    &#125;;</span><br><span class="line">    return Circle;</span><br><span class="line">&#125;(Shape));</span><br><span class="line">var obj = new Circle(223);</span><br><span class="line">obj.disp();</span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是子类只能继承一个父类，TypeScript 不支持继承多个类，但支持多重继承，如下实例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">class Root &#123; </span><br><span class="line">   str:string; </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">class Child extends Root &#123;&#125; </span><br><span class="line">class Leaf extends Child &#123;&#125; // 多重继承，继承了 Child 和 Root 类</span><br><span class="line"> </span><br><span class="line">var obj = new Leaf(); </span><br><span class="line">obj.str =&quot;hello&quot; </span><br><span class="line">console.log(obj.str)</span><br></pre></td></tr></table></figure>
+<p>编译以上代码，得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">var __extends = (this &amp;&amp; this.__extends) || (function () &#123;</span><br><span class="line">    var extendStatics = function (d, b) &#123;</span><br><span class="line">        extendStatics = Object.setPrototypeOf ||</span><br><span class="line">            (&#123; __proto__: [] &#125; instanceof Array &amp;&amp; function (d, b) &#123; d.__proto__ = b; &#125;) ||</span><br><span class="line">            function (d, b) &#123; for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; &#125;;</span><br><span class="line">        return extendStatics(d, b);</span><br><span class="line">    &#125;;</span><br><span class="line">    return function (d, b) &#123;</span><br><span class="line">        extendStatics(d, b);</span><br><span class="line">        function __() &#123; this.constructor = d; &#125;</span><br><span class="line">        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;)();</span><br><span class="line">var Root = /** @class */ (function () &#123;</span><br><span class="line">    function Root() &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    return Root;</span><br><span class="line">&#125;());</span><br><span class="line">var Child = /** @class */ (function (_super) &#123;</span><br><span class="line">    __extends(Child, _super);</span><br><span class="line">    function Child() &#123;</span><br><span class="line">        return _super !== null &amp;&amp; _super.apply(this, arguments) || this;</span><br><span class="line">    &#125;</span><br><span class="line">    return Child;</span><br><span class="line">&#125;(Root));</span><br><span class="line">var Leaf = /** @class */ (function (_super) &#123;</span><br><span class="line">    __extends(Leaf, _super);</span><br><span class="line">    function Leaf() &#123;</span><br><span class="line">        return _super !== null &amp;&amp; _super.apply(this, arguments) || this;</span><br><span class="line">    &#125;</span><br><span class="line">    return Leaf;</span><br><span class="line">&#125;(Child)); // 多重继承，继承了 Child 和 Root 类</span><br><span class="line">var obj = new Leaf();</span><br><span class="line">obj.str = &quot;hello&quot;;</span><br><span class="line">console.log(obj.str);</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="继承类的方法重写"><a href="#继承类的方法重写" class="headerlink" title="继承类的方法重写"></a>继承类的方法重写</h2><p>类继承后，子类可以对父类的方法重新定义，这个过程称之为方法的重写。</p>
+<p>其中 super 关键字是对父类的直接引用，该关键字可以引用父类的属性和方法。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class PrinterClass &#123; </span><br><span class="line">   doPrint():void &#123;</span><br><span class="line">      console.log(&quot;父类的 doPrint() 方法。&quot;) </span><br><span class="line">   &#125; </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">class StringPrinter extends PrinterClass &#123; </span><br><span class="line">   doPrint():void &#123; </span><br><span class="line">      super.doPrint() // 调用父类的函数</span><br><span class="line">      console.log(&quot;子类的 doPrint()方法。&quot;)</span><br><span class="line">   &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>编译以上代码，得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">var obj = new StringPrinter() </span><br><span class="line">obj.doPrint()</span><br><span class="line"> </span><br><span class="line">var __extends = (this &amp;&amp; this.__extends) || (function () &#123;</span><br><span class="line">    var extendStatics = function (d, b) &#123;</span><br><span class="line">        extendStatics = Object.setPrototypeOf ||</span><br><span class="line">            (&#123; __proto__: [] &#125; instanceof Array &amp;&amp; function (d, b) &#123; d.__proto__ = b; &#125;) ||</span><br><span class="line">            function (d, b) &#123; for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; &#125;;</span><br><span class="line">        return extendStatics(d, b);</span><br><span class="line">    &#125;;</span><br><span class="line">    return function (d, b) &#123;</span><br><span class="line">        extendStatics(d, b);</span><br><span class="line">        function __() &#123; this.constructor = d; &#125;</span><br><span class="line">        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;)();</span><br><span class="line">var PrinterClass = /** @class */ (function () &#123;</span><br><span class="line">    function PrinterClass() &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    PrinterClass.prototype.doPrint = function () &#123;</span><br><span class="line">        console.log(&quot;父类的 doPrint() 方法。&quot;);</span><br><span class="line">    &#125;;</span><br><span class="line">    return PrinterClass;</span><br><span class="line">&#125;());</span><br><span class="line">var StringPrinter = /** @class */ (function (_super) &#123;</span><br><span class="line">    __extends(StringPrinter, _super);</span><br><span class="line">    function StringPrinter() &#123;</span><br><span class="line">        return _super !== null &amp;&amp; _super.apply(this, arguments) || this;</span><br><span class="line">    &#125;</span><br><span class="line">    StringPrinter.prototype.doPrint = function () &#123;</span><br><span class="line">        _super.prototype.doPrint.call(this); // 调用父类的函数</span><br><span class="line">        console.log(&quot;子类的 doPrint()方法。&quot;);</span><br><span class="line">    &#125;;</span><br><span class="line">    return StringPrinter;</span><br><span class="line">&#125;(PrinterClass));</span><br><span class="line">var obj = new StringPrinter();</span><br><span class="line">obj.doPrint();</span><br></pre></td></tr></table></figure>
+
+<h2 id="static-关键字"><a href="#static-关键字" class="headerlink" title="static 关键字"></a>static 关键字</h2><p>static 关键字用于定义类的数据成员（属性和方法）为静态的，静态成员可以直接通过类名调用。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">class StaticMem &#123;  </span><br><span class="line">   static num:number; </span><br><span class="line">   </span><br><span class="line">   static disp():void &#123; </span><br><span class="line">      console.log(&quot;num 值为 &quot;+ StaticMem.num) </span><br><span class="line">   &#125; </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">StaticMem.num = 12     // 初始化静态变量</span><br><span class="line">StaticMem.disp()       // 调用静态方法</span><br></pre></td></tr></table></figure>
+<p>编译以上代码，得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var StaticMem = /** @class */ (function () &#123;</span><br><span class="line">    function StaticMem() &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    StaticMem.disp = function () &#123;</span><br><span class="line">        console.log(&quot;num 值为 &quot; + StaticMem.num);</span><br><span class="line">    &#125;;</span><br><span class="line">    return StaticMem;</span><br><span class="line">&#125;());</span><br><span class="line">StaticMem.num = 12; // 初始化静态变量</span><br><span class="line">StaticMem.disp(); // 调用静态方法</span><br></pre></td></tr></table></figure>
+
+<h2 id="instanceof-运算符"><a href="#instanceof-运算符" class="headerlink" title="instanceof 运算符"></a>instanceof 运算符</h2><p>instanceof 运算符用于判断对象是否是指定的类型，如果是返回 true，否则返回 false。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">class Person&#123; &#125; </span><br><span class="line">var obj = new Person() </span><br><span class="line">var isPerson = obj instanceof Person; </span><br><span class="line">console.log(&quot;obj 对象是 Person 类实例化来的吗？ &quot; + isPerson);</span><br></pre></td></tr></table></figure>
+<p>编译以上代码，得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var Person = /** @class */ (function () &#123;</span><br><span class="line">    function Person() &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    return Person;</span><br><span class="line">&#125;());</span><br><span class="line">var obj = new Person();</span><br><span class="line">var isPerson = obj instanceof Person;</span><br><span class="line">console.log(&quot; obj 对象是 Person 类实例化来的吗？ &quot; + isPerson);</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="访问控制修饰符"><a href="#访问控制修饰符" class="headerlink" title="访问控制修饰符"></a>访问控制修饰符</h2><p>TypeScript 中，可以使用访问控制符来保护对类、变量、方法和构造方法的访问。 </p>
+<p>TypeScript 支持 3 种不同的访问权限。</p>
+<ul>
+<li>public（默认） : 公有，可以在任何地方被访问。</li>
+<li>protected : 受保护，可以被其自身以及其子类和父类访问。</li>
+<li>private : 私有，只能被其定义所在的类访问。</li>
+</ul>
+<p>以下实例定义了两个变量 str1 和 str2，str1 为 public，str2 为 private，实例化后可以访问 str1，如果要访问 str2 则会编译错误。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">class Encapsulate &#123; </span><br><span class="line">   str1:string = &quot;hello&quot; </span><br><span class="line">   private str2:string = &quot;world&quot; </span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">var obj = new Encapsulate() </span><br><span class="line">console.log(obj.str1)     // 可访问 </span><br><span class="line">console.log(obj.str2)   // 编译错误， str2 是私有的</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="类和接口"><a href="#类和接口" class="headerlink" title="类和接口"></a>类和接口</h2><p>类可以实现接口，使用关键字 implements，并将 interest 字段作为类的属性使用。</p>
+<p>以下实例红 AgriLoan 类实现了 ILoan 接口：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">interface ILoan &#123; </span><br><span class="line">   interest:number </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">class AgriLoan implements ILoan &#123; </span><br><span class="line">   interest:number </span><br><span class="line">   rebate:number </span><br><span class="line">   </span><br><span class="line">   constructor(interest:number,rebate:number) &#123; </span><br><span class="line">      this.interest = interest </span><br><span class="line">      this.rebate = rebate </span><br><span class="line">   &#125; </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">var obj = new AgriLoan(10,1) </span><br><span class="line">console.log(&quot;利润为 : &quot;+obj.interest+&quot;，抽成为 : &quot;+obj.rebate )</span><br></pre></td></tr></table></figure>
+<p>编译以上代码，得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var AgriLoan = /** @class */ (function () &#123;</span><br><span class="line">    function AgriLoan(interest, rebate) &#123;</span><br><span class="line">        this.interest = interest;</span><br><span class="line">        this.rebate = rebate;</span><br><span class="line">    &#125;</span><br><span class="line">    return AgriLoan;</span><br><span class="line">&#125;());</span><br><span class="line">var obj = new AgriLoan(10, 1);</span><br><span class="line">console.log(&quot;利润为 : &quot; + obj.interest + &quot;，抽成为 : &quot; + obj.rebate);</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="鸭子类型-Duck-Typing"><a href="#鸭子类型-Duck-Typing" class="headerlink" title="鸭子类型(Duck Typing)"></a>鸭子类型(Duck Typing)</h2><p>鸭子类型（英语：duck typing）是动态类型的一种风格，是多态(polymorphism)的一种形式。</p>
+<p>在这种风格中，一个对象有效的语义，不是由继承自特定的类或实现特定的接口，而是由”当前方法和属性的集合”决定。</p>
+<blockquote>
+<p>可以这样表述：<br>“当看到一只鸟走起来像鸭子、游泳起来像鸭子、叫起来也像鸭子，那么这只鸟就可以被称为鸭子。”</p>
+</blockquote>
+<p>在鸭子类型中，关注点在于对象的行为，能作什么；而不是关注对象所属的类型。例如，在不使用鸭子类型的语言中，我们可以编写一个函数，它接受一个类型为”鸭子”的对象，并调用它的”走”和”叫”方法。在使用鸭子类型的语言中，这样的一个函数可以接受一个任意类型的对象，并调用它的”走”和”叫”方法。如果这些需要被调用的方法不存在，那么将引发一个运行时错误。任何拥有这样的正确的”走”和”叫”方法的对象都可被函数接受的这种行为引出了以上表述，这种决定类型的方式因此得名。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">interface IPoint &#123; </span><br><span class="line">    x:number </span><br><span class="line">    y:number </span><br><span class="line">&#125; </span><br><span class="line">function addPoints(p1:IPoint,p2:IPoint):IPoint &#123; </span><br><span class="line">    var x = p1.x + p2.x </span><br><span class="line">    var y = p1.y + p2.y </span><br><span class="line">    return &#123;x:x,y:y&#125; </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">// 正确</span><br><span class="line">var newPoint = addPoints(&#123;x:3,y:4&#125;,&#123;x:5,y:1&#125;)  </span><br><span class="line"> </span><br><span class="line">// 错误 </span><br><span class="line">var newPoint2 = addPoints(&#123;x:1&#125;,&#123;x:4,y:3&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="TypeScript-命名空间"><a href="#TypeScript-命名空间" class="headerlink" title="TypeScript 命名空间"></a>TypeScript 命名空间</h1><p>命名空间一个最明确的目的就是解决重名问题。</p>
+<p>假设这样一种情况，当一个班上有两个名叫小明的学生时，为了明确区分它们，我们在使用名字之外，不得不使用一些额外的信息，比如他们的姓（王小明，李小明），或者他们父母的名字等等。</p>
+<p>命名空间定义了标识符的可见范围，一个标识符可在多个名字空间中定义，它在不同名字空间中的含义是互不相干的。这样，在一个新的名字空间中可定义任何标识符，它们不会与任何已有的标识符发生冲突，因为已有的定义都处于其他名字空间中。</p>
+<p>TypeScript 中命名空间使用 namespace 来定义，语法格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">namespace SomeNameSpaceName &#123; </span><br><span class="line">   export interface ISomeInterfaceName &#123;      &#125;  </span><br><span class="line">   export class SomeClassName &#123;      &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以上定义了一个命名空间 SomeNameSpaceName，如果我们需要在外部可以调用 SomeNameSpaceName 中的类类和接口，则需要在类和接口添加 export 关键字。</p>
+<p>要在另外一个命名空间调用语法格式为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SomeNameSpaceName.SomeClassName;</span><br></pre></td></tr></table></figure>
+
+<p>如果一个命名空间在一个单独的 TypeScript 文件中，则应使用三斜杠 /// 引用它，语法格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/// &lt;reference path = &quot;SomeFileName.ts&quot; /&gt;</span><br></pre></td></tr></table></figure>
+
+<p>以下实例演示了命名空间的使用，定义在不同文件中：<br>IShape.ts 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">namespace Drawing &#123; </span><br><span class="line">    export interface IShape &#123; </span><br><span class="line">        draw(); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Circle.ts 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/// &lt;reference path = &quot;IShape.ts&quot; /&gt; </span><br><span class="line">namespace Drawing &#123; </span><br><span class="line">    export class Circle implements IShape &#123; </span><br><span class="line">        public draw() &#123; </span><br><span class="line">            console.log(&quot;Circle is drawn&quot;); </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Triangle.ts 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/// &lt;reference path = &quot;IShape.ts&quot; /&gt; </span><br><span class="line">namespace Drawing &#123; </span><br><span class="line">    export class Triangle implements IShape &#123; </span><br><span class="line">        public draw() &#123; </span><br><span class="line">            console.log(&quot;Triangle is drawn&quot;); </span><br><span class="line">        &#125; </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>TestShape.ts 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/// &lt;reference path = &quot;IShape.ts&quot; /&gt;   </span><br><span class="line">/// &lt;reference path = &quot;Circle.ts&quot; /&gt; </span><br><span class="line">/// &lt;reference path = &quot;Triangle.ts&quot; /&gt;  </span><br><span class="line">function drawAllShapes(shape:Drawing.IShape) &#123; </span><br><span class="line">    shape.draw(); </span><br><span class="line">&#125; </span><br><span class="line">drawAllShapes(new Drawing.Circle());</span><br><span class="line">drawAllShapes(new Drawing.Triangle());</span><br></pre></td></tr></table></figure>
+
+<p>使用 tsc 命令编译以上代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tsc --out app.js TestShape.ts  </span><br></pre></td></tr></table></figure>
+
+<p>得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">/// &lt;reference path = &quot;IShape.ts&quot; /&gt; </span><br><span class="line">var Drawing;</span><br><span class="line">(function (Drawing) &#123;</span><br><span class="line">    var Circle = /** @class */ (function () &#123;</span><br><span class="line">        function Circle() &#123;</span><br><span class="line">        &#125;</span><br><span class="line">        Circle.prototype.draw = function () &#123;</span><br><span class="line">            console.log(&quot;Circle is drawn&quot;);</span><br><span class="line">        &#125;;</span><br><span class="line">        return Circle;</span><br><span class="line">    &#125;());</span><br><span class="line">    Drawing.Circle = Circle;</span><br><span class="line">&#125;)(Drawing || (Drawing = &#123;&#125;));</span><br><span class="line">/// &lt;reference path = &quot;IShape.ts&quot; /&gt; </span><br><span class="line">var Drawing;</span><br><span class="line">(function (Drawing) &#123;</span><br><span class="line">    var Triangle = /** @class */ (function () &#123;</span><br><span class="line">        function Triangle() &#123;</span><br><span class="line">        &#125;</span><br><span class="line">        Triangle.prototype.draw = function () &#123;</span><br><span class="line">            console.log(&quot;Triangle is drawn&quot;);</span><br><span class="line">        &#125;;</span><br><span class="line">        return Triangle;</span><br><span class="line">    &#125;());</span><br><span class="line">    Drawing.Triangle = Triangle;</span><br><span class="line">&#125;)(Drawing || (Drawing = &#123;&#125;));</span><br><span class="line">/// &lt;reference path = &quot;IShape.ts&quot; /&gt;   </span><br><span class="line">/// &lt;reference path = &quot;Circle.ts&quot; /&gt; </span><br><span class="line">/// &lt;reference path = &quot;Triangle.ts&quot; /&gt;  </span><br><span class="line">function drawAllShapes(shape) &#123;</span><br><span class="line">    shape.draw();</span><br><span class="line">&#125;</span><br><span class="line">drawAllShapes(new Drawing.Circle());</span><br><span class="line">drawAllShapes(new Drawing.Triangle());</span><br></pre></td></tr></table></figure>
+
+<p>使用 node 命令查看输出结果为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ node app.js</span><br><span class="line">Circle is drawn</span><br><span class="line">Triangle is drawn</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="嵌套命名空间"><a href="#嵌套命名空间" class="headerlink" title="嵌套命名空间"></a>嵌套命名空间</h2><p>命名空间支持嵌套，即你可以将命名空间定义在另外一个命名空间里头。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">namespace namespace_name1 &#123; </span><br><span class="line">    export namespace namespace_name2 &#123;</span><br><span class="line">        export class class_name &#123;    &#125; </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>成员的访问使用点号 . 来实现，如下实例：<br>Invoice.ts 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">namespace Runoob &#123; </span><br><span class="line">   export namespace invoiceApp &#123; </span><br><span class="line">      export class Invoice &#123; </span><br><span class="line">         public calculateDiscount(price: number) &#123; </span><br><span class="line">            return price * .40; </span><br><span class="line">         &#125; </span><br><span class="line">      &#125; </span><br><span class="line">   &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>InvoiceTest.ts 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/// &lt;reference path = &quot;Invoice.ts&quot; /&gt;</span><br><span class="line">var invoice = new Runoob.invoiceApp.Invoice(); </span><br><span class="line">console.log(invoice.calculateDiscount(500));</span><br></pre></td></tr></table></figure>
+
+<p>使用 tsc 命令编译以上代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tsc --out app.js InvoiceTest.ts</span><br></pre></td></tr></table></figure>
+<p>得到以下 JavaScript 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">var Runoob;</span><br><span class="line">(function (Runoob) &#123;</span><br><span class="line">    var invoiceApp;</span><br><span class="line">    (function (invoiceApp) &#123;</span><br><span class="line">        var Invoice = /** @class */ (function () &#123;</span><br><span class="line">            function Invoice() &#123;</span><br><span class="line">            &#125;</span><br><span class="line">            Invoice.prototype.calculateDiscount = function (price) &#123;</span><br><span class="line">                return price * .40;</span><br><span class="line">            &#125;;</span><br><span class="line">            return Invoice;</span><br><span class="line">        &#125;());</span><br><span class="line">        invoiceApp.Invoice = Invoice;</span><br><span class="line">    &#125;)(invoiceApp = Runoob.invoiceApp || (Runoob.invoiceApp = &#123;&#125;));</span><br><span class="line">&#125;)(Runoob || (Runoob = &#123;&#125;));</span><br><span class="line">/// &lt;reference path = &quot;Invoice.ts&quot; /&gt;</span><br><span class="line">var invoice = new Runoob.invoiceApp.Invoice();</span><br><span class="line">console.log(invoice.calculateDiscount(500));</span><br></pre></td></tr></table></figure>
+<p>使用 node 命令查看输出结果为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ node app.js</span><br><span class="line">200</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="TypeScript-模块"><a href="#TypeScript-模块" class="headerlink" title="TypeScript 模块"></a>TypeScript 模块</h1><p>TypeScript 模块的设计理念是可以更换的组织代码。</p>
+<p>模块是在其自身的作用域里执行，并不是在全局作用域，这意味着定义在模块里面的变量、函数和类等在模块外部是不可见的，除非明确地使用 export 导出它们。类似地，我们必须通过 import 导入其他模块导出的变量、函数、类等。</p>
+<p>两个模块之间的关系是通过在文件级别上使用 import 和 export 建立的。</p>
+<p>模块使用模块加载器去导入其它的模块。 在运行时，模块加载器的作用是在执行此模块代码前去查找并执行这个模块的所有依赖。 大家最熟知的JavaScript模块加载器是服务于 Node.js 的 CommonJS 和服务于 Web 应用的 Require.js。</p>
+<p>此外还有有 SystemJs 和 Webpack。</p>
+<p>模块导出使用关键字 export 关键字，语法格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 文件名 : SomeInterface.ts </span><br><span class="line">export interface SomeInterface &#123; </span><br><span class="line">   // 代码部分</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>要在另外一个文件使用该模块就需要使用 import 关键字来导入:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import someInterfaceRef = require(&quot;./SomeInterface&quot;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>实例</strong></p>
+<p>IShape.ts 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/// &lt;reference path = &quot;IShape.ts&quot; /&gt; </span><br><span class="line">export interface IShape &#123; </span><br><span class="line">   draw(); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Circle.ts 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import shape = require(&quot;./IShape&quot;); </span><br><span class="line">export class Circle implements shape.IShape &#123; </span><br><span class="line">   public draw() &#123; </span><br><span class="line">      console.log(&quot;Cirlce is drawn (external module)&quot;); </span><br><span class="line">   &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Triangle.ts 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import shape = require(&quot;./IShape&quot;); </span><br><span class="line">export class Triangle implements shape.IShape &#123; </span><br><span class="line">   public draw() &#123; </span><br><span class="line">      console.log(&quot;Triangle is drawn (external module)&quot;); </span><br><span class="line">   &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>TestShape.ts 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">import shape = require(&quot;./IShape&quot;); </span><br><span class="line">import circle = require(&quot;./Circle&quot;); </span><br><span class="line">import triangle = require(&quot;./Triangle&quot;);  </span><br><span class="line"> </span><br><span class="line">function drawAllShapes(shapeToDraw: shape.IShape) &#123;</span><br><span class="line">   shapeToDraw.draw(); </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line">drawAllShapes(new circle.Circle()); </span><br><span class="line">drawAllShapes(new triangle.Triangle());</span><br></pre></td></tr></table></figure>
+
+<p>使用 tsc 命令编译以上代码（AMD）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tsc --module amd TestShape.ts </span><br></pre></td></tr></table></figure>
+
+<p>得到以下 JavaScript 代码：<br>IShape.js 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">define([&quot;require&quot;, &quot;exports&quot;], function (require, exports) &#123;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Circle.js 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">define([&quot;require&quot;, &quot;exports&quot;], function (require, exports) &#123;</span><br><span class="line">   var Circle = (function () &#123;</span><br><span class="line">      function Circle() &#123;</span><br><span class="line">      &#125;</span><br><span class="line">      Circle.prototype.draw = function () &#123;</span><br><span class="line">         console.log(&quot;Cirlce is drawn (external module)&quot;);</span><br><span class="line">      &#125;;</span><br><span class="line">      return Circle;</span><br><span class="line">   &#125;)();</span><br><span class="line">   exports.Circle = Circle;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Triangle.js 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">define([&quot;require&quot;, &quot;exports&quot;], function (require, exports) &#123;</span><br><span class="line">   var Triangle = (function () &#123;</span><br><span class="line">      function Triangle() &#123;</span><br><span class="line">      &#125;</span><br><span class="line">      Triangle.prototype.draw = function () &#123;</span><br><span class="line">         console.log(&quot;Triangle is drawn (external module)&quot;);</span><br><span class="line">      &#125;;</span><br><span class="line">      return Triangle;</span><br><span class="line">   &#125;)();</span><br><span class="line">   exports.Triangle = Triangle;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>TestShape.js 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">define([&quot;require&quot;, &quot;exports&quot;, &quot;./Circle&quot;, &quot;./Triangle&quot;], </span><br><span class="line">   function (require, exports, circle, triangle) &#123;</span><br><span class="line">   </span><br><span class="line">   function drawAllShapes(shapeToDraw) &#123;</span><br><span class="line">      shapeToDraw.draw();</span><br><span class="line">   &#125;</span><br><span class="line">   drawAllShapes(new circle.Circle());</span><br><span class="line">   drawAllShapes(new triangle.Triangle());</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>使用 tsc 命令编译以上代码（Commonjs）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tsc --module commonjs TestShape.ts</span><br></pre></td></tr></table></figure>
+
+<p>得到以下 JavaScript 代码：<br>Circle.js 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var Circle = (function () &#123;</span><br><span class="line">   function Circle() &#123;</span><br><span class="line">   &#125;</span><br><span class="line">   Circle.prototype.draw = function () &#123;</span><br><span class="line">      console.log(&quot;Cirlce is drawn&quot;);</span><br><span class="line">   &#125;;</span><br><span class="line">   return Circle;</span><br><span class="line">&#125;)();</span><br><span class="line"> </span><br><span class="line">exports.Circle = Circle;</span><br></pre></td></tr></table></figure>
+
+<p>Triangle.js 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var Triangle = (function () &#123;</span><br><span class="line">   function Triangle() &#123;</span><br><span class="line">   &#125;</span><br><span class="line">   Triangle.prototype.draw = function () &#123;</span><br><span class="line">      console.log(&quot;Triangle is drawn (external module)&quot;);</span><br><span class="line">   &#125;;</span><br><span class="line">   return Triangle;</span><br><span class="line">&#125;)();</span><br><span class="line">exports.Triangle = Triangle;</span><br></pre></td></tr></table></figure>
+
+<p>TestShape.js 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var circle = require(&quot;./Circle&quot;);</span><br><span class="line">var triangle = require(&quot;./Triangle&quot;);</span><br><span class="line"> </span><br><span class="line">function drawAllShapes(shapeToDraw) &#123;</span><br><span class="line">   shapeToDraw.draw();</span><br><span class="line">&#125;</span><br><span class="line">drawAllShapes(new circle.Circle());</span><br><span class="line">drawAllShapes(new triangle.Triangle());</span><br></pre></td></tr></table></figure>
+
+<p>输出结果为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Cirlce is drawn (external module)</span><br><span class="line">Triangle is drawn (external module)</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="TypeScript-声明文件"><a href="#TypeScript-声明文件" class="headerlink" title="TypeScript 声明文件"></a>TypeScript 声明文件</h1><p>TypeScript 作为 JavaScript 的超集，在开发过程中不可避免要引用其他第三方的 JavaScript 的库。虽然通过直接引用可以调用库的类和方法，但是却无法使用TypeScript 诸如类型检查等特性功能。为了解决这个问题，需要将这些库里的函数和方法体去掉后只保留导出类型声明，而产生了一个描述 JavaScript 库和模块信息的声明文件。通过引用这个声明文件，就可以借用 TypeScript 的各种特性来使用库文件了。</p>
+<p>假如我们想使用第三方库，比如 jQuery，我们通常这样获取一个 id 是 foo 的元素：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(&#x27;#foo&#x27;);</span><br><span class="line">// 或</span><br><span class="line">jQuery(&#x27;#foo&#x27;);</span><br></pre></td></tr></table></figure>
+
+<p>但是在 TypeScript 中，我们并不知道 $ 或 jQuery 是什么东西：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">jQuery(&#x27;#foo&#x27;);</span><br><span class="line"></span><br><span class="line">// index.ts(1,1): error TS2304: Cannot find name &#x27;jQuery&#x27;.</span><br></pre></td></tr></table></figure>
+
+<p>这时，我们需要使用 declare 关键字来定义它的类型，帮助 TypeScript 判断我们传入的参数类型对不对：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">declare var jQuery: (selector: string) =&gt; any;</span><br><span class="line"></span><br><span class="line">jQuery(&#x27;#foo&#x27;);</span><br></pre></td></tr></table></figure>
+
+<p>declare 定义的类型只会用于编译时的检查，编译结果中会被删除。</p>
+<p>上例的编译结果是：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jQuery(&#x27;#foo&#x27;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="声明文件"><a href="#声明文件" class="headerlink" title="声明文件"></a>声明文件</h2><p>声明文件以 .d.ts 为后缀，例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">runoob.d.ts</span><br></pre></td></tr></table></figure>
+
+<p>声明文件或模块的语法格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">declare module Module_Name &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>TypeScript 引入声明文件语法格式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/// &lt;reference path = &quot; runoob.d.ts&quot; /&gt;</span><br></pre></td></tr></table></figure>
+
+<p>当然，很多流行的第三方库的声明文件不需要我们定义了，比如 jQuery 已经有人帮我们定义好了：<a target="_blank" rel="noopener" href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/jquery/index.d.ts">jQuery in DefinitelyTyped</a>。</p>
+<p><strong>实例</strong></p>
+<p>以下定义一个第三方库来演示：<br>CalcThirdPartyJsLib.js 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">var Runoob;  </span><br><span class="line">(function(Runoob) &#123;</span><br><span class="line">    var Calc = (function () &#123; </span><br><span class="line">        function Calc() &#123; </span><br><span class="line">        &#125; </span><br><span class="line">    &#125;)</span><br><span class="line">    Calc.prototype.doSum = function (limit) &#123;</span><br><span class="line">        var sum = 0; </span><br><span class="line"> </span><br><span class="line">        for (var i = 0; i &lt;= limit; i++) &#123; </span><br><span class="line">            sum = sum + i; </span><br><span class="line">        &#125;</span><br><span class="line">        return sum; </span><br><span class="line">    &#125;</span><br><span class="line">    Runoob.Calc = Calc; </span><br><span class="line">    return Calc; </span><br><span class="line">&#125;)(Runoob || (Runoob = &#123;&#125;)); </span><br><span class="line">var test = new Runoob.Calc();</span><br></pre></td></tr></table></figure>
+
+<p>如果我们想在 TypeScript 中引用上面的代码，则需要设置声明文件 Calc.d.ts，代码如下：</p>
+<p>Calc.d.ts 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">declare module Runoob &#123; </span><br><span class="line">   export class Calc &#123; </span><br><span class="line">      doSum(limit:number) : number; </span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>声明文件不包含实现，它只是类型声明，把声明文件加入到 TypeScript 中：<br>CalcTest.ts 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/// &lt;reference path = &quot;Calc.d.ts&quot; /&gt; </span><br><span class="line">var obj = new Runoob.Calc(); </span><br><span class="line">// obj.doSum(&quot;Hello&quot;); // 编译错误</span><br><span class="line">console.log(obj.doSum(10));</span><br></pre></td></tr></table></figure>
+
+<p>下面这行导致编译错误，因为我们需要传入数字参数：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">obj.doSum(&quot;Hello&quot;);</span><br></pre></td></tr></table></figure>
+
+<p>使用 tsc 命令来编译以上代码文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tsc CalcTest.ts</span><br></pre></td></tr></table></figure>
+
+<p>生成的 JavaScript 代码如下：</p>
+<p>CalcTest.js 文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/// &lt;reference path = &quot;Calc.d.ts&quot; /&gt; </span><br><span class="line">var obj = new Runoob.Calc();</span><br><span class="line">//obj.doSum(&quot;Hello&quot;); // 编译错误</span><br><span class="line">console.log(obj.doSum(10));</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<hr>
+<p>参考：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/f97fc6bc0d56">TypeScript入门</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.runoob.com/typescript/ts-tutorial.html">TypeScript 教程</a></li>
+</ul>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 D05DdV@163.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>TypeScript教程</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="RacingK">RacingK</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-11-01, 16:13:18</p>
+    <p><span class="copy-title">最后更新:</span>2021-07-02, 20:01:51</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/TypeScript%E6%95%99%E7%A8%8B/" title="TypeScript教程">https://www.52ruankai.cn/TypeScript%E6%95%99%E7%A8%8B/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+<!-- 
+    <div id="comments"></div>
+<script>
+  new Valine({
+    el: '#comments',
+    appId: 'OVfMjrRltgj0gOIDIRKqAFsc-gzGzoHsz',
+    appKey: 'UozYUfoCJGOnEMdyxhaBB2lH',
+    placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+  })
+</script>
+ -->
+
+
+    <div id="comments"></div>
+<script>
+  new Valine({
+    el: '#comments',
+    appId: 'OVfMjrRltgj0gOIDIRKqAFsc-gzGzoHsz',
+    appKey: 'UozYUfoCJGOnEMdyxhaBB2lH',
+    placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+  })
+</script>
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2016-2020 RacingK</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80NzAwOS8yMzUwOQ==">
+  <script type="text/javascript">
+  (function(d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+      if (typeof LivereTower === 'function') { return; }
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+  </script>
+  <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":200,"height":350},"mobile":{"show":true},"react":{"opacity":0.7},"dialog":{"enable":true},"log":false});</script></body>
+<script src="/js/jquery.pjax.js?v=1.0.2" ></script>
+
+<script src="/js/script.js?v=1.0.2" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#小程序','#java','#Spring','#CentOS','#linux','#Elasticsearch','#Eclipse','#运维','#Node.js','#Hexo','#Next','#logstash','#javascript','#MySQL','#MongoDB','#IOC','#vue','#TypeScript','#ubuntu','#express','#Vim','#Vuex','#Vue','#WebAssembly','#windows','#cmd','#filebeat','#git','#ES6','#kibana','#ES','#jdk','#powershell','#CSS','#svn','#webpack','#ejs','#pug','#三阶魔方','#魔方','#Babel','#位运算','#位','#字节','#二进制','#sass','#less','#styl','#前端','#用户体验','#pwa','#vue-cli','#npm','#微信小程序','#速度','#赛车','#shell',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 604px;
+    }
+    .nav.fullscreen {
+        margin-left: -604px;
+    }
+    .nav-left {
+        width: 182px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 574px;
+        }
+        .nav.fullscreen {
+            margin-left: -574px;
+        }
+        .nav-left {
+            width: 182px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 574px;
+            margin-left: -574px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 574px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>generator入门 | RacingK&#39;s blog</title>
+  <meta name="keywords" content=" javascript , ES6 ">
+  <meta name="description" content="generator入门 | RacingK&#39;s blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="个人博客 记录生活 记录技术">
+<meta property="og:type" content="website">
+<meta property="og:title" content="文章分类">
+<meta property="og:url" content="https://www.52ruankai.cn/categories/index.html">
+<meta property="og:site_name" content="RacingK&#39;s blog">
+<meta property="og:description" content="个人博客 记录生活 记录技术">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-09-27T02:12:58.000Z">
+<meta property="article:modified_time" content="2021-07-02T12:01:51.924Z">
+<meta property="article:author" content="RacingK">
+<meta property="article:tag" content="前端博客,JavaScript,html5,css3,Jquery,NodeJs,Ubuntu,Vue,React">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.0.2" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.0.2" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.2" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="/js/iconfont.js?v=1.0.2" ></script>
+
+<script src="//unpkg.com/valine/dist/Valine.min.js" ></script>
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>RacingK</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="github" href="https://github.com/clear93-hub" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a title="weibo" href="https://weibo.com/52ruankai" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="jianshu" href="https://www.jianshu.com/u/11c5d2d55266" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-jianshu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="zhihu" href="https://www.zhihu.com/people/ruan-kai-44/activities" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-zhihu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="oschina" href="https://my.oschina.net/RacingK" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-oschina"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="juejin" href="https://juejin.im/user/5a913ad85188255de2010c05" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-juejin"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="email" href="mailto:D05DdV@163.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=736512612&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="kugou" href="https://www.kugou.com/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-kugou"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=53457140" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(62)</small></div></li>
+    
+        
+            
+            <li><div data-rel="小程序">小程序<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="java">java<small>(16)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="运维">运维<small>(6)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Node.js">Node.js<small>(4)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Hexo">Hexo<small>(4)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="javascript">javascript<small>(5)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="MySQL">MySQL<small>(4)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Next">Next<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="MongoDB">MongoDB<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="vue">vue<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Vuex">Vuex<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="WebAssembly">WebAssembly<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="windows">windows<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="git">git<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="CSS">CSS<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="svn">svn<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="webpack">webpack<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="魔方">魔方<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Babel">Babel<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="计算机科学与技术">计算机科学与技术<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="前端">前端<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="npm">npm<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="赛车">赛车<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="用户体验">用户体验<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="62">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="Search..." autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color4">小程序</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">java</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">Spring</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">CentOS</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">linux</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Elasticsearch</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Eclipse</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">运维</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Node.js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Hexo</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Next</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">logstash</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">javascript</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">MySQL</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">MongoDB</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">IOC</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">vue</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">TypeScript</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">ubuntu</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">express</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Vim</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Vuex</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Vue</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">WebAssembly</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">windows</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">cmd</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">filebeat</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">git</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">ES6</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">kibana</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">ES</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">jdk</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">powershell</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">CSS</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">svn</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">webpack</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">ejs</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">pug</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">三阶魔方</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">魔方</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">Babel</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">位运算</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">位</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">字节</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">二进制</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">sass</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">less</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">styl</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">前端</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">用户体验</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">pwa</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">vue-cli</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">npm</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">微信小程序</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">速度</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">赛车</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">shell</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="运维 "
+           href="/CentOS%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="CentOS,linux"
+           data-author="" >
+            <span class="post-title" title="CentOS系统操作常用命令">CentOS系统操作常用命令</span>
+            <span class="post-date" title="2020-01-08 11:28:04">2020/01/08</span>
+        </a>
+        
+        <a  class="java "
+           href="/Elasticsearch%E5%B8%B8%E7%94%A8%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/"
+           data-tag="java,Elasticsearch"
+           data-author="" >
+            <span class="post-title" title="Elasticsearch常用查询语句">Elasticsearch常用查询语句</span>
+            <span class="post-date" title="2020-09-09 16:05:17">2020/09/09</span>
+        </a>
+        
+        <a  class="java "
+           href="/Eclipse%E5%AE%89%E8%A3%85/"
+           data-tag="java,Eclipse"
+           data-author="" >
+            <span class="post-title" title="安装Eclipse">安装Eclipse</span>
+            <span class="post-date" title="2020-01-14 17:16:23">2020/01/14</span>
+        </a>
+        
+        <a  class="java "
+           href="/Elasticsearch%E4%B8%AD%E7%9A%84mappings/"
+           data-tag="java,Elasticsearch"
+           data-author="" >
+            <span class="post-title" title="Elasticsearch中的mappings">Elasticsearch中的mappings</span>
+            <span class="post-date" title="2020-09-09 16:39:46">2020/09/09</span>
+        </a>
+        
+        <a  class="java "
+           href="/Elasticsearch%E7%9A%84%E5%88%86%E8%AF%8D%E5%99%A8/"
+           data-tag="java,Elasticsearch"
+           data-author="" >
+            <span class="post-title" title="Elasticsearch的分词器">Elasticsearch的分词器</span>
+            <span class="post-date" title="2020-09-09 16:56:26">2020/09/09</span>
+        </a>
+        
+        <a  class="java "
+           href="/Elasticsearch%E7%B4%A2%E5%BC%95%E5%BA%93%E9%87%8D%E5%91%BD%E5%90%8D/"
+           data-tag="java,linux,Elasticsearch,运维"
+           data-author="" >
+            <span class="post-title" title="Elasticsearch索引库重命名">Elasticsearch索引库重命名</span>
+            <span class="post-date" title="2020-09-08 20:23:57">2020/09/08</span>
+        </a>
+        
+        <a  class="java "
+           href="/Elasticsearch%E4%BB%8B%E7%BB%8D/"
+           data-tag="java,Elasticsearch"
+           data-author="" >
+            <span class="post-title" title="Elasticsearch介绍">Elasticsearch介绍</span>
+            <span class="post-date" title="2020-09-09 15:55:53">2020/09/09</span>
+        </a>
+        
+        <a  class="Node.js "
+           href="/Express/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Express 入门">Express 入门</span>
+            <span class="post-date" title="2019-09-18 10:41:54">2019/09/18</span>
+        </a>
+        
+        <a  class="Hexo Next "
+           href="/Hexo-Next-%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/"
+           data-tag="Hexo,Next"
+           data-author="" >
+            <span class="post-title" title="Hexo Next 添加分类和标签">Hexo Next 添加分类和标签</span>
+            <span class="post-date" title="2019-09-27 11:40:27">2019/09/27</span>
+        </a>
+        
+        <a  class="Hexo Next "
+           href="/Hexo%E4%B9%8BNext/"
+           data-tag="Hexo,Next"
+           data-author="" >
+            <span class="post-title" title="Hexo之Next">Hexo之Next</span>
+            <span class="post-date" title="2019-09-27 09:08:38">2019/09/27</span>
+        </a>
+        
+        <a  class="Hexo "
+           href="/Hexo%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E5%AD%A6/"
+           data-tag="Hexo"
+           data-author="" >
+            <span class="post-title" title="Hexo 手把手教学">Hexo 手把手教学</span>
+            <span class="post-date" title="2019-09-26 15:28:23">2019/09/26</span>
+        </a>
+        
+        <a  class="java "
+           href="/Logstash%E5%AE%89%E8%A3%85/"
+           data-tag="java,logstash"
+           data-author="" >
+            <span class="post-title" title="Logstash安装">Logstash安装</span>
+            <span class="post-date" title="2020-09-11 11:14:44">2020/09/11</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/JavaScript-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%A6%81%E4%BD%BF%E7%94%A8-eval/"
+           data-tag="javascript"
+           data-author="" >
+            <span class="post-title" title="JavaScript 为什么不要使用 eval">JavaScript 为什么不要使用 eval</span>
+            <span class="post-date" title="2019-12-24 10:21:35">2019/12/24</span>
+        </a>
+        
+        <a  class="MySQL "
+           href="/MySQL-%E5%85%A5%E9%97%A8/"
+           data-tag="MySQL"
+           data-author="" >
+            <span class="post-title" title="MySQL 介绍">MySQL 介绍</span>
+            <span class="post-date" title="2019-10-15 11:37:37">2019/10/15</span>
+        </a>
+        
+        <a  class="MongoDB "
+           href="/MongoDB-%E5%85%A5%E9%97%A8/"
+           data-tag="MongoDB"
+           data-author="" >
+            <span class="post-title" title="MongoDB 入门">MongoDB 入门</span>
+            <span class="post-date" title="2020-01-06 11:24:55">2020/01/06</span>
+        </a>
+        
+        <a  class="Node.js "
+           href="/NodeJS-net-module/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="NodeJS的网络模块">NodeJS的网络模块</span>
+            <span class="post-date" title="2019-09-16 11:38:21">2019/09/16</span>
+        </a>
+        
+        <a  class="java "
+           href="/Spring-IOC/"
+           data-tag="java,Spring,IOC"
+           data-author="" >
+            <span class="post-title" title="Spring IOC">Spring IOC</span>
+            <span class="post-date" title="2020-08-25 10:56:36">2020/08/25</span>
+        </a>
+        
+        <a  class="vue "
+           href="/TypeScript%E6%95%99%E7%A8%8B/"
+           data-tag="vue,TypeScript"
+           data-author="" >
+            <span class="post-title" title="TypeScript教程">TypeScript教程</span>
+            <span class="post-date" title="2019-11-01 16:13:18">2019/11/01</span>
+        </a>
+        
+        <a  class="Node.js "
+           href="/Ubuntu-install-express-project/"
+           data-tag="linux,Node.js,ubuntu,express"
+           data-author="" >
+            <span class="post-title" title="Ubuntu下安装部署express项目">Ubuntu下安装部署express项目</span>
+            <span class="post-date" title="2019-09-17 11:14:00">2019/09/17</span>
+        </a>
+        
+        <a  class="运维 "
+           href="/Vim%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%95%B4%E7%90%86/"
+           data-tag="Vim"
+           data-author="" >
+            <span class="post-title" title="Vim常用操作整理">Vim常用操作整理</span>
+            <span class="post-date" title="2020-01-08 13:58:28">2020/01/08</span>
+        </a>
+        
+        <a  class="Vuex "
+           href="/Vuex%E7%9A%84%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8/"
+           data-tag="Vuex,Vue"
+           data-author="" >
+            <span class="post-title" title="Vuex的使用入门">Vuex的使用入门</span>
+            <span class="post-date" title="2019-10-25 10:18:10">2019/10/25</span>
+        </a>
+        
+        <a  class="Node.js "
+           href="/NodeJS%E7%9A%84fs%E6%A8%A1%E5%9D%97/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="NodeJS的fs模块">NodeJS的fs模块</span>
+            <span class="post-date" title="2019-09-11 11:28:21">2019/09/11</span>
+        </a>
+        
+        <a  class="WebAssembly "
+           href="/WebAssembly%E6%A6%82%E5%BF%B5%E5%85%A5%E9%97%A8/"
+           data-tag="WebAssembly"
+           data-author="" >
+            <span class="post-title" title="WebAssembly概念入门">WebAssembly概念入门</span>
+            <span class="post-date" title="2019-12-18 09:17:26">2019/12/18</span>
+        </a>
+        
+        <a  class=""
+           href="/chrome-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B1%9E%E6%80%A7/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="chrome://的一些属性">chrome://的一些属性</span>
+            <span class="post-date" title="2019-11-01 14:59:35">2019/11/01</span>
+        </a>
+        
+        <a  class="windows "
+           href="/cmd%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="windows,cmd"
+           data-author="" >
+            <span class="post-title" title="cmd常用命令">cmd常用命令</span>
+            <span class="post-date" title="2019-12-24 11:18:21">2019/12/24</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/don't-use-document.write/"
+           data-tag="javascript"
+           data-author="" >
+            <span class="post-title" title="不建议使用document.write">不建议使用document.write</span>
+            <span class="post-date" title="2019-09-09 09:30:00">2019/09/09</span>
+        </a>
+        
+        <a  class="java "
+           href="/filebeat-issue/"
+           data-tag="java,filebeat"
+           data-author="" >
+            <span class="post-title" title="filebeat issue">filebeat issue</span>
+            <span class="post-date" title="2020-09-14 13:35:15">2020/09/14</span>
+        </a>
+        
+        <a  class="git "
+           href="/git%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git常用操作">git常用操作</span>
+            <span class="post-date" title="2019-12-20 17:31:43">2019/12/20</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/generator%E5%85%A5%E9%97%A8/"
+           data-tag="javascript,ES6"
+           data-author="" >
+            <span class="post-title" title="generator入门">generator入门</span>
+            <span class="post-date" title="2019-12-27 17:08:26">2019/12/27</span>
+        </a>
+        
+        <a  class="git "
+           href="/git%E6%8A%A5-changes-not-staged-for-commit/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git报&#39;changes not staged for commit&#39;">git报&#39;changes not staged for commit&#39;</span>
+            <span class="post-date" title="2019-09-27 18:35:45">2019/09/27</span>
+        </a>
+        
+        <a  class="java "
+           href="/kibana-issue/"
+           data-tag="java,kibana"
+           data-author="" >
+            <span class="post-title" title="kibana issue">kibana issue</span>
+            <span class="post-date" title="2020-09-14 15:10:34">2020/09/14</span>
+        </a>
+        
+        <a  class="java "
+           href="/kibana%E5%AE%89%E8%A3%85/"
+           data-tag="java,linux,kibana,ES"
+           data-author="" >
+            <span class="post-title" title="kibana安装">kibana安装</span>
+            <span class="post-date" title="2020-09-09 14:50:22">2020/09/09</span>
+        </a>
+        
+        <a  class="java "
+           href="/linux%E4%B8%8BElasticsearch%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"
+           data-tag="java,linux,Elasticsearch,运维,filebeat"
+           data-author="" >
+            <span class="post-title" title="linux下Elasticsearch相关操作">linux下Elasticsearch相关操作</span>
+            <span class="post-date" title="2020-09-08 09:38:55">2020/09/08</span>
+        </a>
+        
+        <a  class="运维 MySQL "
+           href="/linux%E4%B8%8Bmysql%E6%93%8D%E4%BD%9C/"
+           data-tag="linux,运维,MySQL"
+           data-author="" >
+            <span class="post-title" title="linux下mysql操作">linux下mysql操作</span>
+            <span class="post-date" title="2020-09-02 17:30:43">2020/09/02</span>
+        </a>
+        
+        <a  class="java "
+           href="/linux%E4%B8%8B%E5%AE%89%E8%A3%85Elasticsearch7-9/"
+           data-tag="java,Elasticsearch,运维"
+           data-author="" >
+            <span class="post-title" title="linux下安装Elasticsearch7.9">linux下安装Elasticsearch7.9</span>
+            <span class="post-date" title="2020-09-02 08:52:07">2020/09/02</span>
+        </a>
+        
+        <a  class="java "
+           href="/linux%E5%AE%89%E8%A3%85jdk/"
+           data-tag="java,linux,jdk"
+           data-author="" >
+            <span class="post-title" title="linux安装jdk">linux安装jdk</span>
+            <span class="post-date" title="2020-09-01 17:44:34">2020/09/01</span>
+        </a>
+        
+        <a  class="运维 "
+           href="/linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux系统常用命令">linux系统常用命令</span>
+            <span class="post-date" title="2020-01-08 11:50:32">2020/01/08</span>
+        </a>
+        
+        <a  class="java "
+           href="/logstash-issue/"
+           data-tag="java,logstash"
+           data-author="" >
+            <span class="post-title" title="logstash issue">logstash issue</span>
+            <span class="post-date" title="2020-09-14 11:42:56">2020/09/14</span>
+        </a>
+        
+        <a  class="MySQL "
+           href="/mysql%E4%B9%8Bjoin/"
+           data-tag="MySQL"
+           data-author="" >
+            <span class="post-title" title="mysql之join">mysql之join</span>
+            <span class="post-date" title="2020-09-03 16:06:23">2020/09/03</span>
+        </a>
+        
+        <a  class="MySQL "
+           href="/mysql%E4%B9%8B%E6%9F%A5%E8%AF%A2/"
+           data-tag="MySQL"
+           data-author="" >
+            <span class="post-title" title="mysql之查询">mysql之查询</span>
+            <span class="post-date" title="2020-09-03 16:03:33">2020/09/03</span>
+        </a>
+        
+        <a  class="windows "
+           href="/powershell%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="windows,powershell"
+           data-author="" >
+            <span class="post-title" title="powershell常用命令">powershell常用命令</span>
+            <span class="post-date" title="2019-12-24 14:43:30">2019/12/24</span>
+        </a>
+        
+        <a  class="CSS "
+           href="/px-em-rem-vh-vw-media-%E4%B9%8B%E8%87%AA%E9%80%82%E5%BA%94%E6%96%B9%E6%B3%95/"
+           data-tag="CSS"
+           data-author="" >
+            <span class="post-title" title="px em rem vh vw @media 之自适应方法">px em rem vh vw @media 之自适应方法</span>
+            <span class="post-date" title="2020-01-02 16:30:08">2020/01/02</span>
+        </a>
+        
+        <a  class="svn "
+           href="/svn%E5%88%86%E6%94%AF%E5%90%88%E5%B9%B6%E4%B8%BB%E5%B9%B2/"
+           data-tag="svn"
+           data-author="" >
+            <span class="post-title" title="svn分支合并主干">svn分支合并主干</span>
+            <span class="post-date" title="2020-11-18 09:36:41">2020/11/18</span>
+        </a>
+        
+        <a  class="运维 "
+           href="/ubuntu%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="linux,ubuntu"
+           data-author="" >
+            <span class="post-title" title="ubuntu系统操作常用命令">ubuntu系统操作常用命令</span>
+            <span class="post-date" title="2020-01-06 17:49:57">2020/01/06</span>
+        </a>
+        
+        <a  class="vue "
+           href="/vue%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E4%BA%8B%E4%BB%B6%E8%A7%A6%E5%8F%91/"
+           data-tag="vue"
+           data-author="" >
+            <span class="post-title" title="vue组件之间如何进行事件触发">vue组件之间如何进行事件触发</span>
+            <span class="post-date" title="2019-11-05 11:48:04">2019/11/05</span>
+        </a>
+        
+        <a  class="vue "
+           href="/vue%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E4%BC%A0%E5%80%BC/"
+           data-tag="vue"
+           data-author="" >
+            <span class="post-title" title="vue组件之间的传值">vue组件之间的传值</span>
+            <span class="post-date" title="2019-10-24 09:01:54">2019/10/24</span>
+        </a>
+        
+        <a  class="webpack "
+           href="/webpack%E8%BD%AC%E6%8D%A2ejs-pug%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
+           data-tag="webpack,ejs,pug"
+           data-author="" >
+            <span class="post-title" title="webpack转换ejs pug模板引擎">webpack转换ejs pug模板引擎</span>
+            <span class="post-date" title="2019-10-10 14:20:55">2019/10/10</span>
+        </a>
+        
+        <a  class="魔方 "
+           href="/%E4%B8%89%E9%98%B6%E9%AD%94%E6%96%B9%E5%A4%8D%E5%8E%9F%E6%96%B9%E6%B3%95%E8%AE%B0%E5%BD%95/"
+           data-tag="三阶魔方,魔方"
+           data-author="" >
+            <span class="post-title" title="三阶魔方复原方法记录">三阶魔方复原方法记录</span>
+            <span class="post-date" title="2020-08-31 21:16:56">2020/08/31</span>
+        </a>
+        
+        <a  class="Babel "
+           href="/%E4%BA%94%E6%AD%A5%E6%90%9E%E5%AE%9A%EF%BC%8C%E4%BD%BF%E7%94%A8babel%E5%B0%86js%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84%E6%89%80%E6%9C%89js%E6%96%87%E4%BB%B6%E5%85%A8%E9%83%A8%E8%BD%AC%E7%A0%81%E5%88%B0compile%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B/"
+           data-tag="Babel"
+           data-author="" >
+            <span class="post-title" title="五步搞定，使用babel将js文件夹下的所有js文件全部转码到compile文件夹下">五步搞定，使用babel将js文件夹下的所有js文件全部转码到compile文件夹下</span>
+            <span class="post-date" title="2019-12-24 11:11:34">2019/12/24</span>
+        </a>
+        
+        <a  class="计算机科学与技术 "
+           href="/%E4%BD%8D%E8%BF%90%E7%AE%97/"
+           data-tag="位运算,位,字节,二进制"
+           data-author="" >
+            <span class="post-title" title="位运算">位运算</span>
+            <span class="post-date" title="2019-10-23 11:15:05">2019/10/23</span>
+        </a>
+        
+        <a  class="webpack "
+           href="/webpack%E9%85%8D%E7%BD%AE%E4%B9%8Bsass-less-styl%E7%9A%84%E5%BA%94%E7%94%A8/"
+           data-tag="webpack,sass,less,styl"
+           data-author="" >
+            <span class="post-title" title="webpack配置之sass less styl的应用">webpack配置之sass less styl的应用</span>
+            <span class="post-date" title="2019-10-10 11:59:42">2019/10/10</span>
+        </a>
+        
+        <a  class="Hexo "
+           href="/%E4%BF%AE%E6%94%B9Hexo%E4%B8%BB%E9%A2%98/"
+           data-tag="Hexo"
+           data-author="" >
+            <span class="post-title" title="修改Hexo主题">修改Hexo主题</span>
+            <span class="post-date" title="2019-12-24 13:42:18">2019/12/24</span>
+        </a>
+        
+        <a  class="前端 用户体验 "
+           href="/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E4%B8%AD%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"
+           data-tag="前端,用户体验"
+           data-author="" >
+            <span class="post-title" title="前端开发中用户体验注意事项">前端开发中用户体验注意事项</span>
+            <span class="post-date" title="2019-12-11 11:56:16">2019/12/11</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/%E5%85%A5%E9%97%A8PWA/"
+           data-tag="javascript,vue,pwa,vue-cli"
+           data-author="" >
+            <span class="post-title" title="入门PWA">入门PWA</span>
+            <span class="post-date" title="2019-10-29 11:08:04">2019/10/29</span>
+        </a>
+        
+        <a  class="git "
+           href="/%E5%90%8C%E4%B8%AA%E7%94%B5%E8%84%91%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E4%B8%8D%E5%90%8Cgit%E5%B9%B3%E5%8F%B0%E8%B4%A6%E6%88%B7/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="同个电脑配置多个不同git平台账户">同个电脑配置多个不同git平台账户</span>
+            <span class="post-date" title="2019-10-17 14:57:48">2019/10/17</span>
+        </a>
+        
+        <a  class="npm "
+           href="/%E5%A6%82%E4%BD%95%E7%94%A8CNPM%E4%BB%A3%E6%9B%BFNPM/"
+           data-tag="npm"
+           data-author="" >
+            <span class="post-title" title="如何用CNPM代替NPM">如何用CNPM代替NPM</span>
+            <span class="post-date" title="2019-12-24 09:57:37">2019/12/24</span>
+        </a>
+        
+        <a  class="webpack "
+           href="/%E5%AE%89%E8%A3%85webpack/"
+           data-tag="webpack"
+           data-author="" >
+            <span class="post-title" title="安装webpack">安装webpack</span>
+            <span class="post-date" title="2019-10-10 11:03:03">2019/10/10</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/%E5%B8%B8%E7%94%A8%E6%AD%A3%E5%88%99%E6%95%B4%E7%90%86/"
+           data-tag="javascript"
+           data-author="" >
+            <span class="post-title" title="常用正则整理">常用正则整理</span>
+            <span class="post-date" title="2019-12-24 10:36:42">2019/12/24</span>
+        </a>
+        
+        <a  class="小程序 "
+           href="/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"
+           data-tag="小程序,微信小程序"
+           data-author="" >
+            <span class="post-title" title="微信小程序开发中的注意事项">微信小程序开发中的注意事项</span>
+            <span class="post-date" title="2019-12-11 10:18:02">2019/12/11</span>
+        </a>
+        
+        <a  class="赛车 "
+           href="/%E6%9E%81%E9%99%90%E9%80%9F%E5%BA%A6%E6%8F%AD%E7%A7%98%E8%AE%B0%E5%BD%95/"
+           data-tag="速度,赛车"
+           data-author="" >
+            <span class="post-title" title="极限速度揭秘记录">极限速度揭秘记录</span>
+            <span class="post-date" title="2020-08-31 22:53:41">2020/08/31</span>
+        </a>
+        
+        <a  class="java "
+           href="/%E7%94%A8filebeat%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5ES/"
+           data-tag="java,Elasticsearch,运维,filebeat"
+           data-author="" >
+            <span class="post-title" title="用filebeat将数据导入ES">用filebeat将数据导入ES</span>
+            <span class="post-date" title="2020-09-08 09:05:32">2020/09/08</span>
+        </a>
+        
+        <a  class="运维 "
+           href="/%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6-shell%E8%84%9A%E6%9C%AC/"
+           data-tag="运维,shell"
+           data-author="" >
+            <span class="post-title" title="读写文件-shell脚本">读写文件-shell脚本</span>
+            <span class="post-date" title="2020-09-23 11:26:46">2020/09/23</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-generator入门" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">generator入门</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="javascript">javascript</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color1">javascript</a>
+            
+            <a class="color4">ES6</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2021-07-02 20:01:51'>2019-12-27 17:08</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5"><span class="toc-text">概念</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#yield"><span class="toc-text">yield</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#yield%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%A6%82%E6%9E%9C%E7%94%A8%E5%9C%A8%E5%8F%A6%E4%B8%80%E4%B8%AA%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B9%8B%E4%B8%AD%EF%BC%8C%E5%BF%85%E9%A1%BB%E6%94%BE%E5%9C%A8%E5%9C%86%E6%8B%AC%E5%8F%B7%E9%87%8C%E9%9D%A2"><span class="toc-text">yield表达式如果用在另一个表达式之中，必须放在圆括号里面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yield%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%94%A8%E4%BD%9C%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E6%88%96%E6%94%BE%E5%9C%A8%E8%B5%8B%E5%80%BC%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%8F%B3%E8%BE%B9%EF%BC%8C%E5%8F%AF%E4%BB%A5%E4%B8%8D%E5%8A%A0%E6%8B%AC%E5%8F%B7"><span class="toc-text">yield表达式用作函数参数或放在赋值表达式的右边，可以不加括号</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Generator%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-text">Generator应用场景</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%BC%82%E6%AD%A5%E6%93%8D%E4%BD%9C%E7%9A%84%E5%90%8C%E6%AD%A5%E5%8C%96%E8%A1%A8%E8%BE%BE"><span class="toc-text">1、异步操作的同步化表达</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%A0%E7%BB%9F%E6%96%B9%E6%B3%95"><span class="toc-text">传统方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%82%E6%AD%A5"><span class="toc-text">异步</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0"><span class="toc-text">回调函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Promise"><span class="toc-text">Promise</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Generator-%E5%87%BD%E6%95%B0"><span class="toc-text">Generator 函数</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8D%8F%E7%A8%8B"><span class="toc-text">协程</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8D%8F%E7%A8%8B%E7%9A%84-Generator-%E5%87%BD%E6%95%B0%E5%AE%9E%E7%8E%B0"><span class="toc-text">协程的 Generator 函数实现</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Generator-%E5%87%BD%E6%95%B0%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%E5%92%8C%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86"><span class="toc-text">Generator 函数的数据交换和错误处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E5%90%91-next-%E4%BC%A0%E9%80%92%E5%8F%82%E6%95%B0"><span class="toc-text">可以通过向.next()传递参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1%E7%9A%84%E5%B0%81%E8%A3%85"><span class="toc-text">异步任务的封装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E6%8E%A7%E5%88%B6%E6%B5%81%E7%AE%A1%E7%90%86"><span class="toc-text">2、控制流管理</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h1><p>Generator 的中文名称是生成器，它是ECMAScript6中提供的新特性。<br>Generator 函数是 ES6 提供的一种异步编程解决方案。</p>
+<p>在过去，封装一段运算逻辑的单元是函数。函数只存在“没有被调用”或者“被调用”的情况，不存在一个函数被执行之后还能暂停的情况，而Generator的出现让这种情况成为可能。</p>
+<p>通过function*来定义的函数称之为“生成器函数”（generator function），它的特点是可以中断函数的执行，每次执行yield语句之后，函数即暂停执行，直到调用返回的生成器对象的next()函数它才会继续执行。</p>
+<p>Generator 函数有多种理解角度。语法上，首先可以把它理解成，Generator 函数是一个状态机，封装了多个内部状态。</p>
+<p>执行 Generator 函数会返回一个遍历器对象（一个指向内部状态的指针对象），调用遍历器对象的next方法，使得指针移向下一个状态。每次调用next方法，内部指针就从函数头部或上一次停下来的地方开始执行，直到遇到下一个yield表达式（或return语句）为止。也就是说，Generator 函数除了状态机，还是一个遍历器对象生成函数。返回的遍历器对象，可以依次遍历 Generator 函数内部的每一个状态。</p>
+<p>形式上，Generator 函数是一个普通函数，但是有两个特征。一是，function关键字与函数名之间有一个星号；二是，函数体内部使用yield表达式，定义不同的内部状态（yield在英语里的意思就是“产出”）。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function* helloWorldGenerator() &#123;</span><br><span class="line">  yield &#x27;hello&#x27;;</span><br><span class="line">  yield &#x27;world&#x27;;</span><br><span class="line">  return &#x27;ending&#x27;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var hw = helloWorldGenerator();</span><br></pre></td></tr></table></figure>
+
+<p>上面代码定义了一个 Generator 函数helloWorldGenerator，它内部有两个yield表达式（hello和world），即该函数有三个状态：hello，world 和 return 语句（结束执行）。</p>
+<p>然后，Generator 函数的调用方法与普通函数一样，也是在函数名后面加上一对圆括号。不同的是，调用 Generator 函数后，该函数并不执行，返回的也不是函数运行结果，而是一个指向内部状态的指针对象，也就是上一章介绍的遍历器对象（Iterator Object）。</p>
+<p>下一步，必须调用遍历器对象的next方法，使得指针移向下一个状态。也就是说，每次调用next方法，内部指针就从函数头部或上一次停下来的地方开始执行，直到遇到下一个yield表达式（或return语句）为止。换言之，Generator 函数是分段执行的，yield表达式是暂停执行的标记，而next方法可以恢复执行。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">hw.next()</span><br><span class="line">// &#123; value: &#x27;hello&#x27;, done: false &#125;</span><br><span class="line"></span><br><span class="line">hw.next()</span><br><span class="line">// &#123; value: &#x27;world&#x27;, done: false &#125;</span><br><span class="line"></span><br><span class="line">hw.next()</span><br><span class="line">// &#123; value: &#x27;ending&#x27;, done: true &#125;</span><br><span class="line"></span><br><span class="line">hw.next()</span><br><span class="line">// &#123; value: undefined, done: true &#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码一共调用了四次next方法。</p>
+<p>第一次调用，Generator 函数开始执行，直到遇到第一个yield表达式为止。next方法返回一个对象，它的value属性就是当前yield表达式的值hello，done属性的值false，表示遍历还没有结束。</p>
+<p>第二次调用，Generator 函数从上次yield表达式停下的地方，一直执行到下一个yield表达式。next方法返回的对象的value属性就是当前yield表达式的值world，done属性的值false，表示遍历还没有结束。</p>
+<p>第三次调用，Generator 函数从上次yield表达式停下的地方，一直执行到return语句（如果没有return语句，就执行到函数结束）。next方法返回的对象的value属性，就是紧跟在return语句后面的表达式的值（如果没有return语句，则value属性的值为undefined），done属性的值true，表示遍历已经结束。</p>
+<p>第四次调用，此时 Generator 函数已经运行完毕，next方法返回对象的value属性为undefined，done属性为true。以后再调用next方法，返回的都是这个值。</p>
+<p>总结一下，调用 Generator 函数，返回一个遍历器对象，代表 Generator 函数的内部指针。以后，每次调用遍历器对象的next方法，就会返回一个有着value和done两个属性的对象。value属性表示当前的内部状态的值，是yield表达式后面那个表达式的值；done属性是一个布尔值，表示是否遍历结束。</p>
+<p>ES6 没有规定，function关键字与函数名之间的星号，写在哪个位置。这导致下面的写法都能通过。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function * foo(x, y) &#123; ··· &#125;</span><br><span class="line">function *foo(x, y) &#123; ··· &#125;</span><br><span class="line">function* foo(x, y) &#123; ··· &#125;</span><br><span class="line">function*foo(x, y) &#123; ··· &#125;</span><br></pre></td></tr></table></figure>
+
+<p>由于 Generator 函数仍然是普通函数，所以一般的写法是上面的第三种，即星号紧跟在function关键字后面。本书也采用这种写法。</p>
+<br>
+
+<hr>
+<br>
+
+
+<h1 id="yield"><a href="#yield" class="headerlink" title="yield"></a>yield</h1><p>真正让Generator具有价值的是yield关键字，这个yield关键字让 Generator内部的逻辑能够切割成多个部分。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">let compute = function* (a, b) &#123;</span><br><span class="line">  let sum = a + b;</span><br><span class="line">  yield console.log(sum);</span><br><span class="line">  let c = a - b;</span><br><span class="line">  yield console.log(c);</span><br><span class="line">  let d = a * b;</span><br><span class="line">  yield console.log(d);</span><br><span class="line">  let e = a / b;</span><br><span class="line">  console.log(e);</span><br><span class="line">&#125;;</span><br><span class="line">// 执行一下这个函数得到 Generator 实例</span><br><span class="line">let generator = compute(4, 2);</span><br><span class="line">// 要使得函数中封装的代码逻辑得到执行，还得需要调用一次next方法。</span><br><span class="line">generator.next();</span><br></pre></td></tr></table></figure>
+
+<p>输出结果：<br>6</p>
+<p>发现函数执行到第一个yield关键字的时候就停止了。要让业务逻辑继续执行完，需要反复调用.next()。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">generator.next();</span><br><span class="line">generator.next();</span><br><span class="line">generator.next();</span><br><span class="line">generator.next();</span><br></pre></td></tr></table></figure>
+
+
+<p>可以简单地理解为yield关键字将程序逻辑划分成几部分，每次.next()执行时执行一部分。这使得程序的执行单元再也不是函数，<strong>复杂的逻辑可以通过yield来暂停</strong>。</p>
+<p>遍历器对象的next方法的运行逻辑如下。</p>
+<p>（1）遇到yield表达式，就暂停执行后面的操作，并将紧跟在yield后面的那个表达式的值，作为返回的对象的value属性值。</p>
+<p>（2）下一次调用next方法时，再继续往下执行，直到遇到下一个yield表达式。</p>
+<p>（3）如果没有再遇到新的yield表达式，就一直运行到函数结束，直到return语句为止，并将return语句后面的表达式的值，作为返回的对象的value属性值。</p>
+<p>（4）如果该函数没有return语句，则返回的对象的value属性值为undefined。</p>
+<p>需要注意的是，yield表达式后面的表达式，只有当调用next方法、内部指针指向该语句时才会执行，因此等于为 JavaScript 提供了手动的“惰性求值”（Lazy Evaluation）的语法功能。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function* gen() &#123;</span><br><span class="line">  yield  123 + 456;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，yield后面的表达式123 + 456，不会立即求值，只会在next方法将指针移到这一句时，才会求值。</p>
+<p>yield表达式与return语句既有相似之处，也有区别。相似之处在于，都能返回紧跟在语句后面的那个表达式的值。区别在于每次遇到yield，函数暂停执行，下一次再从该位置继续向后执行，而return语句不具备位置记忆的功能。一个函数里面，只能执行一次（或者说一个）return语句，但是可以执行多次（或者说多个）yield表达式。正常函数只能返回一个值，因为只能执行一次return；Generator 函数可以返回一系列的值，因为可以有任意多个yield。从另一个角度看，也可以说 Generator 生成了一系列的值，这也就是它的名称的来历（英语中，generator 这个词是“生成器”的意思）。</p>
+<p>Generator 函数可以不用yield表达式，这时就变成了一个单纯的暂缓执行函数。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function* f() &#123;</span><br><span class="line">  console.log(&#x27;执行了！&#x27;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var generator = f();</span><br><span class="line"></span><br><span class="line">setTimeout(function () &#123;</span><br><span class="line">  generator.next()</span><br><span class="line">&#125;, 2000);</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，函数f如果是普通函数，在为变量generator赋值时就会执行。但是，函数f是一个 Generator 函数，就变成只有调用next方法时，函数f才会执行。</p>
+<p>另外需要注意，<strong>yield表达式只能用在 Generator 函数里面，用在其他地方都会报错</strong>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(function ()&#123;</span><br><span class="line">  yield 1;</span><br><span class="line">&#125;)()</span><br><span class="line">// SyntaxError: Unexpected number</span><br></pre></td></tr></table></figure>
+
+<p>上面代码在一个普通函数中使用yield表达式，结果产生一个句法错误。</p>
+<br>
+
+<hr>
+<h2 id="yield表达式如果用在另一个表达式之中，必须放在圆括号里面"><a href="#yield表达式如果用在另一个表达式之中，必须放在圆括号里面" class="headerlink" title="yield表达式如果用在另一个表达式之中，必须放在圆括号里面"></a>yield表达式如果用在另一个表达式之中，必须放在圆括号里面</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function* demo() &#123;</span><br><span class="line">  console.log(&#x27;Hello&#x27; + yield); // SyntaxError</span><br><span class="line">  console.log(&#x27;Hello&#x27; + yield 123); // SyntaxError</span><br><span class="line"></span><br><span class="line">  console.log(&#x27;Hello&#x27; + (yield)); // OK</span><br><span class="line">  console.log(&#x27;Hello&#x27; + (yield 123)); // OK</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="yield表达式用作函数参数或放在赋值表达式的右边，可以不加括号"><a href="#yield表达式用作函数参数或放在赋值表达式的右边，可以不加括号" class="headerlink" title="yield表达式用作函数参数或放在赋值表达式的右边，可以不加括号"></a>yield表达式用作函数参数或放在赋值表达式的右边，可以不加括号</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function* demo() &#123;</span><br><span class="line">  foo(yield &#x27;a&#x27;, yield &#x27;b&#x27;); // OK</span><br><span class="line">  let input = yield; // OK</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="Generator应用场景"><a href="#Generator应用场景" class="headerlink" title="Generator应用场景"></a>Generator应用场景</h1><h2 id="1、异步操作的同步化表达"><a href="#1、异步操作的同步化表达" class="headerlink" title="1、异步操作的同步化表达"></a>1、异步操作的同步化表达</h2><p>异步编程对 JavaScript 语言太重要。JavaScript 语言的执行环境是“单线程”的，如果没有异步编程，根本没法用，非卡死不可</p>
+<h3 id="传统方法"><a href="#传统方法" class="headerlink" title="传统方法"></a>传统方法</h3><p>ES6 诞生以前，异步编程的方法，大概有下面四种。</p>
+<ul>
+<li>回调函数</li>
+<li>事件监听</li>
+<li>发布/订阅</li>
+<li>Promise 对象</li>
+</ul>
+<p>Generator 函数将 JavaScript 异步编程带入了一个全新的阶段。</p>
+<h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><h4 id="异步"><a href="#异步" class="headerlink" title="异步"></a>异步</h4><p>所谓”异步”，简单说就是一个任务不是连续完成的，可以理解成该任务被人为分成两段，先执行第一段，然后转而执行其他任务，等做好了准备，再回过头执行第二段。<br>比如，有一个任务是读取文件进行处理，任务的第一段是向操作系统发出请求，要求读取文件。然后，程序执行其他任务，等到操作系统返回文件，再接着执行任务的第二段（处理文件）。这种不连续的执行，就叫做异步。<br>相应地，连续的执行就叫做同步。由于是连续执行，不能插入其他任务，所以操作系统从硬盘读取文件的这段时间，程序只能干等着。</p>
+<h4 id="回调函数"><a href="#回调函数" class="headerlink" title="回调函数"></a>回调函数</h4><p>JavaScript 语言对异步编程的实现，就是回调函数。所谓回调函数，就是把任务的第二段单独写在一个函数里面，等到重新执行这个任务的时候，就直接调用这个函数。回调函数的英语名字callback，直译过来就是”重新调用”。</p>
+<p>读取文件进行处理，是这样写的。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fs.readFile(&#x27;/etc/passwd&#x27;, &#x27;utf-8&#x27;, function (err, data) &#123;</span><br><span class="line">  if (err) throw err;</span><br><span class="line">  console.log(data);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，readFile函数的第三个参数，就是回调函数，也就是任务的第二段。等到操作系统返回了/etc/passwd这个文件以后，回调函数才会执行。</p>
+<p>一个有趣的问题是，为什么 Node 约定，回调函数的第一个参数，必须是错误对象err（如果没有错误，该参数就是null）？</p>
+<p>原因是执行分成两段，第一段执行完以后，任务所在的上下文环境就已经结束了。在这以后抛出的错误，原来的上下文环境已经无法捕捉，只能当作参数，传入第二段。</p>
+<h4 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h4><p>回调函数本身并没有问题，它的问题出现在多个回调函数嵌套。假定读取A文件之后，再读取B文件，代码如下。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">fs.readFile(fileA, &#x27;utf-8&#x27;, function (err, data) &#123;</span><br><span class="line">  fs.readFile(fileB, &#x27;utf-8&#x27;, function (err, data) &#123;</span><br><span class="line">    // ...</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>不难想象，如果依次读取两个以上的文件，就会出现多重嵌套。代码不是纵向发展，而是横向发展，很快就会乱成一团，无法管理。因为多个异步操作形成了强耦合，只要有一个操作需要修改，它的上层回调函数和下层回调函数，可能都要跟着修改。这种情况就称为”回调函数地狱”（callback hell）。</p>
+<p>Promise 对象就是为了解决这个问题而提出的。它不是新的语法功能，而是一种新的写法，允许将回调函数的嵌套，改成链式调用。采用 Promise，连续读取多个文件，写法如下。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var readFile = require(&#x27;fs-readfile-promise&#x27;);</span><br><span class="line"></span><br><span class="line">readFile(fileA)</span><br><span class="line">.then(function (data) &#123;</span><br><span class="line">  console.log(data.toString());</span><br><span class="line">&#125;)</span><br><span class="line">.then(function () &#123;</span><br><span class="line">  return readFile(fileB);</span><br><span class="line">&#125;)</span><br><span class="line">.then(function (data) &#123;</span><br><span class="line">  console.log(data.toString());</span><br><span class="line">&#125;)</span><br><span class="line">.catch(function (err) &#123;</span><br><span class="line">  console.log(err);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，我使用了fs-readfile-promise模块，它的作用就是返回一个 Promise 版本的readFile函数。Promise 提供then方法加载回调函数，catch方法捕捉执行过程中抛出的错误。</p>
+<p>可以看到，Promise 的写法只是回调函数的改进，使用then方法以后，异步任务的两段执行看得更清楚了，除此以外，并无新意。</p>
+<p>Promise 的最大问题是代码冗余，原来的任务被 Promise 包装了一下，不管什么操作，一眼看去都是一堆then，原来的语义变得很不清楚。</p>
+<p>那么，有没有更好的写法呢？</p>
+<h4 id="Generator-函数"><a href="#Generator-函数" class="headerlink" title="Generator 函数"></a>Generator 函数</h4><h5 id="协程"><a href="#协程" class="headerlink" title="协程"></a>协程</h5><p>传统的编程语言，早有异步编程的解决方案（其实是多任务的解决方案）。其中有一种叫做”协程”（coroutine），意思是多个线程互相协作，完成异步任务。<br>协程有点像函数，又有点像线程。它的运行流程大致如下。</p>
+<ul>
+<li>第一步，协程A开始执行。</li>
+<li>第二步，协程A执行到一半，进入暂停，执行权转移到协程B。</li>
+<li>第三步，（一段时间后）协程B交还执行权。</li>
+<li>第四步，协程A恢复执行。</li>
+</ul>
+<p>上面流程的协程A，就是异步任务，因为它分成两段（或多段）执行。<br>举例来说，读取文件的协程写法如下。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function* asyncJob() &#123;</span><br><span class="line">  // ...其他代码</span><br><span class="line">  var f = yield readFile(fileA);</span><br><span class="line">  // ...其他代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码的函数asyncJob是一个协程，它的奥妙就在其中的yield命令。它表示执行到此处，执行权将交给其他协程。也就是说，yield命令是异步两个阶段的分界线。</p>
+<p>协程遇到yield命令就暂停，等到执行权返回，再从暂停的地方继续往后执行。它的最大优点，就是代码的写法非常像同步操作，如果去除yield命令，简直一模一样。</p>
+<h5 id="协程的-Generator-函数实现"><a href="#协程的-Generator-函数实现" class="headerlink" title="协程的 Generator 函数实现"></a>协程的 Generator 函数实现</h5><p>Generator 函数是协程在 ES6 的实现，最大特点就是可以交出函数的执行权（即暂停执行）。</p>
+<p>整个 Generator 函数就是一个封装的异步任务，或者说是异步任务的容器。异步操作需要暂停的地方，都用yield语句注明。Generator 函数的执行方法如下。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function* gen(x) &#123;</span><br><span class="line">  var y = yield x + 2;</span><br><span class="line">  return y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var g = gen(1);</span><br><span class="line">g.next() // &#123; value: 3, done: false &#125;</span><br><span class="line">g.next() // &#123; value: undefined, done: true &#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，调用 Generator 函数，会返回一个内部指针（即遍历器）g。这是 Generator 函数不同于普通函数的另一个地方，即执行它不会返回结果，返回的是指针对象。调用指针g的next方法，会移动内部指针（即执行异步任务的第一段），指向第一个遇到的yield语句，上例是执行到x + 2为止。</p>
+<p>换言之，next方法的作用是分阶段执行Generator函数。每次调用next方法，会返回一个对象，表示当前阶段的信息（value属性和done属性）。value属性是yield语句后面表达式的值，表示当前阶段的值；done属性是一个布尔值，表示 Generator 函数是否执行完毕，即是否还有下一个阶段。</p>
+<p>Generator函数的暂停执行的效果，意味着可以把异步操作写在yield表达式里面，等到调用next方法时再往后执行。这实际上等同于不需要写回调函数了，因为异步操作的后续操作可以放在yield表达式下面，反正要等到调用next方法时再执行。所以，Generator函数的一个重要实际意义就是用来处理异步操作，改写回调函数。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function* loadUI() &#123;</span><br><span class="line">  showLoadingScreen();</span><br><span class="line">  yield loadUIDataAsynchronously();</span><br><span class="line">  hideLoadingScreen();</span><br><span class="line">&#125;</span><br><span class="line">var loader = loadUI();</span><br><span class="line">// 加载UI</span><br><span class="line">loader.next()</span><br><span class="line"></span><br><span class="line">// 卸载UI</span><br><span class="line">loader.next()</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，第一次调用loadUI函数时，该函数不会执行，仅返回一个遍历器。下一次对该遍历器调用next方法，则会显示Loading界面，并且异步加载数据。等到数据加载完成，再一次使用next方法，则会隐藏Loading界面。可以看到，这种写法的好处是所有Loading界面的逻辑，都被封装在一个函数，按部就班非常清晰。</p>
+<p>Ajax是典型的异步操作，通过Generator函数部署Ajax操作，可以用同步的方式表达。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function* main() &#123;</span><br><span class="line">  var result = yield request(&quot;http://some.url&quot;);</span><br><span class="line">  var resp = JSON.parse(result);</span><br><span class="line">    console.log(resp.value);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function request(url) &#123;</span><br><span class="line">  makeAjaxCall(url, function(response)&#123;</span><br><span class="line">    it.next(response);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var it = main();</span><br><span class="line">it.next();</span><br></pre></td></tr></table></figure>
+
+<p>上面代码的main函数，就是通过Ajax操作获取数据。可以看到，除了多了一个·yield，它几乎与同步操作的写法完全一样。注意，makeAjaxCall函数中的next方法，必须加上response参数，因为yield表达式，本身是没有值的，总是等于undefined。</p>
+<p>下面是另一个例子，通过 Generator 函数逐行读取文本文件。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function* numbers() &#123;</span><br><span class="line">  let file = new FileReader(&quot;numbers.txt&quot;);</span><br><span class="line">  try &#123;</span><br><span class="line">    while(!file.eof) &#123;</span><br><span class="line">      yield parseInt(file.readLine(), 10);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; finally &#123;</span><br><span class="line">    file.close();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面代码打开文本文件，使用yield表达式可以手动逐行读取文件。</p>
+<br>
+
+
+<h2 id="Generator-函数的数据交换和错误处理"><a href="#Generator-函数的数据交换和错误处理" class="headerlink" title="Generator 函数的数据交换和错误处理"></a>Generator 函数的数据交换和错误处理</h2><p>Generator 函数可以暂停执行和恢复执行，这是它能封装异步任务的根本原因。除此之外，它还有两个特性，使它可以作为异步编程的完整解决方案：函数体内外的数据交换和错误处理机制。</p>
+<p>next返回值的 value 属性，是 Generator 函数向外输出数据；next方法还可以接受参数，向 Generator 函数体内输入数据。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function* gen(x)&#123;</span><br><span class="line">  var y = yield x + 2;</span><br><span class="line">  return y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var g = gen(1);</span><br><span class="line">g.next() // &#123; value: 3, done: false &#125;</span><br><span class="line">g.next(2) // &#123; value: 2, done: true &#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，第一个next方法的value属性，返回表达式x + 2的值3。第二个next方法带有参数2，这个参数可以传入 Generator 函数，作为上个阶段异步任务的返回结果，被函数体内的变量y接收。因此，这一步的value属性，返回的就是2（变量y的值）。</p>
+<p>Generator 函数内部还可以部署错误处理代码，捕获函数体外抛出的错误。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function* gen(x)&#123;</span><br><span class="line">  try &#123;</span><br><span class="line">    var y = yield x + 2;</span><br><span class="line">  &#125; catch (e)&#123;</span><br><span class="line">    console.log(e);</span><br><span class="line">  &#125;</span><br><span class="line">  return y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var g = gen(1);</span><br><span class="line">g.next();</span><br><span class="line">g.throw(&#x27;出错了&#x27;);</span><br><span class="line">// 出错了</span><br></pre></td></tr></table></figure>
+
+<p>上面代码的最后一行，Generator 函数体外，使用指针对象的throw方法抛出的错误，可以被函数体内的try…catch代码块捕获。这意味着，出错的代码与处理错误的代码，实现了时间和空间上的分离，这对于异步编程无疑是很重要的。</p>
+<br>
+
+<h3 id="可以通过向-next-传递参数"><a href="#可以通过向-next-传递参数" class="headerlink" title="可以通过向.next()传递参数"></a>可以通过向.next()传递参数</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let compute = function* (a, b) &#123;</span><br><span class="line">  var foo = yield a + b;</span><br><span class="line">  console.log(foo);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">let generator = compute(4, 2);</span><br><span class="line">generator.next(); // &#123;value: 6, done: false&#125;</span><br><span class="line">generator.next(&quot;Hello world!&quot;); //Hello world! &#123;value: undefined, done: true&#125;</span><br></pre></td></tr></table></figure>
+
+<p>通过.next()传递参数，可以赋值给yield关键字前面的变量声明。</p>
+<p>所以，对于Generator而言，它不仅可以将逻辑的单元切分得更细外，还能在暂停和继续执行的间隔中，动态传入数据，使得代码逻辑可以更灵活。</p>
+<h3 id="异步任务的封装"><a href="#异步任务的封装" class="headerlink" title="异步任务的封装"></a>异步任务的封装</h3><p>下面看看如何使用 Generator 函数，执行一个真实的异步任务。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var fetch = require(&#x27;node-fetch&#x27;);</span><br><span class="line"></span><br><span class="line">function* gen()&#123;</span><br><span class="line">  var url = &#x27;https://api.github.com/users/github&#x27;;</span><br><span class="line">  var result = yield fetch(url);</span><br><span class="line">  console.log(result.bio);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，Generator 函数封装了一个异步操作，该操作先读取一个远程接口，然后从 JSON 格式的数据解析信息。就像前面说过的，这段代码非常像同步操作，除了加上了yield命令。</p>
+<p>执行这段代码的方法如下。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var g = gen();</span><br><span class="line">var result = g.next();</span><br><span class="line"></span><br><span class="line">result.value.then(function(data)&#123;</span><br><span class="line">  return data.json();</span><br><span class="line">&#125;).then(function(data)&#123;</span><br><span class="line">  g.next(data);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，首先执行 Generator 函数，获取遍历器对象，然后使用next方法（第二行），执行异步任务的第一阶段。由于Fetch模块返回的是一个 Promise 对象，因此要用then方法调用下一个next方法。</p>
+<p>可以看到，虽然 Generator 函数将异步操作表示得很简洁，但是流程管理却不方便（即何时执行第一阶段、何时执行第二阶段）。</p>
+<h2 id="2、控制流管理"><a href="#2、控制流管理" class="headerlink" title="2、控制流管理"></a>2、控制流管理</h2><p>如果有一个多步操作非常耗时，采用回调函数，可能会写成下面这样。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">step1(function (value1) &#123;</span><br><span class="line">  step2(value1, function(value2) &#123;</span><br><span class="line">    step3(value2, function(value3) &#123;</span><br><span class="line">      step4(value3, function(value4) &#123;</span><br><span class="line">        // Do something with value4</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>采用 Promise 改写上面的代码。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Promise.resolve(step1)</span><br><span class="line">  .then(step2)</span><br><span class="line">  .then(step3)</span><br><span class="line">  .then(step4)</span><br><span class="line">  .then(function (value4) &#123;</span><br><span class="line">    // Do something with value4</span><br><span class="line">  &#125;, function (error) &#123;</span><br><span class="line">    // Handle any error from step1 through step4</span><br><span class="line">  &#125;)</span><br><span class="line">  .done();</span><br></pre></td></tr></table></figure>
+
+<p>上面代码已经把回调函数，改成了直线执行的形式，但是加入了大量 Promise 的语法。Generator 函数可以进一步改善代码运行流程。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function* longRunningTask(value1) &#123;</span><br><span class="line">  try &#123;</span><br><span class="line">    var value2 = yield step1(value1);</span><br><span class="line">    var value3 = yield step2(value2);</span><br><span class="line">    var value4 = yield step3(value3);</span><br><span class="line">    var value5 = yield step4(value4);</span><br><span class="line">    // Do something with value4</span><br><span class="line">  &#125; catch (e) &#123;</span><br><span class="line">    // Handle any error from step1 through step4</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后，使用一个函数，按次序自动执行所有步骤。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">scheduler(longRunningTask(initialValue));</span><br><span class="line"></span><br><span class="line">function scheduler(task) &#123;</span><br><span class="line">  var taskObj = task.next(task.value);</span><br><span class="line">  // 如果Generator函数未结束，就继续调用</span><br><span class="line">  if (!taskObj.done) &#123;</span><br><span class="line">    task.value = taskObj.value</span><br><span class="line">    scheduler(task);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意，上面这种做法，只适合同步操作，即所有的task都必须是同步的，不能有异步操作。因为这里的代码一得到返回值，就继续往下执行，没有判断异步操作何时完成。</p>
+<p>下面，利用for…of循环会自动依次执行yield命令的特性，提供一种更一般的控制流管理的方法。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let steps = [step1Func, step2Func, step3Func];</span><br><span class="line"></span><br><span class="line">function *iterateSteps(steps)&#123;</span><br><span class="line">  for (var i=0; i&lt; steps.length; i++)&#123;</span><br><span class="line">    var step = steps[i];</span><br><span class="line">    yield step();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，数组steps封装了一个任务的多个步骤，Generator 函数iterateSteps则是依次为这些步骤加上yield命令。</p>
+<p>将任务分解成步骤之后，还可以将项目分解成多个依次执行的任务。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let jobs = [job1, job2, job3];</span><br><span class="line"></span><br><span class="line">function* iterateJobs(jobs)&#123;</span><br><span class="line">  for (var i=0; i&lt; jobs.length; i++)&#123;</span><br><span class="line">    var job = jobs[i];</span><br><span class="line">    yield* iterateSteps(job.steps);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，数组jobs封装了一个项目的多个任务，Generator 函数iterateJobs则是依次为这些任务加上yield*命令。</p>
+<p>最后，就可以用for…of循环一次性依次执行所有任务的所有步骤。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for (var step of iterateJobs(jobs))&#123;</span><br><span class="line">  console.log(step.id);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>再次提醒，上面的做法只能用于所有步骤都是同步操作的情况，不能有异步操作的步骤。</p>
+<p>for…of的本质是一个while循环，所以上面的代码实质上执行的是下面的逻辑。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var it = iterateJobs(jobs);</span><br><span class="line">var res = it.next();</span><br><span class="line"></span><br><span class="line">while (!res.done)&#123;</span><br><span class="line">  var result = res.value;</span><br><span class="line">  // ...</span><br><span class="line">  res = it.next();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+<br>
+<br>
+
+<hr>
+<p>参考：</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/92639e681e2a">js异步编程之Generator</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/c7f4129d7794">【ES6】Generator应用场景</a></li>
+<li><a target="_blank" rel="noopener" href="http://es6.ruanyifeng.com/#docs/generator-async">Generator 函数的异步应用</a></li>
+<li><a target="_blank" rel="noopener" href="http://es6.ruanyifeng.com/#docs/generator">Generator 函数的语法</a></li>
+</ol>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 D05DdV@163.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>generator入门</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="RacingK">RacingK</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-12-27, 17:08:26</p>
+    <p><span class="copy-title">最后更新:</span>2021-07-02, 20:01:51</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/generator%E5%85%A5%E9%97%A8/" title="generator入门">https://www.52ruankai.cn/generator%E5%85%A5%E9%97%A8/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+<!-- 
+    <div id="comments"></div>
+<script>
+  new Valine({
+    el: '#comments',
+    appId: 'OVfMjrRltgj0gOIDIRKqAFsc-gzGzoHsz',
+    appKey: 'UozYUfoCJGOnEMdyxhaBB2lH',
+    placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+  })
+</script>
+ -->
+
+
+    <div id="comments"></div>
+<script>
+  new Valine({
+    el: '#comments',
+    appId: 'OVfMjrRltgj0gOIDIRKqAFsc-gzGzoHsz',
+    appKey: 'UozYUfoCJGOnEMdyxhaBB2lH',
+    placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+  })
+</script>
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2016-2020 RacingK</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80NzAwOS8yMzUwOQ==">
+  <script type="text/javascript">
+  (function(d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+      if (typeof LivereTower === 'function') { return; }
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+  </script>
+  <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":200,"height":350},"mobile":{"show":true},"react":{"opacity":0.7},"dialog":{"enable":true},"log":false});</script></body>
+<script src="/js/jquery.pjax.js?v=1.0.2" ></script>
+
+<script src="/js/script.js?v=1.0.2" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#小程序','#java','#Spring','#CentOS','#linux','#Elasticsearch','#Eclipse','#运维','#Node.js','#Hexo','#Next','#logstash','#javascript','#MySQL','#MongoDB','#IOC','#vue','#TypeScript','#ubuntu','#express','#Vim','#Vuex','#Vue','#WebAssembly','#windows','#cmd','#filebeat','#git','#ES6','#kibana','#ES','#jdk','#powershell','#CSS','#svn','#webpack','#ejs','#pug','#三阶魔方','#魔方','#Babel','#位运算','#位','#字节','#二进制','#sass','#less','#styl','#前端','#用户体验','#pwa','#vue-cli','#npm','#微信小程序','#速度','#赛车','#shell',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 604px;
+    }
+    .nav.fullscreen {
+        margin-left: -604px;
+    }
+    .nav-left {
+        width: 182px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 574px;
+        }
+        .nav.fullscreen {
+            margin-left: -574px;
+        }
+        .nav-left {
+            width: 182px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 574px;
+            margin-left: -574px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 574px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
